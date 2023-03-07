@@ -1,0 +1,20 @@
+#Robots.txt
+
+User-Agent: *
+Allow: /
+Disallow: /App_Code/
+Disallow: /App_Farm/
+Disallow: /Bin/
+Disallow: /Busca/
+Disallow: /Comuns/
+Disallow: /Less/
+Disallow: /Logs/
+Disallow: /Masterpages/
+Disallow: /Personalizacao/
+Disallow: /Suporte/
+Disallow: /Temp/
+Disallow: /WebAPI/
+Disallow: /XML/
+Disallow: /XSL/
+
+Sitemap: https://amp.acidadeon.com/sitemap/noticias.sitemap

@@ -1,0 +1,266 @@
+﻿using CMS.CacheSync.Front.BLL;
+using CMS.Personalizacoes.Front.BLL;
+using CMS.Personalizacoes.Model.Extensions;
+using CMS.Web.FrontEnd.TemplatesV55.Comuns;
+using HtmlToAMPHelper;
+//using HtmlAgilityPack;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Net;
+using System.Text;
+using System.Web;
+using System.Web.Http;
+
+/// <summary>
+/// Descrição resumida de PersonalizacaoController
+/// </summary>
+/// 
+[RoutePrefix("api/Personalizacao")]
+public class PersonalizacaoController : ApiController
+{
+    [Route("GerarLayoutSecao")]
+    [HttpPost]
+    public string GerarLayoutSecao(int idLayout)
+    {
+        string arquivo = string.Empty;
+
+        try
+        {
+            CMS.Personalizacoes.Front.BLL.PersonalizadorXslBLL personalizadorXsl = new CMS.Personalizacoes.Front.BLL.PersonalizadorXslBLL();
+            if (personalizadorXsl.GeraArquivoXslPersonalizador(idLayout, out arquivo))
+            {
+                Sincronizar(SyncNoticiaBLL.Chamadas.GerarLayoutSecao, idLayout);
+                return arquivo;
+            }
+            else
+                return string.Empty;
+        }
+        catch (Exception exception)
+        {
+            ClassHelper.RegistrarErro(exception, HttpContext.Current, "Erro_GerarLayoutSecao", true, "Ocorreu um erro ao gerar o layout. Verifique o log do site para mais detalhes.");
+        }
+
+        return arquivo;
+    }
+
+    [Route("GerarLayoutSecaoLinha")]
+    [HttpGet]
+    public string GerarLayoutSecaoLinha(int idLayout)
+    {
+        string arquivo = string.Empty;
+
+        try
+        {
+            CMS.Personalizacoes.Model.PersonalizacaoSecoesModel secao = null;
+            CMS.Personalizacoes.Model.PersonalizacaoSecoesLayoutModel layout = null;
+            CMS.Personalizacoes.Front.BLL.PersonalizacaoSecoesLayoutBLL personalizacaoSecoesLayoutBLL = new CMS.Personalizacoes.Front.BLL.PersonalizacaoSecoesLayoutBLL();
+            CMS.Personalizacoes.Front.BLL.PersonalizacaoSecoesBLL personalizacaoSecoesBLL = new CMS.Personalizacoes.Front.BLL.PersonalizacaoSecoesBLL();
+
+            layout = personalizacaoSecoesLayoutBLL.GetById(idLayout);
+
+            if (layout == null)
+                throw new Exception("O layout da seção não existe");
+
+            secao = personalizacaoSecoesBLL.GetById(layout.idSecao);
+
+            string uriXsl = FrameworkExtension.CommonBusiness.CommonBusiness.GetHttpAddress(FrameworkExtension.CommonBusiness.CommonBusiness.GetConfig("personalizacao_path_xslpersonalizador_padrao_linha"));
+
+            if (String.IsNullOrEmpty(uriXsl))
+                throw new Exception("O arquivo de personalização padrão não foi encontrado '" + uriXsl + "'.");
+
+            uriXsl = uriXsl + "?idLayout=" + idLayout;
+
+            string strResponse = FrameworkExtension.CommonBusiness.CommonBusiness.GetWebRequest(uriXsl);
+            strResponse = strResponse.Trim();
+
+            StringBuilder str = new StringBuilder(strResponse);
+
+            string path = FrameworkExtension.CommonBusiness.CommonBusiness.GetConfig("personalizacao_path_xslconfigurados");
+            string nomeArquivo = secao.diretorio.Trim().Replace(" ", "").ToLower().Replace("/", "_");
+
+            path += nomeArquivo;
+
+            switch ((BoxControlModel.EnumTipoPagina)layout.TipoPagina)
+            {
+                case BoxControlModel.EnumTipoPagina.Lateral:
+                    path += "_int";
+                    break;
+                case BoxControlModel.EnumTipoPagina.Mobile:
+                    path += "_mob";
+                    break;
+            }
+
+            path += ".xsl";
+
+            if (!String.IsNullOrEmpty(layout.ArquivoXsl))
+            {
+                string arqFisico = FrameworkExtension.CommonBusiness.CommonBusiness.GetPhysicalAddress(path);
+                string arqBackup = arqFisico.Replace(".xsl", ".bkp.xsl");
+
+                File.Delete(arqBackup);
+
+                if (File.Exists(arqFisico))
+                    File.Move(arqFisico, arqBackup);
+            }
+
+            StreamWriter write = new StreamWriter(FrameworkExtension.CommonBusiness.CommonBusiness.GetPhysicalAddress(path));
+
+            write.Write(str);
+            write.Close();
+
+            arquivo = path;
+
+            #region Transforma o XSL e gera o "miolo" da interna em HTML com o mesmo nome do XSL
+
+            TransformaPortal iTransformaPortal = new TransformaPortal();
+            var conteudoTransformado = iTransformaPortal.Ativas().Transforma(arquivo, true);
+            string pathFisicoTemp = FrameworkExtension.CommonBusiness.CommonBusiness.GetPhysicalAddress(path);
+            string pathFisico = pathFisicoTemp.Substring(0, pathFisicoTemp.IndexOf("xsl-secoes")) + "html\\" + Path.GetFileName(path).Replace(".xsl", ".html");
+            conteudoTransformado = conteudoTransformado.Replace("///","/");			
+
+            if (!Directory.Exists(Path.GetDirectoryName(pathFisico)))
+            {
+                Directory.CreateDirectory(Path.GetDirectoryName(pathFisico));
+            }
+
+            // converte html to amp image
+            conteudoTransformado = CommonHtmlToAMPHelper.HtmlToAmpImages(conteudoTransformado);
+
+            // os arquivos HTML serão criados na seguinte pasta: /XSL/xsl-secoes/html
+            File.WriteAllText(pathFisico, conteudoTransformado);
+
+            #endregion
+
+            #region Transforma a Default.aspx em default.html, index.html
+
+            var converted = ClassHelper.ToAbsoluteUrl("/Default.aspx");
+
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(converted);
+            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+            if (response.StatusCode == HttpStatusCode.OK)
+            {
+                Stream receiveStream = response.GetResponseStream();
+                StreamReader readStream = null;
+                if (response.CharacterSet == null)
+                    readStream = new StreamReader(receiveStream);
+                else
+                    readStream = new StreamReader(receiveStream, Encoding.GetEncoding(response.CharacterSet));
+                string data = readStream.ReadToEnd();
+
+                var pathRaiz = FrameworkExtension.CommonBusiness.CommonBusiness.GetPhysicalAddress("~/Default.aspx");
+                // o arquivo HTML default.html, index.html serão gravados na raiz do projeto
+                File.WriteAllText(pathRaiz.Replace("Default.aspx",string.Empty) + "index.html", data);
+
+                #region Insere o arquivo HTML que foi gerado em cache
+
+                HttpRuntime.Cache.Insert(pathRaiz.Replace("Default.aspx", string.Empty) + "index.html", data);
+
+                #endregion
+
+                response.Close();
+                readStream.Close();
+            }
+
+
+            #endregion
+
+            #region Insere o arquivo HTML que foi gerado em cache
+
+            HttpRuntime.Cache.Insert(pathFisico, conteudoTransformado);
+
+            #endregion
+
+            object[] param = { "Personalizacao", "idLayout", idLayout };
+
+            Sincronizar(SyncNoticiaBLL.Chamadas.GerarLayoutSecaoLinha, param);
+        }
+        catch (Exception exception)
+        {
+            ClassHelper.RegistrarErro(exception, HttpContext.Current, "Erro_GerarLayoutSecaoLinha_", true, "Ocorreu um erro ao gerar o layout. Verifique o log do site para mais detalhes.");
+        }
+
+        ExtensoesXslBLL extensoesXslBLL = new ExtensoesXslBLL();
+        extensoesXslBLL.LimpaListaConteudoSelecionado();
+
+        return arquivo;
+    }
+
+    [Route("GerarTodosLayouts")]
+    [HttpGet]
+    public void GerarTodosLayouts()
+    {
+        int idSite = Convert.ToInt32(ClassNegocio.GetIdPortal.ToString());
+
+        // filtra personalizacao secoes sites
+        PersonalizacaoSecoesSitesBLL personalizacaoSecoesSitesBLL = new PersonalizacaoSecoesSitesBLL();
+        List<CMS.Personalizacoes.Model.PersonalizacaoSecoesSitesModel> listaSecoesSitesModel =
+            personalizacaoSecoesSitesBLL.GetByFilter(new CMS.Personalizacoes.Model.PersonalizacaoSecoesSitesModel { idsite = idSite });
+
+        // filtra personalizacao secoes layouts
+        PersonalizacaoSecoesLayoutBLL personalizacaoSecoesLayoutBLL = new PersonalizacaoSecoesLayoutBLL();
+        List<CMS.Personalizacoes.Model.PersonalizacaoSecoesLayoutModel> listaSecoesLayoutModel =
+            personalizacaoSecoesLayoutBLL.GetByFilter(new CMS.Personalizacoes.Model.PersonalizacaoSecoesLayoutModel { TipoPagina = 1, status = true });
+
+        var all = listaSecoesLayoutModel.Where(b => listaSecoesSitesModel.Any(a => a.idSecao == b.idSecao && a.idSecao != 1));
+
+        if (all.Any())
+        {
+            foreach (var item in all)
+            {
+                try
+                {
+                    if (item != null && item.idLayout > 0)
+                        GerarLayoutSecaoLinha(item.idLayout);
+                }
+                catch (Exception)
+                {
+                    continue;
+                }
+            }
+        }
+    }
+
+    [Route("RemoveOutputCacheSecao")]
+    [HttpGet]
+    public void RemoveOutputCacheSecao(string paginasecao)
+    {
+        CMS.Xml.Front.BLL.XmlBLL iXmlNegocio = new CMS.Xml.Front.BLL.XmlBLL();
+        iXmlNegocio.RemoveOutputCacheSecao(paginasecao);
+
+        object[] param = { "Personalizacao", "paginasecao", paginasecao };
+
+        Sincronizar(SyncNoticiaBLL.Chamadas.RemoveOutputCacheSecao, param);
+    }
+
+    [Route("RemoveOutputCacheXsl")]
+    [HttpGet]
+    public void RemoveOutputCacheXsl(string paginasecao)
+    {
+        CMS.Personalizacoes.Front.BLL.PersonalizadorXslBLL iPersonalizadorXsl = new CMS.Personalizacoes.Front.BLL.PersonalizadorXslBLL();
+        iPersonalizadorXsl.RemoverOutPutCacheXsl(paginasecao);
+
+        object[] param = { "Personalizacao", "paginasecao", paginasecao };
+
+        Sincronizar(SyncNoticiaBLL.Chamadas.RemoveOutputCacheXsl, param);
+    }
+
+    private void Sincronizar(SyncNoticiaBLL.Chamadas metodo, params object[] args)
+    {
+        SyncNoticiaBLL syncNoticiaBLL = new SyncNoticiaBLL();
+        syncNoticiaBLL.PropagarCacheWebApi(metodo, args);
+    }
+
+    //private static HtmlDocument GetHtmlDocument(string htmlContent)
+    //{
+    //    var doc = new HtmlDocument
+    //    {
+    //        OptionOutputAsXml = false,
+    //        OptionDefaultStreamEncoding = Encoding.UTF8
+    //    };
+    //    doc.LoadHtml(htmlContent);
+
+    //    return doc;
+    //}
+}

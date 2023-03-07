@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/masterpages/Template.AMP.master" AutoEventWireup="true" CodeFile="Templates.InternaNOT.AMP.master.cs" Inherits="CMS.Web.FrontEnd.TemplatesV55.masterpages_Templates_InternaNOT_AMP" %>
+
+<%@ Register Src="~/comuns/noticias/ucNoticia_Interna_AMP.ascx" TagName="ucNoticia_Interna_AMP" TagPrefix="uc1" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="cphHead" runat="Server">
+    <!-- AMP Video -->
+    <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+
+    <!-- AMP Audio -->
+    <script async custom-element="amp-audio" src="https://cdn.ampproject.org/v0/amp-audio-0.1.js"></script>
+
+    <!-- AMP Youtube -->
+    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+
+    <!-- AMP Carousel -->
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    
+
+    <!-- Aponta para a versão HTML normal do documento AMP HTML ou para si mesmo, se essa versão HTML não existir -->
+    <link rel="canonical" href="<%= SiteUrlHtml %>" />
+
+    <asp:ContentPlaceHolder ID="cphHead_Interna" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cphHeaderTopo" runat="Server">
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="cphTopoCorpo" runat="Server">
+    <asp:ContentPlaceHolder ID="cphTopoCorpo_Interna" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="cphCorpo" runat="Server">
+    <uc1:ucNoticia_Interna_AMP ID="ucNoticia_Interna_AMP" runat="server" />
+</asp:Content>
+<asp:Content ID="Content5" ContentPlaceHolderID="cphRodapeCorpo" runat="Server">
+    <asp:ContentPlaceHolder ID="cphRodapeCorpo_Interna" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content6" ContentPlaceHolderID="cphRodape" runat="Server">
+</asp:Content>
+<asp:Content ID="Content7" ContentPlaceHolderID="cphScriptsRodape" runat="Server">
+    <asp:ContentPlaceHolder ID="cphScriptsRodape_Interna" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

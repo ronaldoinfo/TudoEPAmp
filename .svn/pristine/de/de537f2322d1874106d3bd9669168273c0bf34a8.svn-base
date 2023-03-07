@@ -1,0 +1,190 @@
+﻿using CMS.Web.FrontEnd.TemplatesV55.Comuns;
+using MongoDB.Driver;
+using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Linq;
+using System.Net.Http;
+using System.Threading.Tasks;
+using System.Web;
+using System.Web.Http;
+
+/// <summary>
+/// Descrição resumida de SitesNoSQLController
+/// </summary>
+/// 
+
+namespace WebApi.SiteNoSQL.Controllers
+{
+    [RoutePrefix("api/SitesNoSQL")]
+    public class SitesNoSQLController : ApiController
+    {
+        private static string UrlBaseApi;
+        private static int IdSite;
+        private static IMongoDatabase mongoDatabase;
+
+        //public SitesNoSQLController(bool FromNoSQL = false)
+        //{
+        //    UrlBaseApi = ConfigurationManager.AppSettings["urlBaseAPI"].ToString();
+        //    IdSite = Convert.ToInt32(ClassNegocio.GetIdPortal.ToString());
+        //    var client = CommonMongoClient.Instance;
+        //    mongoDatabase = client.GetDatabase(IdSite.ToString());
+        //}
+
+        public SitesNoSQLController()
+        {
+            UrlBaseApi = ConfigurationManager.AppSettings["urlBaseAPI"].ToString();
+            IdSite = Convert.ToInt32(ClassNegocio.GetIdPortal.ToString());
+            var client = CommonMongoClient.Instance;
+            mongoDatabase = client.GetDatabase(IdSite.ToString());
+        }
+
+        #region Publicadores
+
+        /// <summary>
+        /// Gera documento no mongo baseado na tabela TbSites
+        /// </summary>
+        [HttpGet]
+        [Route("PublicarSites")]
+        public string PublicarSites()
+        {
+            mongoDatabase.DropCollectionAsync("Sites");
+
+            string inicio = DateTime.Now.ToString();
+            var sitesCollection = mongoDatabase.GetCollection<SitesModelsNoSQL.SitesModel>("Sites");
+
+            foreach (var item in GetAllSites())
+            {
+                sitesCollection.InsertOneAsync(item);
+            }
+
+            #region Criação de índices
+            IndexKeysDefinition<SitesModelsNoSQL.SitesModel> keys = Builders<SitesModelsNoSQL.SitesModel>.IndexKeys.Ascending("idSite");
+            var options = new CreateIndexOptions { Name = "SitesIDX" };
+            var indexModel = new CreateIndexModel<SitesModelsNoSQL.SitesModel>(keys, options);
+            sitesCollection.Indexes.CreateOneAsync(indexModel);
+            #endregion
+
+            return JsonConvert.SerializeObject("{" + "Início: " + inicio + ", Término: " + DateTime.Now.ToString() + ", Duração: " + (DateTime.Now - Convert.ToDateTime(inicio))) + "}";
+        }
+
+        #endregion
+
+        #region Buscas Banco Relacional
+        private static List<SitesModelsNoSQL.SitesModel> GetAllSites()
+        {
+            List<SitesModelsNoSQL.SitesModel> sitesModel = new List<SitesModelsNoSQL.SitesModel>();
+            var client = CommonHttpClient.Instance;
+            var URI = UrlBaseApi + "Sites";
+            HttpResponseMessage response = client.GetAsync(URI).Result;
+            if (response.IsSuccessStatusCode)
+            {
+                var sitesJsonString = response.Content.ReadAsStringAsync().Result;
+                sitesModel = JsonConvert.DeserializeObject<List<SitesModelsNoSQL.SitesModel>>(sitesJsonString);
+            }
+
+            return sitesModel;
+        }
+        public SitesModelsNoSQL.SitesModel GetSite(int idSite)
+        {
+            try
+            {
+                SitesModelsNoSQL.SitesModel sitesModel = new SitesModelsNoSQL.SitesModel();
+                var client = CommonHttpClient.Instance;
+                var URI = UrlBaseApi + "Sites/" + idSite;
+                HttpResponseMessage response = client.GetAsync(URI).Result;
+                if (response.IsSuccessStatusCode)
+                {
+                    var sitesJsonString = response.Content.ReadAsStringAsync().Result;
+                    sitesModel = JsonConvert.DeserializeObject<SitesModelsNoSQL.SitesModel>(sitesJsonString);
+                }
+
+                return sitesModel;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
+
+
+        #endregion
+
+        #region DTOS
+
+        public SitesModelsNoSQL.SitesModel SitesBsonModelToSitesModel(SitesModelsNoSQL.SitesBsonModel sitesBsonModel)
+        {
+             SitesModelsNoSQL.SitesModel sitesModel;
+
+            try
+            {
+                sitesModel = new SitesModelsNoSQL.SitesModel
+                {
+                    agruparConteudo = sitesBsonModel.agruparConteudo,
+                    dtAtualizacao = sitesBsonModel.dtAtualizacao,
+                    FanPage = sitesBsonModel.FanPage,
+                    habilitaProprClubeAssinante = sitesBsonModel.habilitaProprClubeAssinante,
+                    idcidade = sitesBsonModel.idcidade,
+                    identificarCanaisSecoes = sitesBsonModel.identificarCanaisSecoes,
+                    idSite = sitesBsonModel.idSite,
+                    IdUsuarioAtualizacao = sitesBsonModel.IdUsuarioAtualizacao,
+                    nomeSite = sitesBsonModel.nomeSite,
+                    reterNoticia = sitesBsonModel.reterNoticia,
+                    status = sitesBsonModel.status,
+                    URL = sitesBsonModel.URL,
+                    URLBoletim = sitesBsonModel.URLBoletim,
+                    URLEMC = sitesBsonModel.URLEMC,
+                    URLParticipacao = sitesBsonModel.URLParticipacao,
+                    URLPublicacao = sitesBsonModel.URLPublicacao,
+                    UtilizaMarcaDagua = sitesBsonModel.UtilizaMarcaDagua,
+                    versaoTemplateFront = sitesBsonModel.versaoTemplateFront,
+                    UtilizaNoSQL = sitesBsonModel.UtilizaNoSQL
+                };
+            }
+            catch (Exception)
+            {
+                SitesNoSQLController sitesNoSQLController = new SitesNoSQLController();
+                sitesModel = sitesNoSQLController.GetSite(IdSite);
+            }
+
+            return sitesModel;
+        }
+
+        #endregion
+
+        #region Buscas NoSQL
+
+        [HttpGet]
+        [Route("GetSiteByIdNoSQL")]
+        public SitesModelsNoSQL.SitesBsonModel GetSiteByIdNoSQL(int Id)
+        {
+            try
+            {
+                var collection = mongoDatabase.GetCollection<SitesModelsNoSQL.SitesBsonModel>("Sites");
+                var filter = Builders<SitesModelsNoSQL.SitesBsonModel>.Filter.Eq("idSite", Id);
+                return collection.Find(filter).FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+        public static List<SitesModelsNoSQL.SitesModel> GetAllSitesNoSQL<T>()
+        {
+            try
+            {
+                var sites = mongoDatabase.GetCollection<SitesModelsNoSQL.SitesModel>("Sites");
+                var filter = Builders<SitesModelsNoSQL.SitesModel>.Filter.Empty;
+
+                return mongoDatabase.GetCollection<SitesModelsNoSQL.SitesModel>("Sites").Find(filter).ToList();
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
+
+        #endregion
+    }
+}

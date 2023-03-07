@@ -1,0 +1,53 @@
+#FROM mcr.microsoft.com/windows/servercore/iis
+#EXPOSE 80
+#EXPOSE 51329
+#RUN powershell Import-Module WebAdministration; \
+#New-Item -Path IIS:\AppPools\AppPoolTudoEpAmp; \
+#New-Item -Path "C:\inetpub\wwwroot" -Type Directory; \
+#New-WebSite -Name TudoEpAmp -Port 51329 -PhysicalPath "C:\inetpub\wwwroot" -ApplicationPool AppPoolTudoEpAmp -Force; \
+#Set-ItemProperty -Path "IIS:\AppPools\AppPoolTudoEpAmp" -name "managedPipelineMode" -value 1; \
+#Set-ItemProperty -Path "IIS:\AppPools\AppPoolTudoEpAmp" -name "managedRuntimeVersion" -value v4.0; \
+#Set-ItemProperty -Path "IIS:\AppPools\AppPoolTudoEpAmp" -name "startMode" -value 1; \
+#$Site = Get-Item IIS:\Sites\TudoEpAmp; \
+#$Site.applicationDefaults.preloadEnabled = $true; \
+#New-Item -Path "C:\temp" -Type Directory
+#FROM mcr.microsoft.com/dotnet/framework/aspnet:4.8 AS runtime
+#COPY ./ ./inetpub/wwwroot
+
+#FROM mcr.microsoft.com/windows/servercore/iis:windowsservercore-ltsc2019
+
+# Indicates that the windowsservercore image will be used as the base image.
+FROM mcr.microsoft.com/windows/servercore:ltsc2019
+ 
+# Uses dism.exe to install the IIS role.
+RUN dism.exe /online /enable-feature /all /featurename:iis-webserver /NoRestart
+
+RUN powershell Import-Module WebAdministration
+
+EXPOSE 80
+EXPOSE 51329
+
+### Install Chocolatey
+#RUN @powershell -NoProfile -ExecutionPolicy Bypass -Command "$env:ChocolateyUseWindowsCompression='false'; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+#
+## Install build tools
+#RUN powershell add-windowsfeature web-asp-net45 \
+    #&& choco install microsoft-build-tools -y --allow-empty-checksums -version 14.0.23107.10 \
+    #&& choco install netfx-4.8-devpack --allow-empty-checksums -y \
+    #&& choco install nuget.commandline --allow-empty-checksums -y \
+    #&& nuget install MSBuild.Microsoft.VisualStudio.Web.targets -Version 14.0.0.3 \
+    #&& nuget install WebConfigTransformRunner -Version 1.0.0.1
+#
+RUN powershell Import-Module WebAdministration; \
+New-Item -Path IIS:\AppPools\AppPoolTudoEpAmp; \
+New-Item -Path "C:\inetpub\wwwroot" -Type Directory; \
+New-WebSite -Name TudoEpAmp -Port 51329 -PhysicalPath "C:\inetpub\wwwroot" -ApplicationPool AppPoolTudoEpAmp -Force; \
+Set-ItemProperty -Path "IIS:\AppPools\AppPoolTudoEpAmp" -name "managedPipelineMode" -value 1; \
+Set-ItemProperty -Path "IIS:\AppPools\AppPoolTudoEpAmp" -name "managedRuntimeVersion" -value v4.0; \
+Set-ItemProperty -Path "IIS:\AppPools\AppPoolTudoEpAmp" -name "startMode" -value 1; \
+$Site = Get-Item IIS:\Sites\TudoEpAmp; \
+$Site.applicationDefaults.preloadEnabled = $true; \
+New-Item -Path "C:\temp" -Type Directory
+
+RUN powershell remove-item C:\inetpub\wwwroot\iisstart.*
+COPY ./ ./inetpub/wwwroot

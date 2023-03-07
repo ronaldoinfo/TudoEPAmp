@@ -1,0 +1,424 @@
+// 
+//----------------------------------  VARIÁVEIS TUDOEP 2022 -----------------------------------
+// Customizações das variáveis trazidas do arquivo "_variables.scss" do Bootstrap original. É bom
+// deixar as linhas comentadas do modo como estão, para serem usadas em possíveis casos
+// necessários. Verificar as demais variáveis no arquivo original, antes de se ter certeza do que
+// se está fazendo/modificando.
+
+// ADOBE FONTS - "Azo Sans"
+// @import url("https://use.typekit.net/arz2oix.css");
+// Azo Sans Black
+// font-family: azo-sans-web, sans-serif;
+// font-weight: 900;
+// font-style: normal;
+
+// Azo Sans Bold
+// font-family: azo-sans-web, sans-serif;
+// font-weight: 700;
+// font-style: normal;
+
+// Azo Sans Bold Italic
+// font-family: azo-sans-web, sans-serif;
+// font-weight: 700;
+// font-style: italic;
+
+// Azo Sans Italic
+// font-family: azo-sans-web, sans-serif;
+// font-weight: 400;
+// font-style: italic;
+
+// Azo Sans Light
+// font-family: azo-sans-web, sans-serif;
+// font-weight: 300;
+// font-style: normal;
+
+// Azo Sans Light Italic
+// font-family: azo-sans-web, sans-serif;
+// font-weight: 300;
+// font-style: italic;
+
+// Azo Sans Medium
+// font-family: azo-sans-web, sans-serif;
+// font-weight: 500;
+// font-style: normal;
+
+// Azo Sans Medium Italic
+// font-family: azo-sans-web, sans-serif;
+// font-weight: 500;
+// font-style: italic;
+
+// Azo Sans Regular
+// font-family: azo-sans-web, sans-serif;
+// font-weight: 400;
+// font-style: normal;
+
+
+// VARIÁVEIS CRIADAS - Cores, tipografia e etc..
+$azulescuro-tudoep:  #153572; // Economia TUDOEP
+$roxoazulado-tudoep: #460FC8; // Cotidiano TUDOEP
+$cor-agro:           #076D02;
+$cor-corrida:        #8CE73D;
+$cor-games:          #8A44C9;
+$cor-viuessa:        #650E99;
+$cor-auto:           #494949;
+$cor-podcasts:       #E11B22;
+$cor-gastro:         #DB0008;
+$cor-sertanejo:      #A76627;
+$cor-viagens:        #195389;
+$cor-bebes:          #F08C86;
+$cor-decor:          #D1382C;
+$cor-inovacao:       #208ACF;
+$cor-educa:          #FEBD0B;
+$cor-vagas:          #0CAB83;
+$cor-saude:          #118ab2;
+$cor-churrasqueadas: #FF4800;
+$cor-casaemversoeprosa:     #663C17;
+
+$cor-virandobixo:    #FF7D02;
+$cor-acidadeon:      #FF9600;
+
+$font-family-websafe:  system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+// $font-family-wf: 'wotfardregular', 'Raleway', "Segoe UI", "Helvetica Neue", Arial, system-ui, -apple-system, sans-serif;
+$font-family-azosans: azo-sans-web, 'Raleway', "Segoe UI", "Helvetica Neue", Arial, system-ui, -apple-system, sans-serif;
+
+$columns-width: clamp(8rem, 7rem + 3.2vw, 11rem);
+$columns-count: 2;
+$columns-gap: 2%;
+// $font-weight-medio: 600;
+// Variáve para controlar a espessura das letras do "bc_v6_notas_a".
+// $font-weight-notas: 550; // Raleway
+
+// Color system
+
+// scss-docs-start gray-color-variables
+$white:    #fff !default;
+$gray-100: #f5f5f5 !default;
+$gray-200: #ececec !default;
+$gray-300: #e2e2e2 !default;
+$gray-400: #d4d4d4 !default;
+$gray-500: #adadad !default;
+$gray-600: #7e7e7e !default;
+$gray-700: #454545 !default;
+$gray-800: #3b3b3b !default;
+$gray-900: #262626 !default;
+$black:    #000 !default;
+// scss-docs-end gray-color-variables ------ OBS.: Escala de cinzas também customizada/modificada
+
+// fusv-enable
+
+$border-1: 1px solid rgba($black, .12);
+$border-d: 1px dashed rgba($black, .12);
+
+// scss-docs-start color-variables
+$blue:    #0d6efd !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #d63384 !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+// $green:   #28EB7D !default; // "verde EP"
+$green:   #198754 !default;
+$teal:    #20c997 !default;
+// $cyan:    #00E0FC !default; // "azul claro EP"
+$cyan:    #0dcaf0 !default;
+// scss-docs-end color-variables
+
+// scss-docs-start colors-map
+$colors: (
+  "azulescuro":       $azulescuro-tudoep,
+  "roxoazulado":      $roxoazulado-tudoep,
+  "agro":             $cor-agro,
+  "corrida":          $cor-corrida,
+  "games":            $cor-games,
+  "viuessa":          $cor-viuessa,
+  "auto":             $cor-auto,
+  "gastro":           $cor-gastro,
+  "sertanejo":        $cor-sertanejo,
+  "viagens":          $cor-viagens,
+  "bebes":            $cor-bebes,
+  "decor":            $cor-decor,
+  "inovacao":         $cor-inovacao,
+  "podcasts":         $cor-podcasts,
+  "educa":            $cor-educa,
+  "vagas":            $cor-vagas,
+  "saude":            $cor-saude,
+  "churrasqueadas":   $cor-churrasqueadas,
+  "casaemversoeprosa":$cor-casaemversoeprosa,
+
+  "virandobixo":      $cor-virandobixo,
+  "acidadeon":        $cor-acidadeon,
+
+  "blue":             $blue,
+  "indigo":           $indigo,
+  "purple":           $purple,
+  "pink":             $pink,
+  "red":              $red,
+  "orange":           $orange,
+  "yellow":           $yellow,
+  "green":            $green,
+  "teal":             $teal,
+  "cyan":             $cyan,
+  "white":            $white,
+  "gray":             $gray-600,
+  "gray-dark":        $gray-800,
+  "black":            $black,
+  
+  "columns-width":    $columns-width,
+  "columns-count":    $columns-count,
+  "columns-gap":      $columns-gap,
+  "border":           $border-1,
+  "border-d":         $border-d,
+
+  "font-websafe":     $font-family-websafe,
+  "font-azosans":     $font-family-azosans
+  // "font-weight-notas": $font-weight-notas,
+  // "font-weight-medio": $font-weight-medio
+
+) !default;
+// scss-docs-end colors-map
+
+// scss-docs-start theme-color-variables
+// $primary:       $blue !default;
+$primary:       $roxoazulado-tudoep !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-900 !default;
+// scss-docs-end theme-color-variables
+
+// scss-docs-start theme-colors-map
+// $theme-colors: (
+//   "primary":    $primary,
+//   "secondary":  $secondary,
+//   "success":    $success,
+//   "info":       $info,
+//   "warning":    $warning,
+//   "danger":     $danger,
+//   "light":      $light,
+//   "dark":       $dark
+// ) !default;
+// scss-docs-end theme-colors-map
+
+// scss-docs-start theme-colors-rgb
+// $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value") !default;
+// scss-docs-end theme-colors-rgb
+
+
+// Quickly modify global styling by enabling or disabling optional features.
+
+// $enable-caret:                true !default;
+// $enable-rounded:              true !default;
+// $enable-shadows:              false !default;
+// $enable-gradients:            false !default;
+// $enable-transitions:          true !default;
+// $enable-reduced-motion:       true !default;
+// $enable-smooth-scroll:        true !default;
+// $enable-grid-classes:         true !default;
+// $enable-cssgrid:              false !default;
+// $enable-button-pointers:      true !default;
+// $enable-rfs:                  true !default;
+// $enable-validation-icons:     true !default;
+// $enable-negative-margins:     false !default;
+// $enable-deprecation-messages: true !default;
+// $enable-important-utilities:  true !default;
+
+// Style anchor elements.
+$variable-prefix:             bs- !default;
+
+$gradient: linear-gradient(185deg, rgba($white, .15), rgba($white, 0)) !default;
+
+$link-color:                              var(--bs-dark) !default;
+$link-decoration:                         none !default;
+$link-shade-percentage:                   0% !default;
+// $link-hover-color:                     shift-color($orange, $link-shade-percentage) !default;
+$link-hover-color:                        $roxoazulado-tudoep !default;
+$link-hover-decoration:                   null !default;
+
+// Paragraphs
+//
+// Style p element.
+
+// $paragraph-margin-bottom:   1rem !default;
+
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+// scss-docs-start grid-breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  xsm: 321px, // refinamento necessário, a fim de melhorar o uso do "mixin" de breakpoints. Valor é em função de um tamanho diferenciado de dispositivos ainda menores ou iguais a um "Moto G4" por exemplo.
+  xsl: 361px, // refinamento necessário, a fim de melhorar o uso do "mixin" de breakpoints. Valor é em função de um tamanho diferenciado de dispositivos ainda menores ou iguais a um "Moto G4" por exemplo.
+  sm: 576px,
+  md: 768px,
+  // lg: 992px,
+  lg: 1200px,
+  // lg: 1350px,
+  // xl: 1650px,
+  xl: 1400px,
+  // xl: 1200px
+  // xxl: 1725px
+  xxl: 1760px
+) !default;
+
+// @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+// @include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
+
+// scss-docs-end grid-breakpoints
+
+// scss-docs-start container-max-widths
+$container-max-widths: (
+  // sm: 540px,
+  sm: 100%,
+  // md: 720px,
+  md: 90%,
+  // lg: 960px,
+  lg: 90%,
+  xl: 1270px,
+  // xl: 1140px,
+  xxl: 1320px
+
+  // Obs.: É desta maneira que se altera os tamanhos da classe "container". 
+  //       Caso seja exigido que o container tenha o tamanho "1190px", basta  
+  //       descomentar estes "xl" e "xxl" abaixo, e comentar os que estão acima.
+  // xl: 1190px, 
+  // xxl: 1190px
+
+) !default;
+// scss-docs-end container-max-widths
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// scss-docs-start font-variables
+// stylelint-disable value-keyword-case
+
+$font-family-sans-serif:      'Lato', "Segoe UI", 'Open Sans', "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default; // [*]
+// $font-family-sans-serif:      azo-sans-web, "Segoe UI", 'Open Sans', "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default; // [*]
+
+// stylelint-enable value-keyword-case
+$font-family-base:            var(--#{$variable-prefix}font-sans-serif) !default;
+// $font-family-code:            var(--#{$variable-prefix}font-monospace) !default;
+
+// $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
+// $font-size-base affects the font size of the body text
+$font-size-root:              null !default;
+// $font-size-base:              1rem !default; // Assumes the browser default, typically `16px` [*]
+// $font-size-base:              .95rem !default;
+$font-size-base:              1.125rem !default;
+// $font-size-sm:                $font-size-base * .875 !default;
+// $font-size-lg:                $font-size-base * 1.25 !default;
+// [*] Obs.:Ou seja, o Bootstrap baseia toda a tipografia do frame-work em unidades "rem". E 1rem é cerca de 16px, como eles explicam nesta frase.
+//          Mudar de "rem" para "px" causa incompatibilidade com funções usadas por outros componentes e para a responsividade da fonte, ou seja,
+//          o resizing da fonte para tamanhos de telas diferentes. Estas funções fazem operações com estes valores. Então, tem que usar "rem" 
+//          obrigatoriamente. E isso não é uma "limitação". É apenas algo estabecido pelos autores do Bootstrap com fundamentos de web devidamente 
+//          estudados, que são importantes, e com necessidades de técnicas próprias da tecnologia para fazer todo o frame-work funcionar.
+//          Para diminuir ou almentar, basta fazer a correlação... Por exemplo, para "18px", em rem será, talvez, "1.2rem", e assim por diante.
+
+// $font-weight-lighter:         lighter !default;
+// $font-weight-light:           300 !default;
+// $font-weight-normal:          400 !default;
+// $font-weight-bold:            800 !default;
+// $font-weight-bolder:          bolder !default;
+// $font-weight-normal:          450 !default; // Com o link de Google Fonts (no arquivo "TemplatesHead.ascx") chamando as fontes no modo "variable axes", os pesos (grossuras) da família ficam em unidades, e não mais necessariamente em centenas. O valor pode ser, por exemplo, tanto "400", quanto "451", "452", "455", e etc.. Mas isso só funciona pelo sistema fornecido pelo Google Fonts. Caso a tipografia do projeto venha mudar para uma família web-safe, essa abordagem não funcionará, e os valores deverão ser revertidos para o padrão de centenas (ex. 300, ou 400, 500, 600, 700, e etc.).
+
+$font-weight-lighter:         100 !default;
+// $font-weight-light:           300 !default;
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            700 !default;
+$font-weight-bolder:          900 !default;
+
+$font-weight-base:            $font-weight-normal !default;
+
+// $line-height-base:            1.5 !default;
+$line-height-base:            1.3 !default;
+$line-height-sm:              1.25 !default;
+$line-height-lg:              2 !default;
+
+$h1-font-size:                $font-size-base * 2.22223 !default;
+$h2-font-size:                $font-size-base * 1.94445 !default;
+$h3-font-size:                $font-size-base * 1.66657 !default;
+$h4-font-size:                $font-size-base * 1.33334 !default;
+$h5-font-size:                $font-size-base * 1.16667 !default;
+$h6-font-size:                $font-size-base !default;
+
+// $headings-line-height:        1.2 !default;
+// $headings-font-family:        'Raleway', "Segoe UI", 'Open Sans', "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", system-ui, -apple-system, sans-serif !default;
+$headings-font-weight:        900 !default;
+$display-font-weight:         unset !default;
+// scss-docs-end font-variables
+
+$border-color:                var(--bs-gray-300) !default;
+$border-radius:               .45rem !default;
+$border-radius-sm:            .4rem !default;
+$border-radius-lg:            .8rem !default;
+// $border-radius-pill:          50rem !default;
+
+
+$input-border-width: 0;
+
+// scss-docs-start form-floating-variables
+// $form-floating-height:            add(3.5rem, $input-height-border) !default;
+// $form-floating-line-height:       1.25 !default;
+// $form-floating-padding-x:         $input-padding-x !default;
+$form-floating-padding-x:            .5rem !default;
+// $form-floating-padding-y:         1rem !default;
+// $form-floating-input-padding-t:   1.625rem !default;
+// $form-floating-input-padding-b:   .625rem !default;
+// $form-floating-label-opacity:     .65 !default;
+$form-floating-label-transform:   scale(.7) translateY(-.5rem) translateX(.15rem) !default;
+// $form-floating-transition:        opacity .1s ease-in-out, transform .1s ease-in-out !default;
+// scss-docs-end form-floating-variables
+
+// scss-docs-start card-variables
+// $card-spacer-y:                     $spacer !default;
+// $card-spacer-x:                     $spacer !default;
+// $card-title-spacer-y:               $spacer * .5 !default;
+// $card-border-width:                 $border-width !default;
+// $card-border-color:                 rgba($black, .125) !default;
+// $card-border-radius:                $border-radius !default;
+// $card-box-shadow:                   null !default;
+// $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
+// $card-cap-padding-y:                $card-spacer-y * .5 !default;
+// $card-cap-padding-x:                $card-spacer-x !default;
+// $card-cap-bg:                       rgba($black, .03) !default;
+// $card-cap-color:                    null !default;
+// $card-height:                       null !default;
+// $card-color:                        null !default;
+// $card-bg:                           unset !default;
+// $card-img-overlay-padding:          $spacer !default;
+// $card-group-margin:                 $grid-gutter-width * .5 !default;
+// scss-docs-end card-variables
+
+// %heading {
+//   letter-spacing: -.3px;
+// }
+
+// @mixin visually-hidden() {
+//   margin: -101vw -1px -1px -1px !important; // Fix for https://github.com/twbs/bootstrap/issues/25686
+// }
+
+%bg-opec {
+  // background: transparent url(https://statics.tudoep.com/tudoep.v56/img/pattern_diagonal.svg) repeat;
+  // background-size: 51px;
+  border: 1px solid var(--bs-gray-300);
+  border-radius: 5px;
+  padding-bottom: .5rem;
+}
+
+// Cores personalizadas para os detalhes da tela de Erro 404, e para o aviso de Cookies. 
+// Aqui são aplicadas cores conforme necessidades do TUDO EP, mas para outros projetos, basta trocar por outras que sejam pertinentes para cada caso e/ou identidade visual específica.
+#tit-error {
+  --bs-primary: var(--bs-roxoazulado);
+}
+// #confirmCookies {
+//   --bs-primary: var(--bs-gray-500);
+// }

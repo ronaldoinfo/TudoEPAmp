@@ -1,0 +1,95 @@
+/*! ----------------------- TUDOEP 2022 - GRUPO EP ------------------------
+ * Bootstrap v5.2.0-beta1 (https://getbootstrap.com/)
+ * Copyright 2011-2022 The Bootstrap Authors
+ * Copyright 2011-2022 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+
+ 
+ * ------------------------------------------------------------------------
+   IMPORTANTE - É aqui que definiremos o CSS do AMP. Foram reunidos todos
+   os arquivos necessários, incluindo esta integração de Bootstrap (apenas 
+   com elementos básicos dele, e sem os "components").
+   Deve-se, antes de copiar (Ctrl+C) toda a linha compactada (gerada pelo 
+   compilador de Sass no arquivo de CSS final, na pasta "/css/") com o CSS
+   puro, apagar o parâmetro "important" de todas/quaisquer definições, e só
+   então colar (Ctrl+V) isso dentro do elemento "<style amp-custom>", no
+   arquivo "Template.AMP.master".
+ * ------------------------------------------------------------------------
+ */
+ 
+$include-column-box-sizing: true !default;
+
+@import "functions";
+@import "variables-TUDOEP";
+@import "variables";
+@import "maps";
+
+// @import "mixins/lists";
+// @import "mixins/breakpoints";
+// @import "mixins/container";
+// @import "mixins/grid";
+// @import "mixins/utilities";
+@import "mixins";
+
+// @import "vendor/rfs";
+
+@import "root";
+@import "reboot";
+@import "type";
+
+// @import "containers";
+@import "grid";
+
+// @import "utilities";
+// Only use the utilities we need
+// stylelint-disable-next-line scss/dollar-variable-default
+// $utilities: map-get-multiple(
+//   $utilities,
+//   (
+//     "display",
+//     "order",
+//     "flex",
+//     "flex-direction",
+//     "flex-grow",
+//     "flex-shrink",
+//     "flex-wrap",
+//     "justify-content",
+//     "align-items",
+//     "align-content",
+//     "align-self",
+//     "margin",
+//     "margin-x",
+//     "margin-y",
+//     "margin-top",
+//     "margin-end",
+//     "margin-bottom",
+//     "margin-start",
+//     "negative-margin",
+//     "negative-margin-x",
+//     "negative-margin-y",
+//     "negative-margin-top",
+//     "negative-margin-end",
+//     "negative-margin-bottom",
+//     "negative-margin-start",
+//     "padding",
+//     "padding-x",
+//     "padding-y",
+//     "padding-top",
+//     "padding-end",
+//     "padding-bottom",
+//     "padding-start",
+
+//     "font-family",
+//     "font-size",
+//     "font-style",
+//     "font-weight",
+//     "line-height",
+//     "text-align",
+//     "text-decoration",
+//     "text-transform",
+//   )
+// );
+
+// @import "utilities/api";
+
+@import "custom-amp"

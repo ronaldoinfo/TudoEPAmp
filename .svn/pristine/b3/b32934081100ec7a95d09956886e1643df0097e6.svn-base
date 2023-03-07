@@ -1,0 +1,29 @@
+<midiaCenter>
+  <home idsecao="1" nomesecao="Home">
+    <editoria idsecao="3" nomesecao="Economia" canal="1" diretorio="economia">
+    </editoria>
+    <editoria idsecao="4" nomesecao="Lazer e Cultura" canal="1" diretorio="lazerecultura">
+    </editoria>
+    <editoria idsecao="5" nomesecao="Política" canal="1" diretorio="politica">
+    </editoria>
+    <editoria idsecao="7" nomesecao="Esportes" canal="1" diretorio="esportes">
+    </editoria>
+    <editoria idsecao="8" nomesecao="Multimídia" canal="1" diretorio="multimidia">
+    </editoria>
+    <editoria idsecao="294" nomesecao="Serviços" canal="1" diretorio="servicos/">
+    </editoria>
+    <editoria idsecao="1197" nomesecao="Empregos" canal="1" diretorio="empregos">
+    </editoria>
+    <editoria idsecao="1546" nomesecao="Opinião" canal="1" diretorio="opiniao">
+    </editoria>
+    <editoria idsecao="1939" nomesecao="Cotidiano" canal="1" diretorio="cotidiano">
+    </editoria>
+    <editoria idsecao="1983" nomesecao="OnList" canal="1" diretorio="onlist">
+    </editoria>
+    <editoria idsecao="1992" nomesecao="Especial Publicitário" canal="1" diretorio="especialpublicitario">
+    </editoria>
+    <editoria idsecao="2121" nomesecao="Vida Útil" canal="1" diretorio="vidautil">
+    </editoria>
+    <editoria idsecao="2161" nomesecao="Publieditorial" canal="1" diretorio="publieditorial" />
+  </home>
+</midiaCenter>

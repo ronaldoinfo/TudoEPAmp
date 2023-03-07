@@ -1,0 +1,15 @@
+FROM mcr.microsoft.com/windows/servercore/iis
+EXPOSE 80
+EXPOSE 5005
+RUN powershell Import-Module WebAdministration; \
+New-Item -Path IIS:\AppPools\AppPoolTudoEpAmp; \
+New-Item -Path "C:\inetpub\wwwroot" -Type Directory; \
+New-WebSite -Name TudoEpAmp -Port 5005 -PhysicalPath "C:\inetpub\wwwroot" -ApplicationPool AppPoolTudoEpAmp -Force; \
+Set-ItemProperty -Path "IIS:\AppPools\AppPoolTudoEpAmp" -name "managedPipelineMode" -value 1; \
+Set-ItemProperty -Path "IIS:\AppPools\AppPoolTudoEpAmp" -name "managedRuntimeVersion" -value v4.0; \
+Set-ItemProperty -Path "IIS:\AppPools\AppPoolTudoEpAmp" -name "startMode" -value 1; \
+$Site = Get-Item IIS:\Sites\TudoEpAmp; \
+$Site.applicationDefaults.preloadEnabled = $true; \
+New-Item -Path "C:\temp" -Type Directory
+FROM mcr.microsoft.com/dotnet/framework/aspnet:4.8 AS runtime
+COPY ./ ./inetpub/wwwroot

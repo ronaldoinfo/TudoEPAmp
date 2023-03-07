@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/masterpages/Template.AMP.master" AutoEventWireup="true" CodeFile="Template.Home.AMP.master.cs" Inherits="CMS.Web.FrontEnd.TemplatesV55.masterpages_Template_Home_AMP" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="cphHead" runat="Server">
+    <!-- Aponta para a versão HTML normal do documento AMP HTML ou para si mesmo, se essa versão HTML não existir -->
+    <link rel="canonical" href="<%= SiteUrlHtml %>" />
+
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://www.tudoep.com","potentialAction":{"@type":"SearchAction",
+    "target":"https://www.tudoep.com/busca/avancada/Default.aspx?q={search_term_string}&periodo=6","query-input":"required name=search_term_string"}}
+    </script>
+    <script type="application/ld+json"> {
+    "@context": "http://schema.org"
+    , "@type": "Organization"
+    , "name": "TudoEP"
+    , "url": "https://www.tudoep.com"
+    , "logo": "https://statics.tudoep.com/tudoep.v56/img/logo_tudoep.svg"
+    , "sameAs": []}
+    </script>
+
+    <asp:ContentPlaceHolder ID="cphHeadHome" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cphHeaderTopo" runat="Server">
+    <asp:ContentPlaceHolder ID="cphHeaderTopoHome" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="cphTopoCorpo" runat="Server">
+    <asp:ContentPlaceHolder ID="cphTopoCorpoHome" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="cphCorpo" runat="Server">
+    <asp:ContentPlaceHolder ID="cphCorpoHome" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content5" ContentPlaceHolderID="cphRodapeCorpo" runat="Server">
+    <asp:ContentPlaceHolder ID="cphRodapeCorpoHome" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content6" ContentPlaceHolderID="cphRodape" runat="Server">
+    <asp:ContentPlaceHolder ID="cphRodapeHome" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content7" ContentPlaceHolderID="cphScriptsRodape" runat="Server">
+    <asp:ContentPlaceHolder ID="cphScriptsRodapeHome" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+

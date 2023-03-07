@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xsl-extensoes="urn:xsl-extensoes" exclude-result-prefixes="xsl-extensoes">
+  <xsl:import href="../../xsl/xsl-funcoes/funcoes_portal_v6.xsl" />
+
+  <xsl:template name="bc_v6_notas_a">
+    <xsl:param name="idnoticia" />
+    <xsl:param name="assunto" />
+    <xsl:param name="manchete" />
+    <xsl:param name="link" />
+    <xsl:param name="position" />
+    <xsl:param name="apos">'</xsl:param>
+    <xsl:param name="quot">"</xsl:param>
+    <div class="full list" id="bc_v6_notas_a">
+      <xsl:if test="$position='1'">
+        <xsl:text disable-output-escaping="yes">
+        </xsl:text>
+      </xsl:if>
+      <xsl:variable name="author">
+		<xsl:if test="$idnoticia=''">
+		   <xsl:value-of select="xsl-extensoes:BuscaAutorNoticia(@idnoticia)"/>
+        </xsl:if>
+		<xsl:if test="$idnoticia!=''">
+		   <xsl:value-of select="xsl-extensoes:BuscaAutorNoticia($idnoticia)"/>            
+        </xsl:if>	    
+	  </xsl:variable>
+      <div id="bc_v6_notas_a">
+        <div class="headline bcotagclass py-2 d-flex flex-wrap border-top" itemscope="" itemtype="https://schema.org/NewsArticle">
+          <div class="col-1 d-flex align-items-start" style="width: 3.5%; margin-top: 0.34rem!important;">
+            <span class="d-block acon-square" style="background-color: var(--bs-primary); width:10px; height:10px; border-radius: 0.15rem;">
+              <span class="d-none">verifica xsl</span>
+            </span>
+          </div>
+          <span class="col nota-ajuste fs-6 lh-sm ps-2 ps-md-0" itemprop="headline">
+            <xsl:call-template name="linkmanchete">
+              <xsl:with-param name="conteudo" select="$manchete"/>
+              <xsl:with-param name="link" select="$link"/>
+            </xsl:call-template>
+          </span>
+
+          <xsl:call-template name="get-meta-foto">
+            <xsl:with-param name="tipo" select="destaque"/>
+          </xsl:call-template>
+          
+          <xsl:text disable-output-escaping="yes">&lt;meta itemprop="datePublished" content="</xsl:text>
+          <xsl:value-of select="@publicacao" />
+          <xsl:text disable-output-escaping="yes">" /&gt;</xsl:text>
+          <xsl:text disable-output-escaping="yes">&lt;meta itemprop="dateModified" content="</xsl:text>
+          <xsl:value-of select="@publicacao" />
+          <xsl:text disable-output-escaping="yes">" /&gt;</xsl:text>
+          <xsl:value-of select="$author" disable-output-escaping="yes"/>
+        </div>
+      </div>
+
+      <xsl:if test="$position='ultimo'">
+        <xsl:text disable-output-escaping="yes">
+         </xsl:text>
+      </xsl:if>
+    </div>
+  </xsl:template>
+
+</xsl:stylesheet>

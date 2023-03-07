@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "http://localhost:5003", "http://localhost:5003", "{1A859749-E2EC-4D9D-875C-C842B3E85520}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "false"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_5003"
+		Debug.AspNetCompiler.PhysicalPath = "..\AMP.ACidadeON.V55\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_5003\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_5003"
+		Release.AspNetCompiler.PhysicalPath = "..\AMP.ACidadeON.V55\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_5003\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\AMP.ACidadeON.V55\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A859749-E2EC-4D9D-875C-C842B3E85520}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A859749-E2EC-4D9D-875C-C842B3E85520}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E0661F5C-24D6-42FE-B881-6D22CC85DF47}
+	EndGlobalSection
+EndGlobal

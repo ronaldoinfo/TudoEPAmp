@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32929.386
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "http://localhost:9000", "http://localhost:9000", "{3BEEF59B-379B-4F13-8B14-FC6345084E5B}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "false"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		ProjectReferences = "{218b9bcd-07a3-4031-af87-b8468b0ff048}|CMS.CacheSync.Front.BLL.dll;{c3cbd6f2-6cb1-4dbb-a339-6e86e8655dca}|CMS.Personalizacoes.Front.BLL.dll;{a5121a0d-17bf-4752-9bcf-ac9d32bdc0fb}|FrameworkExtension.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_9000"
+		Debug.AspNetCompiler.PhysicalPath = "..\AMP.TudoEP\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_9000\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_9000"
+		Release.AspNetCompiler.PhysicalPath = "..\AMP.TudoEP\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_9000\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\AMP.TudoEP\"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMS.Personalizacoes.Front.BLL", "..\..\SourceCode_v5\Front\CMS.Personalizacoes.Front\CMS.Personalizacoes.Front.BLL\CMS.Personalizacoes.Front.BLL.csproj", "{C3CBD6F2-6CB1-4DBB-A339-6E86E8655DCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMS.CacheSync.BLL", "..\..\SourceCode_v5\CMS\CMS.CacheSync\CMS.CacheSync.BLL\CMS.CacheSync.BLL.csproj", "{0CEB760C-C5AC-4626-B148-1F4823EAAE47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMS.CacheSync.Front.BLL", "..\..\SourceCode_v5\Front\CMS.CacheSync\CMS.CacheSync.BLL\CMS.CacheSync.Front.BLL.csproj", "{218B9BCD-07A3-4031-AF87-B8468B0FF048}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameworkExtension", "..\..\SourceCode_v5\Genericos\FrameworkExtension\FrameworkExtension\FrameworkExtension.csproj", "{A5121A0D-17BF-4752-9BCF-AC9D32BDC0FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BEEF59B-379B-4F13-8B14-FC6345084E5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BEEF59B-379B-4F13-8B14-FC6345084E5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BEEF59B-379B-4F13-8B14-FC6345084E5B}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BEEF59B-379B-4F13-8B14-FC6345084E5B}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{C3CBD6F2-6CB1-4DBB-A339-6E86E8655DCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3CBD6F2-6CB1-4DBB-A339-6E86E8655DCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3CBD6F2-6CB1-4DBB-A339-6E86E8655DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3CBD6F2-6CB1-4DBB-A339-6E86E8655DCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CEB760C-C5AC-4626-B148-1F4823EAAE47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CEB760C-C5AC-4626-B148-1F4823EAAE47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CEB760C-C5AC-4626-B148-1F4823EAAE47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CEB760C-C5AC-4626-B148-1F4823EAAE47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{218B9BCD-07A3-4031-AF87-B8468B0FF048}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{218B9BCD-07A3-4031-AF87-B8468B0FF048}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{218B9BCD-07A3-4031-AF87-B8468B0FF048}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{218B9BCD-07A3-4031-AF87-B8468B0FF048}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5121A0D-17BF-4752-9BCF-AC9D32BDC0FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5121A0D-17BF-4752-9BCF-AC9D32BDC0FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5121A0D-17BF-4752-9BCF-AC9D32BDC0FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5121A0D-17BF-4752-9BCF-AC9D32BDC0FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {55A1F323-81B4-47AB-8C13-0A3E387F3F1B}
+	EndGlobalSection
+EndGlobal

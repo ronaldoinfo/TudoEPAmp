@@ -1,0 +1,191 @@
+﻿using MongoDB.Bson;
+using System;
+using System.Collections.Generic;
+
+/// <summary>
+/// Descrição resumida de VideosModelsNoSQL
+/// </summary>
+public class VideosModelsNoSQL
+{
+    public VideosModelsNoSQL()
+    {
+        //
+        // TODO: Adicionar lógica do construtor aqui
+        //
+    }
+    public class IdsVideo
+    {
+        public string Ids { get; set; }
+    }
+    public class SecoesCanaisModel
+    {
+        public int IdCanal { get; set; }
+        public string Canal { get; set; }
+        public List<dynamic> Editorias { get; set; }
+    }
+    public class SecoesModel
+    {
+        public ObjectId _id { get; set; }
+        public List<dynamic> ListSecoesModel { get; set; }
+        public List<dynamic> ListVideosModels { get; set; }
+        public string Canal { get; set; }
+        public byte TipoConteudo { get; set; }
+        public int? Modoexibicao { get; set; }
+        public DateTime? DtAtualizacao { get; set; }
+        public int IdUsuarioAtualizacao { get; set; }
+        public bool? Status { get; set; }
+        public bool Xml { get; set; }
+        public bool Multimidia { get; set; }
+        public bool Agencia { get; set; }
+        public string Paginasecao { get; set; }
+        public string Diretorio { get; set; }
+        public byte HotSite { get; set; }
+        public int? IdCanal { get; set; }
+        public string Secao { get; set; }
+        public int IdTipoSecao { get; set; }
+        public int IdSecaoSecao { get; set; }
+        public int IdSecaoEditoria { get; set; }
+        public int IdSecaoPai { get; set; }
+        public int IdSecao { get; set; }
+        public string Tagspadrao { get; set; }
+        //public virtual SecoesTiposModel TbSecoes_Tipos { get; set; }
+    }
+    public class McVideosModel
+    {
+        public long VIDEO_VIEWS { get; set; }
+        public bool? VIDEO_INTERNAUTA { get; set; }
+        public bool? VIDEO_APROVADO { get; set; }
+        public int VIDEO_APROVADO_POR { get; set; }
+        public DateTime? VIDEO_APROVADO_DATA { get; set; }
+        public int VIDEO_QTD_ENVIO_AMIGO { get; set; }
+        public int VIDEO_QTD_COMPRAS { get; set; }
+        public int VIDEO_QTD_ADD_FAVORITOS { get; set; }
+        public int VIDEO_QTD_COMENTARIOS { get; set; }
+        public string VIDEO_AUTOR { get; set; }
+        public bool? VIDEO_TERRA { get; set; }
+        public bool? VIDEO_HD { get; set; }
+        public int VIDEO_RATE_VOTO5 { get; set; }
+        public int USUARIO_ID { get; set; }
+        public int? VIDEO_ID_USUARIO_ATUALIZACAO { get; set; }
+        public DateTime? VIDEO_DATA_ATUALIZACAO { get; set; }
+        public string VIDEO_CREDITO { get; set; }
+        public int? VIDEO_ID_FAUNA { get; set; }
+        public int? FAUNA_ID { get; set; }
+        public virtual SecoesModel TbSecoes { get; set; }
+        public int? VIDEO_ID_USUARIO_INSERCAO { get; set; }
+        public int VIDEO_RATE_VOTO4 { get; set; }
+        public int VIDEO_RATE_VOTO3 { get; set; }
+        public int VIDEO_RATE_VOTO2 { get; set; }
+        public int VIDEO_ID { get; set; }
+        public string VIDEO_CHAPEU { get; set; }
+        public string VIDEO_MANCHETE { get; set; }
+        public string VIDEO_DESTAQUE { get; set; }
+        public string VIDEO_RESUMO { get; set; }
+        public string VIDEO_URL { get; set; }
+        public bool? VIDEO_DESTACAR { get; set; }
+        public string VIDEO_TAG_BUSCA { get; set; }
+        public int CIDADEPRINCIPAL_ID { get; set; }
+        public int SITEPRINCIPAL_ID { get; set; }
+        public int SECAOPRINCIPAL_ID { get; set; }
+        public string VIDEO_SUBPASTA { get; set; }
+        public string VIDEO_ARQUIVO { get; set; }
+        public string VIDEO_THUMBNAIL { get; set; }
+        public string VIDEO_THUMBNAIL_NEW { get; set; }
+        public string VIDEO_DURACAO { get; set; }
+        public bool? VIDEO_FORMATO_WIDE { get; set; }
+        public int VIDEO_DIMENSAO_ALT { get; set; }
+        public int VIDEO_DIMENSAO_LAR { get; set; }
+        public DateTime VIDEO_DATA_CRIACAO { get; set; }
+        public DateTime VIDEO_DATA_PUBLICACAO { get; set; }
+        public DateTime VIDEO_DATA_EXPIRACAO { get; set; }
+        public bool? VIDEO_ATIVO { get; set; }
+        public byte? VIDEO_NIVELRESTRICAO { get; set; }
+        public int VIDEO_RATE { get; set; }
+        public int VIDEO_RATE_INICIAL { get; set; }
+        public int VIDEO_RATE_VOTO1 { get; set; }
+    }
+    public class VideosSecoesModel
+    {
+        public ObjectId _id { get; set; }
+        public int idCanal { get; set; }
+        public string Canal { get; set; }
+        public List<dynamic> editorias { get; set; }
+        public List<dynamic> secoes { get; set; }
+        public List<dynamic> subsecoes { get; set; }
+    }
+    public enum EnumTipoSecao
+    {
+        Home = 1,
+        Editoria = 2,
+        Secao = 3,
+        SubSecao = 4
+    }
+    public class VideosBsonModel
+    {
+        public ObjectId _id { get; set; }
+        public int idvideo { get; set; }
+        public string publicacao { get; set; }
+        public string expiracao { get; set; }
+        public string assunto { get; set; }
+        public string manchete { get; set; }
+        public string destaque { get; set; }
+        public string resumo { get; set; }
+        public string url { get; set; }
+        public string subpasta { get; set; }
+        public string arquivo { get; set; }
+        public string wide { get; set; }
+        public string dimensao_alt { get; set; }
+        public string dimensao_lar { get; set; }
+        public string duracao { get; set; }
+        public string tags { get; set; }
+        public string views { get; set; }
+        public string votos { get; set; }
+        public string rate { get; set; }
+        public int nivelrestricao { get; set; }
+        public string thumb { get; set; }
+        public string thumb_full_hd { get; set; }
+        public string atualizacao { get; set; }
+        public string idsites { get; set; }
+        public int idportal { get; set; }
+        public bool? ativo { get; set; }
+        public string credito { get; set; }
+    }
+    public class SecoesCanaisBsonModel
+    {
+        public ObjectId _id { get; set; }
+        public int IdCanal { get; set; }
+        public string Canal { get; set; }
+        public List<EditoriasBsonModel> Editorias { get; set; }
+    }
+    public class EditoriasBsonModel
+    {
+        public int idsecao { get; set; }
+        public int idsecaopai { get; set; }
+        public string Canal { get; set; }
+        public string nomesecao { get; set; }
+        public string Diretorio { get; set; }
+        public List<SecoesBsonModel> secoes { get; set; }
+    }
+    public class SecoesBsonModel
+    {
+        public int idsecao { get; set; }
+        public int idsecaopai { get; set; }
+        public string nomesecao { get; set; }
+        public bool Agencia { get; set; }
+        public string Diretorio { get; set; }
+        public byte hotsite { get; set; }
+        public List<SubSecoesBsonModel> subsecoes { get; set; }
+    }
+    public class SubSecoesBsonModel
+    {
+        public int idsecao { get; set; }
+        public int idsecaopai { get; set; }
+        public string nomesecao { get; set; }
+        public bool Agencia { get; set; }
+        public List<VideosBsonCustomModel> videos { get; set; }
+    }
+    public class VideosBsonCustomModel
+    {
+        public int idvideo { get; set; }
+    }
+}

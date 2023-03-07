@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+        <sectionGroup name="applicationSettings" type="System.Configuration.ApplicationSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="CMS.CacheSync.Front.BLL.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+            <section name="CMS.CacheSync.Negocio.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+        </sectionGroup>
+    </configSections>
+    <system.serviceModel>
+        <bindings />
+        <client />
+    </system.serviceModel>
+    <applicationSettings>
+        <CMS.CacheSync.Front.BLL.Properties.Settings>
+            <setting name="WSEptvCom" serializeAs="String">
+                <value>/wservices/WSEptvCom.asmx</value>
+            </setting>
+            <setting name="Servers" serializeAs="String">
+                <value>http://m2588:8061</value>
+            </setting>
+            <setting name="WSPromocao" serializeAs="String">
+                <value>/wservices/WSPromocao.asmx</value>
+            </setting>
+            <setting name="EPTV_CacheSync_Negocio_WSEptvCom_WSEptvCom" serializeAs="String">
+                <value>https://www.acidadeon.com/wservices/WSEptvCom.asmx</value>
+            </setting>
+            <setting name="EPTV_CacheSync_Negocio_WSPromocao_WSPromocao"
+                serializeAs="String">
+                <value>https://www.acidadeon.com/wservices/WSPromocao.asmx</value>
+            </setting>
+            <setting name="EPTV_CacheSync_Negocio_WSEptvCom_WSMultimidia"
+                serializeAs="String">
+                <value>https://www.acidadeon.com/wservices/WSMultimidia.asmx</value>
+            </setting>
+            <setting name="WSMultimidia" serializeAs="String">
+                <value>/wservices/WSMultimidia.asmx</value>
+            </setting>
+        </CMS.CacheSync.Front.BLL.Properties.Settings>
+        <CMS.CacheSync.Negocio.Properties.Settings>
+            <setting name="WSEptvCom" serializeAs="String">
+                <value>/wservices/WSEptvCom.asmx</value>
+            </setting>
+            <setting name="Servers" serializeAs="String">
+                <value>http://m2588:8061</value>
+            </setting>
+            <setting name="WSPromocao" serializeAs="String">
+                <value>/wservices/WSPromocao.asmx</value>
+            </setting>
+            <setting name="EPTV_CacheSync_Negocio_WSEptvCom_WSEptvCom" serializeAs="String">
+                <value>https://www.acidadeon.com/wservices/WSEptvCom.asmx</value>
+            </setting>
+            <setting name="EPTV_CacheSync_Negocio_WSPromocao_WSPromocao"
+                serializeAs="String">
+                <value>https://www.acidadeon.com/wservices/WSPromocao.asmx</value>
+            </setting>
+            <setting name="EPTV_CacheSync_Negocio_WSEptvCom_WSMultimidia"
+                serializeAs="String">
+                <value>https://www.acidadeon.com/wservices/WSMultimidia.asmx</value>
+            </setting>
+            <setting name="CMS_CacheSync_Negocio_WSEptvCom_WSEptvCom" serializeAs="String">
+                <value>https://www.acidadeon.com/wservices/WSEptvCom.asmx</value>
+            </setting>
+            <setting name="CMS_CacheSync_Negocio_WSPromocao_WSPromocao" serializeAs="String">
+                <value>https://www.acidadeon.com/wservices/WSPromocao.asmx</value>
+            </setting>
+            <setting name="CMS_CacheSync_Negocio_WSMultimidia_WSMultimidia"
+                serializeAs="String">
+                <value>https://www.acidadeon.com/wservices/wsmultimidia.asmx</value>
+            </setting>
+            <setting name="WSMultimidia" serializeAs="String">
+                <value>/wservices/WSMultimidia.asmx</value>
+            </setting>
+        </CMS.CacheSync.Negocio.Properties.Settings>
+    </applicationSettings>
+</configuration>

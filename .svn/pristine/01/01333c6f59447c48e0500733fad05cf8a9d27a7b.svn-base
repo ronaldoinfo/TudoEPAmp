@@ -1,0 +1,18 @@
+<xsl:stylesheet version="2.0" exclude-result-prefixes="xsl-extensoes" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xsl-extensoes="urn:xsl-extensoes">
+<xsl:output method="xml" encoding="iso-8859-1" omit-xml-declaration="yes" />
+<xsl:include href="C:\inetpub\wwwroot\Sites_v5.5\AMP.TudoEP\personalizacao\xsl\xsl-templates\templates-manchetes_v5.xsl" />
+<xsl:include href="C:\inetpub\wwwroot\Sites_v5.5\AMP.TudoEP\personalizacao\xsl\xsl-templates\templates-destaques_v5.xsl" />
+<xsl:include href="C:\inetpub\wwwroot\Sites_v5.5\AMP.TudoEP\personalizacao\xsl\xsl-templates\templates-notas_v5.xsl" />
+<xsl:include href="C:\inetpub\wwwroot\Sites_v5.5\AMP.TudoEP\personalizacao\xsl\xsl-templates\templates-agencia_v5.xsl" />
+<xsl:include href="C:\inetpub\wwwroot\Sites_v5.5\AMP.TudoEP\personalizacao\xsl\xsl-templates\templates-emc_v5.xsl" />
+<xsl:include href="C:\inetpub\wwwroot\Sites_v5.5\AMP.TudoEP\personalizacao\xsl\xsl-templates\templates-especiais_v5.xsl" />
+<xsl:include href="C:\inetpub\wwwroot\Sites_v5.5\AMP.TudoEP\personalizacao\xsl\xsl-templates\templates-especiais-jornais_v5.xsl" />
+<xsl:include href="C:\inetpub\wwwroot\Sites_v5.5\AMP.TudoEP\personalizacao\xsl\xsl-funcoes\funcoes_portal_v6.xsl" />
+<xsl:include href="C:\inetpub\wwwroot\Sites_v5.5\AMP.TudoEP\personalizacao\xsl\xsl-templates\templates-manchetes_v6.xsl" />
+<xsl:include href="C:\inetpub\wwwroot\Sites_v5.5\AMP.TudoEP\personalizacao\xsl\xsl-templates\templates-destaques_v6.xsl" />
+<xsl:include href="C:\inetpub\wwwroot\Sites_v5.5\AMP.TudoEP\personalizacao\xsl\xsl-templates\templates-notas_v6.xsl" />
+<xsl:include href="C:\inetpub\wwwroot\Sites_v5.5\AMP.TudoEP\personalizacao\xsl\xsl-templates\templates-emc_v6.xsl" />
+<xsl:include href="C:\inetpub\wwwroot\Sites_v5.5\AMP.TudoEP\personalizacao\xsl\xsl-templates\templates-manchetes-podcasts.xsl" />
+<xsl:template match="/">
+</xsl:template>
+</xsl:stylesheet>

@@ -1,0 +1,746 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="TemplatesHead.AMP.ascx.cs" Inherits="comuns_AMP_TemplatesHead_AMP" %>
+	<header id="cabecalho" class="z4">
+		
+		<div class="content-width content pt3 pb2">
+			<div class="outer contrast-bg py0 row g-0 justify-start">
+				<button class="col-1 sidebar-menu-btn cursor-pointer flex justify-start items-center" on="tap:sidebar.toggle">
+					<span class="block ml2">
+						☰
+					</span>
+				</button>
+				<h1 class="col logo flex justify-start py1 mb0">
+					<a class="block h-100 relative" href="https://www.tudoep.com/" title="TudoEP">
+						<amp-img layout="fixed" media="(min-width: 470px)" src="https://statics.tudoep.com/tudoep.v56/img/logo_tudoep.svg" class="img-fluid" width="290" height="80" alt="TudoEP - logo" noloading></amp-img>
+						<amp-img layout="fixed" media="(max-width: 469px)" src="https://statics.tudoep.com/tudoep.v56/img/logo_tudoep.svg" class="img-fluid" width="240" height="62" alt="TudoEP - logo" noloading></amp-img>
+						<span class="hide text-lowercase">
+							Tudo EP
+						</span>
+					</a>
+				</h1>
+				<div class="col-1 sm-hide md-hide lg-hide">
+					<span class="hide">
+						ajusta layout mobile
+					</span>
+				</div>
+				<div class="icones-menu col-2 col-md-3 justify-self-end xs-hide pl0" style="--bs-link-color: var(--bs-roxoazulado); right: 0; bottom: 0;">
+                    <ul class="flex flex-wrap justify-end h-100 items-center">
+                        <li class="">
+                            <a class="px1" href="https://www.youtube.com/channel/UCuq5PGOVTqA_gmaCDttXKgQ" target="_blank" rel="noopener" title="tudo ep - Youtube">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-youtube img-fluid" viewBox="0 0 16 16">
+                                    <use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a class="px1" href="https://www.facebook.com/tudoep.oficial" target="_blank" rel="noopener" title="tudo ep - Facebook">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook img-fluid" viewBox="0 0 16 16">
+                                    <use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a class="px1" href="https://www.instagram.com/tudo.ep/" target="_blank" rel="noopener" title="tudo ep - Instagram">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram img-fluid" viewBox="0 0 16 16">
+                                    <use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                         <li class="">
+                            <a class="px1" href="https://www.tiktok.com/@tudoep" target="_blank" rel="noopener" title="tudo ep - tiktok">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok img-fluid" viewBox="0 0 16 16">
+                                    <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"></path>
+                                </svg>
+                            </a>
+                        </li>
+
+                       <!--  <li class="">
+                            <a class="px1" href="https://twitter.com/tudo_ep" target="_blank" rel="noopener" title="tudo ep - Twitter">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter img-fluid" viewBox="0 0 16 16">
+                                    <use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#twitter" />
+                                </svg>
+                            </a>
+                        </li>-->
+                        <li class="border-left ml2">
+                            <a class="pl2" href="https://www.tudoep.com/busca/avancada/" title="tudo ep - Busca avançada">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search img-fluid" viewBox="0 0 16 16">
+                                    <use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#search"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+			</div>
+		</div>
+		<hr class="bg-tudoep my0" style="opacity: 1; height: 2px;" />
+		<!-- [START] MENU HORIZONTAL "Secondlevel", acesso rápido aos sites de nicho -->
+		<nav class="tdep-quicklinks w-100 border-bottom dp-menu1 xs-hide">
+			<div class="tdep-scrollable content content-width py0" style="overflow: inherit;">
+				<ul class="tdep-Indicator relative w-100 p0 m0 flex justify-center">
+					<li class="tdep-section relative inline-block" style="border-left: 0;">
+						<a class="tdep-button fw-bold tdep-displayInitial block p3" href="https://www.acidadeon.com/" title="Notícias"><span itemprop="name">Notícias</span></a>
+						
+						<ul class="dp-menu pl0">
+							<li><a href="https://www.acidadeon.com/" itemprop="url" title="Acidade ON"><span itemprop="name">Acidade ON</span></a></li>
+							<ol class="pl2">
+								<li><a href="https://www.acidadeon.com/araraquara/" itemprop="url" title="" target="_blank" rel="noopener"><span itemprop="name">Araraquara</span></a></li>
+								<li><a href="https://www.acidadeon.com/campinas/" itemprop="url" title="" target="_blank" rel="noopener"><span itemprop="name">Campinas</span></a></li>
+								<li><a href="https://www.acidadeon.com/ribeiraopreto/" itemprop="url" title="" target="_blank" rel="noopener"><span itemprop="name">Ribeirão Preto</span></a></li>
+								<li><a href="https://www.acidadeon.com/saocarlos/" itemprop="url" title="" target="_blank" rel="noopener"><span itemprop="name">São Carlos</span></a></li>
+							</ol>
+							<li class="mt-3 m0"><a href="#" itemprop="url" title="Rádio CBN"><span itemprop="name">Rádio CBN</span></a></li>
+							<ol class="pl2">
+								<li><a href="https://www.cbnararaquara.com.br/" itemprop="url" title="" target="_blank" rel="noopener"><span itemprop="name">Araraquara</span></a></li>
+								<li><a href="https://www.cbnribeirao.com.br/" itemprop="url" title="" target="_blank" rel="noopener"><span itemprop="name">Ribeirão Preto</span></a></li>
+								<li><a href="https://www.cbnsaocarlos.com.br/" itemprop="url" title="" target="_blank" rel="noopener"><span itemprop="name">São Carlos</span></a></li>
+							</ol>
+							<li class="mt-3 m0"><a href="https://www.tudoep.com/tudo-noticias/sul-de-minas/" itemprop="url" title=""><span itemprop="name">Sul de Minas</span></a></li>
+						</ul>
+					</li>
+
+					<li class="tdep-section relative inline-block">
+						<a class="tdep-button fw-bold tdep-displayInitial block p3" href="https://www.tudoep.com/tudo-agro/" itemprop="url" title=""><span itemprop="name"><span itemprop="name">Agro</span></span></a>
+						<ul class="dp-menu pl0">
+							<li><a href="https://www.tudoep.com/tudo-agro/no-pe-do-cafe/" itemprop="url" title=""><span itemprop="name">No pé do café</span></a></li>
+						</ul>
+					</li>
+
+					<li class="tdep-section relative inline-block">
+						<a class="tdep-button fw-bold tdep-displayInitial block p3" href="https://www.tudoep.com/tudo-auto/" itemprop="url" title=""><span itemprop="name"><span itemprop="name">Auto</span></span></a></li>
+
+					<li class="tdep-section relative inline-block">
+						<a class="tdep-button fw-bold tdep-displayInitial block p3" href="https://www.tudoep.com/tudo-cult/" itemprop="url" title=""><span itemprop="name">Cult</span></a>
+						<ul class="dp-menu pl0">
+							<li><a href="https://www.tudoep.com/tudo-cult/horoscopo/" itemprop="url" title=""><span itemprop="name">Horóscopo</span></a></li>
+							<li><a href="https://www.tudoep.com/tudo-cult/viu-essa/" itemprop="url" title=""><span itemprop="name">Viu essa?</span></a></li>
+						</ul>
+					</li>
+
+					<li class="tdep-section relative inline-block">
+						<a class="tdep-button fw-bold tdep-displayInitial block p3" href="https://www.tudoep.com/tudo-elas/" itemprop="url" title=""><span itemprop="name"><span itemprop="name">Elas</span></span></a></li>
+
+					<li class="tdep-section relative inline-block">
+						<a class="tdep-button fw-bold tdep-displayInitial block p3" href="https://www.tudoep.com/tudo-games/" itemprop="url" title=""><span itemprop="name"><span itemprop="name">Games</span></span></a>
+						<ul class="dp-menu pl0">
+							<li><a href="https://www.tudoep.com/tudo-games/game-on/" itemprop="url" title=""><span itemprop="name">Game ON</span></a></li>
+						</ul>
+					</li> 
+
+					<li class="tdep-section relative inline-block">
+						<a class="tdep-button fw-bold tdep-displayInitial block p3" href="https://www.tudoep.com/tudo-inovacao/" itemprop="url" title=""><span itemprop="name"><span itemprop="name">Inovação</span></span></a></li>
+
+					<li class="tdep-section relative inline-block">
+						<a class="tdep-button fw-bold tdep-displayInitial block p3" href="https://www.tudoep.com/tudo-receitas/" itemprop="url" title=""><span itemprop="name">Receitas</span></a>
+						<ul class="dp-menu pl0">
+							<li><a href="https://www.tudoep.com/tudo-receitas/churrasqueadas/" itemprop="url" title=""><span itemprop="name">Churrasqueadas</span></a></li>
+						</ul>
+					</li>
+
+					<li class="tdep-section relative inline-block">
+						<span class="tdep-button fw-bold tdep-displayInitial block p3" itemprop="name">Sertanejo</span>
+						<ul class="dp-menu pl0">
+							<li><a href="https://www.movimentocountry.com/" itemprop="url" title="" target="_blank" rel="noopener"><span itemprop="name">Movimento Country</span></a></li>
+						</ul>
+					</li>
+
+					<li class="tdep-section relative inline-block">
+						<a class="tdep-button fw-bold tdep-displayInitial block p3" href="https://www.tudoep.com/tudo-valor/" itemprop="url" title=""><span itemprop="name">Valor</span></a>
+						<ul class="dp-menu pl0">
+							<li><a href="https://www.tudoep.com/tudo-valor/dinheiro-com-voce/" itemprop="url" title=""><span itemprop="name">Dinheiro com Você</span></a></li>
+						</ul>
+					</li>
+
+					<li class="tdep-section relative inline-block">
+						<a class="tdep-button fw-bold tdep-displayInitial block p3" href="https://www.tudoep.com/tudo-viagens/" itemprop="url" title=""><span itemprop="name">Viagens</span></a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- [END] MENU HORIZONTAL "Secondlevel" -->
+
+	</header>
+	<amp-sidebar id="sidebar" class="ampstart-sidebar" layout="nodisplay" side="left">
+
+		<div class="sidebarView">
+				<div class="amp-custom-sidebar-header flex items-center ampstart-sidebar-header border-bottom py2" style="--bs-border-width: 2px; --bs-border-color-translucent: var(--bs-roxoazulado);">
+
+					<!-- [ Nota do designer ] 
+						- Este detalhe (nome da cidade) talvez necessita funcionar dinamicamente (via programação e/ou etc.).
+						- É uma demonstração de layout. Retirar (e/ou modificar) quando necessário. 
+					-->
+					<div class="sidebar-nav-item p0 hide" role="label">
+						<h2 class="h5 offcanvas-title " id="navlabel">
+							Menu
+						</h2>
+						<!-- <span id="nomecidade" class="italic nomecidade"> Campinas</span> -->
+					</div>
+					<a href="https://www.tudoep.com/busca/avancada/" class="xs-hide fw-bolder" itemprop="url" title="busca" style="font-size: 0.875em">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search img-fluid" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>&nbsp;&nbsp;
+                        Busca
+                    </a>
+					<ul class="flex flex-wrap justify-center mb0 sm-hide md-hide lg-hide py1 pl1" style="--bs-link-color: var(--bs-roxoazulado);">
+                            <li class="">
+                                <a class="block px1" href="https://www.youtube.com/channel/UCuq5PGOVTqA_gmaCDttXKgQ" target="_blank" rel="noopener" title="tudo ep - Youtube">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-youtube img-fluid" viewBox="0 0 16 16">
+                                        <use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#youtube" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="block px1" href="https://www.facebook.com/tudoep.oficial" target="_blank" rel="noopener" title="tudo ep - Facebook">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook img-fluid" viewBox="0 0 16 16">
+                                        <use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#facebook" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="block px1" href="https://www.instagram.com/tudo.ep/" target="_blank" rel="noopener" title="tudo ep - Instagram">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram img-fluid" viewBox="0 0 16 16">
+                                        <use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#instagram" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="block px1" href="https://twitter.com/tudo_ep" target="_blank" rel="noopener" title="tudo ep - Twitter">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter img-fluid" viewBox="0 0 16 16">
+                                        <use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#twitter" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="ml3">
+                                <a class="border-left p1 pl3" href="https://www.tudoep.com/busca/avancada/" title="tudo ep - Busca avançada" style="--bs-border-width: 1px; --bs-border-color-translucent: var(--bs-gray-400);">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search img-fluid" viewBox="0 0 16 16">
+                                        <use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#search"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+					
+
+					<div id="sidebar-close"
+						role="button"
+						aria-label="close sidebar"
+						on="tap:sidebar.toggle"
+						tabindex="0"
+						class="ampstart-navbar-trigger items-start p1"
+					>
+						✕
+					</div>
+				</div>
+				<br />
+
+				<div class="sidebar-menu tdepScrollView" style="font-weight: 700;">
+					<h2 class="h4 text-primary fw-bolder p2">
+						Notícias
+					</h2>
+					<amp-accordion layout="container" class="ampstart-dropdown px2 border-bottom mb2" style="border-width: 2px; border-color: var(--bs-roxoazulado);" expand-single-section>
+						<!-- Start Dropdown-inline -->
+						<section class="sidebar-nav-item ampstart-nav-item ampstart-nav-dropdown relative border-bottom border-top">
+							<header class="sidebar-nav-link header pr0 bg-transparent">
+								<div class="flex items-center">
+									<!-- <i class="fas fa-map-marker-alt left pr2"></i> -->
+									<div class="bg-light rounded overflow-hidden d-flex" style="width: 3rem; height: 3rem;">
+                                        <amp-img layout="responsive" class="img-fluid mx-auto" src="https://www.acidadeon.com/img/logo2021/logo_acidadeon2021_isotipo2.svg" width="60" height="60" alt="" style="object-fit: fill; width: 80%" noloading></amp-img>
+                                    </div>
+									<span class="text-lowercase fw-bolder ml2">
+										ACidadde ON
+									</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-right img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-right"></use>
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-down img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-down"></use>
+									</svg>
+								</div>
+							</header>
+							<ul class="ampstart-dropdown-items list-reset pl2 ml3 mt1">
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.acidadeon.com/araraquara/">Araraquara</a>
+								</li>
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.acidadeon.com/campinas/">Campinas</a>
+								</li>
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.acidadeon.com/ribeiraopreto/">Ribeirão Preto</a>
+								</li>
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.acidadeon.com/saocarlos/">São Carlos</a>
+								</li>
+							</ul>
+						</section>
+						<!-- End Dropdown-inline -->
+						<!-- Start Dropdown-inline -->
+						<section class="sidebar-nav-item ampstart-nav-item ampstart-nav-dropdown relative border-bottom">
+							<header class="sidebar-nav-link header pr0 bg-transparent">
+								<div class="flex items-center">
+									<!-- <i class="fas fa-map-marker-alt left pr2"></i> -->
+									<div class="rounded overflow-hidden d-flex" style="width: 3rem; height: 3rem; background-color: var(--bs-podcasts)">
+                                        <amp-img layout="responsive" class="img-fluid mx-auto" src="https://www.tudoep.com/img/logo-cbn_branco.svg" width="60" height="60" alt="" style="object-fit: fill; width: 80%;" noloading></amp-img>
+                                    </div>
+									<span class="text-uppercase fw-bolder ml2">
+										CBN
+									</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-right img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-right"></use>
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-down img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-down"></use>
+									</svg>
+								</div>
+							</header>
+							<ul class="ampstart-dropdown-items list-reset pl2 ml3 mt1">
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.cbnararaquara.com.br/" itemprop="url" title="CBN Araraquara">Araraquara</a>
+								</li>
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.cbnribeirao.com.br/" itemprop="url" title="CBN Ribeirão Preto">Ribeirão Preto</a>
+								</li>
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.cbnsaocarlos.com.br/" itemprop="url" title="CBN São Carlos">
+                                            <span itemprop="name">São Carlos</a>
+								</li>
+							</ul>
+						</section>
+						<!-- End Dropdown-inline -->
+						<!-- Start Dropdown-inline -->
+						<section class="sidebar-nav-item ampstart-nav-item ampstart-nav-dropdown relative">
+							<header class="sidebar-nav-link header pr0 bg-transparent">
+								<div class="flex items-center">
+									<!-- <i class="fas fa-map-marker-alt left pr2"></i> -->
+									<div class="rounded overflow-hidden d-flex bg-light" style="width: 3rem; height: 3rem;">
+                                        <amp-img layout="responsive" class="img-fluid mx-auto" src="https://www.tudoep.com/img/logo_tudoep_isotipo.svg" width="60" height="60" alt="" style="object-fit: fill; width: 80%;" noloading></amp-img>
+                                    </div>
+									<span class="fw-bolder ml2">
+										Sul de Minas
+									</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-right img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-right"></use>
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-down img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-down"></use>
+									</svg>
+								</div>
+							</header>
+							<ul class="ampstart-dropdown-items list-reset pl2 ml3 mt1">
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-noticias/sul-de-minas/" itemprop="url" title="Tudo EP - Sul de Minas">
+										<span class="text-lowercase fw-bolder">
+											Tudo EP
+										</span>
+										 - Sul de Minas
+									</a>
+								</li>
+							</ul>
+						</section>
+						<!-- End Dropdown-inline -->
+					</amp-accordion>
+					<amp-accordion layout="container" class="ampstart-dropdown px2" expand-single-section>
+						<!-- Start Dropdown-inline -->
+						<section class="sidebar-nav-item ampstart-nav-item ampstart-nav-dropdown relative border-bottom">
+							<header class="sidebar-nav-link header pr0 bg-transparent">
+								<div class="flex items-center">
+									<span>Tudo Agro</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-right img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-right"></use>
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-down img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-down"></use>
+									</svg>
+								</div>
+							</header>
+							<ul class="ampstart-dropdown-items list-reset mx0 p0 mt2">
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-agro/" itemprop="url" title="Tudo Agro">
+										<span class="text-lowercase fw-bolder">
+											Tudo
+										</span>
+										Agro
+									</a>
+								</li>
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-agro/no-pe-do-cafe/" itemprop="url" title="No pé do café">
+										<span>No pé do café</span>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<section class="sidebar-nav-item ampstart-nav-item ampstart-nav-dropdown relative border-bottom">
+							<header class="sidebar-nav-link header pr0 bg-transparent">
+								<div class="flex items-center">
+									<span>Tudo Bebês</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-right img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-right"></use>
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-down img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-down"></use>
+									</svg>
+								</div>
+							</header>
+							<ul class="ampstart-dropdown-items list-reset mx0 p0 mt2">
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-bebes/" itemprop="url" title="Tudo Bebês">
+										<span class="text-lowercase fw-bolder">
+											Tudo 
+										</span>
+										Bebês
+									</a>
+								</li>
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-bebes/pod-falar-mae/" itemprop="url" title="Podfalar, mãe!">
+										<span>Podfalar, mãe!</span>
+									</a>
+								</li>
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-bebes/gravidez-e-bebe/" itemprop="url" title="Gravidez e bebê">
+										<span>Gravidez e bebê</span>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<section class="sidebar-nav-item ampstart-nav-item ampstart-nav-dropdown relative border-bottom">
+							<header class="sidebar-nav-link header pr0 bg-transparent">
+								<div class="flex items-center">
+									<span>Tudo Corrida</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-right img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-right"></use>
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-down img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-down"></use>
+									</svg>
+								</div>
+							</header>
+							<ul class="ampstart-dropdown-items list-reset mx0 p0 mt2">
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-corrida/" itemprop="url" title="Tudo Corrida">
+										<span class="text-lowercase fw-bolder">
+											Tudo 
+										</span>
+										Corrida
+									</a>
+								</li>
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-corrida/on-run/" itemprop="url" title="On Run">
+										<span>On Run</span>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<!-- End Dropdown-inline -->
+						<!-- Start Dropdown-inline -->
+						<section class="sidebar-nav-item ampstart-nav-item ampstart-nav-dropdown relative border-bottom">
+							<header class="sidebar-nav-link header pr0 bg-transparent">
+								<div class="flex items-center">
+									<span>Tudo Cult</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-right img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-right"></use>
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-down img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-down"></use>
+									</svg>
+								</div>
+							</header>
+							<ul class="ampstart-dropdown-items list-reset mx0 p0 mt2">
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-cult/" itemprop="url" title="Tudo Cult">
+										<span class="text-lowercase fw-bolder">
+											Tudo 
+										</span>
+										Cult
+									</a>
+								</li>
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-cult/horoscopo/" itemprop="url" title="Horóscopo">
+										<span itemprop="name">Horóscopo</span>
+									</a>
+								</li>
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-cult/viu-essa/" itemprop="url" title="Viu essa?">
+										<span>Viu essa?</span>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<!-- End Dropdown-inline -->
+						<!-- Start Dropdown-inline -->
+						<section class="sidebar-nav-item ampstart-nav-item ampstart-nav-dropdown relative border-bottom">
+							<header class="sidebar-nav-link header pr0 bg-transparent">
+								<div class="flex items-center">
+									<span>Tudo Educação</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-right img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-right"></use>
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-down img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-down"></use>
+									</svg>
+								</div>
+							</header>
+							<ul class="ampstart-dropdown-items list-reset mx0 p0 mt2">
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-educacao/" itemprop="url" title="Tudo Educação">
+										<span class="text-lowercase fw-bolder">
+											Tudo 
+										</span>
+										Educação
+									</a>
+								</li>
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.virandobixo.com.br/" itemprop="url" title="Virando Bixo" target="_blank" rel="noopener">
+										<span itemprop="name">Virando Bixo</span>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<!-- End Dropdown-inline -->
+						<!-- Start Dropdown-inline -->
+						<section class="sidebar-nav-item ampstart-nav-item ampstart-nav-dropdown relative border-bottom">
+							<header class="sidebar-nav-link header pr0 bg-transparent">
+								<div class="flex items-center">
+									<span>Tudo Esporte</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-right img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-right"></use>
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-down img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-down"></use>
+									</svg>
+								</div>
+							</header>
+							<ul class="ampstart-dropdown-items list-reset mx0 p0 mt2">
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-esporte/" itemprop="url" title="Tudo Esporte">
+										<span class="text-lowercase fw-bolder">
+											Tudo 
+										</span>
+										Esporte
+									</a>
+								</li>
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-esporte/derbicampineiro/" target="_blank" itemprop="url" title="Derbi Campineiro">
+										<span itemprop="name">Virando Bixo</span>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<!-- End Dropdown-inline -->
+						<!-- Start Dropdown-inline -->
+						<section class="sidebar-nav-item ampstart-nav-item ampstart-nav-dropdown relative border-bottom">
+							<header class="sidebar-nav-link header pr0 bg-transparent">
+								<div class="flex items-center">
+									<span>Tudo Games</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-right img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-right"></use>
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-down img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-down"></use>
+									</svg>
+								</div>
+							</header>
+							<ul class="ampstart-dropdown-items list-reset mx0 p0 mt2">
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-games/" itemprop="url" title="Tudo Games">
+										<span class="text-lowercase fw-bolder">
+											Tudo 
+										</span>
+										Games
+									</a>
+								</li>
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-games/game-on/" itemprop="url" title="Game On">
+										<span itemprop="name">Game On</span>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<!-- End Dropdown-inline -->
+						<!-- Start Dropdown-inline -->
+						<section class="sidebar-nav-item ampstart-nav-item ampstart-nav-dropdown relative border-bottom">
+							<header class="sidebar-nav-link header pr0 bg-transparent">
+								<div class="flex items-center">
+									<span>Tudo Receitas</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-right img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-right"></use>
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-down img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-down"></use>
+									</svg>
+								</div>
+							</header>
+							<ul class="ampstart-dropdown-items list-reset mx0 p0 mt2">
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-receitas/" itemprop="url" title="Tudo Receitas">
+										<span class="text-lowercase fw-bolder">
+											Tudo 
+										</span>
+										Receitas
+									</a>
+								</li>
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-receitas/churrasqueadas/" itemprop="url" title="Churrasqueadas">
+										<span itemprop="name">Churrasqueadas</span>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<!-- End Dropdown-inline -->
+						<!-- Start Dropdown-inline -->
+						<section class="sidebar-nav-item ampstart-nav-item ampstart-nav-dropdown relative border-bottom">
+							<header class="sidebar-nav-link header pr0 bg-transparent">
+								<div class="flex items-center">
+									<span>Tudo Sertanejo</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-right img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-right"></use>
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-down img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-down"></use>
+									</svg>
+								</div>
+							</header>
+							<ul class="ampstart-dropdown-items list-reset mx0 p0 mt2">
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.movimentocountry.com/" itemprop="url" title="Movimento Country" target="_blank" rel="noopener">
+										<span itemprop="name">Movimento Country</span>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<!-- End Dropdown-inline -->
+						<!-- Start Dropdown-inline -->
+						<section class="sidebar-nav-item ampstart-nav-item ampstart-nav-dropdown relative border-bottom">
+							<header class="sidebar-nav-link header pr0 bg-transparent">
+								<div class="flex items-center">
+									<span>Tudo Valor</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-right img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-right"></use>
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-down img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-down"></use>
+									</svg>
+								</div>
+							</header>
+							<ul class="ampstart-dropdown-items list-reset mx0 p0 mt2">
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-valor/" itemprop="url" title="Tudo Valor">
+										<span class="text-lowercase fw-bolder">
+											Tudo 
+										</span>
+										Valor
+									</a>
+								</li>
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-valor/dinheiro-com-voce/" itemprop="url" title="Dinheiro Com Você">
+										<span itemprop="name">Dinheiro Com Você</span>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<!-- End Dropdown-inline -->
+						<!-- Start Dropdown-inline -->
+						<section class="sidebar-nav-item ampstart-nav-item ampstart-nav-dropdown relative">
+							<header class="sidebar-nav-link header pr0 bg-transparent">
+								<div class="flex items-center">
+									<span>Especiais</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-right img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-right"></use>
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-down img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-down"></use>
+									</svg>
+								</div>
+							</header>
+							<ul class="ampstart-dropdown-items list-reset mx0 p0 mt2">
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/especiais/educa-mais-cast/" itemprop="url" title="Educa Mais Cast">
+										<span itemprop="name">Educa Mais Cast</span>
+									</a>
+								</li>
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/especiais/rota-do-arraia/" itemprop="url" title="Rota do Arraiá">
+										<span>Rota do Arraiá</span>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<!-- End Dropdown-inline -->
+					</amp-accordion>
+					<ul class="py0 px2">
+						<li class="border-top">
+							<a class="sidebar-nav-item block sidebar-nav-link" href="https://www.tudoep.com/tudo-auto/" itemprop="url" title="Tudo Auto">
+								<span itemprop="name">Tudo Auto</span>
+							</a>
+						</li>
+						<li class="border-top">
+							<a class="sidebar-nav-item block sidebar-nav-link" href="https://www.tudoep.com/tudo-decor/" itemprop="url" title="Tudo Decoração">
+								<span itemprop="name">Tudo Decoração</span>
+							</a>
+						</li>
+						<li class="border-top">
+							<a class="sidebar-nav-item block sidebar-nav-link" href="https://www.tudoep.com/tudo-elas/" itemprop="url" title="Tudo Elas">
+								<span itemprop="name">Tudo Elas</span>
+							</a>
+						</li>
+						<li class="border-top">
+							<a class="sidebar-nav-item block sidebar-nav-link" href="https://www.tudoep.com/tudo-inovacao/" itemprop="url" title="Tudo Inovação">
+								<span itemprop="name">Tudo Inovação</span>
+							</a>
+						</li>
+						<li class="border-top">
+							<a class="sidebar-nav-item block sidebar-nav-link" href="https://www.tudoep.com/tudo-viagens/" itemprop="url" title="Tudo Viagens">
+								<span itemprop="name">Tudo Viagens</span>
+							</a>
+						</li>
+						<li class="border-top">
+							<a class="sidebar-nav-item block sidebar-nav-link" href="https://www.tudoep.com/conteudo-patrocinado/" itemprop="url" title="Conteúdo Patrocinado">
+								<span itemprop="name">Conteúdo Patrocinado</span>
+							</a>
+						</li>
+						<li class="border-top">
+							<a class="sidebar-nav-item block sidebar-nav-link" href="https://www.tudoep.com/institucional/" itemprop="url" title="Institucional">
+								<span itemprop="name">Institucional</span>
+							</a>
+						</li>
+						<li class="border-top">
+							<a class="sidebar-nav-item block sidebar-nav-link" href="https://www.tudoep.com/faleconosco/" itemprop="url" title="Fale Conosco">
+								<span itemprop="name">Fale Conosco</span>
+							</a>
+						</li>
+						<li class="border-top">
+							<a class="sidebar-nav-item block sidebar-nav-link" href="https://negocios.empresaspioneiras.com.br/Internet/nossos-sites/tudoep/" itemprop="url" title="Mídia Kit" target="_blank" rel="noopener">
+								<span itemprop="name">Mídia Kit</span>
+							</a>
+						</li>
+						<li class="border-top">
+							<a class="sidebar-nav-item block sidebar-nav-link" href="https://www.empresaspioneiras.com.br/privacidade" itemprop="url" title="Aviso legal" target="_blank" rel="noopener">
+								<span itemprop="name">Aviso Legal</span>
+							</a>
+						</li>
+						<!-- MAIS ESPAÇO NO FINAL DA LISTA -->
+						<li class="sidebar-nav-item">
+							<span class="hide">
+								layout
+							</span>
+							<br />
+							<br />
+							<br />
+							<!-- <br /> -->
+						</li>
+					</ul>
+				</div>
+
+		</div>
+
+	</amp-sidebar>
+	<section  class="target" style="z-index: -1;">
+		<a class="target-anchor" id="top">
+			<span class="hide">
+				topo do site
+			</span>
+		</a>
+		<amp-position-observer on="enter:hideAnim.start; exit:showAnim.start" layout="nodisplay">
+		</amp-position-observer>
+
+		<!-- <div class="content content-width">
+			<h1 class="heading text-grad-cnx">
+				CONHEÇA, COMPARTILHE, E DOE
+			</h1>
+		</div> -->
+	</section>

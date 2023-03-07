@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <section name="viaeptv.noticia" type="System.Configuration.DictionarySectionHandler" />
+    <section name="rewriter" requirePermission="false" type="Intelligencia.UrlRewriter.Configuration.RewriterConfigurationSectionHandler,Intelligencia.UrlRewriter" />
+    <sectionGroup name="cms.eptv">
+      <section name="midiaCenter.negocio" type="FrameworkExtension.Configuration.MidiaCenterSection" />
+      <section name="xmlFrontend.negocio" type="FrameworkExtension.Configuration.XmlFrontendSection" />
+    </sectionGroup>
+  </configSections>
+  <viaeptv.noticia>
+    <!-- Configurações do site -->
+    <add key="id_site" value="1" />
+    <!-- configurações dos XMLs. -->
+    <add key="url_xml_sites" value="~/xml/sites_tudoep.xml" />
+    <add key="url_xml_ativas" value="~/xml/ativas_tudoep.xml" />
+    <add key="url_xml_conteudo" value="~/xml/conteudo_tudoep.xml" />
+    <add key="url_xml_cobertura" value="~/xml/cobertura.xml" />
+    <add key="cachiar_xml_ativas" value="true" />
+    <add key="dias_expiracao_xml_ativas" value="2" />
+    <!-- configurações dos Personalizadores -->
+    <add key="personalizacao_path_xslpersonalizador_padrao_linha" value="~/personalizacao/xsl/xsl-personalizadores/personalizador-secao-linha.aspx" />
+    <add key="personalizacao_path_xslconfigurados" value="~/xsl/xsl-secoes/" />
+    <!--PATH debugs-->
+    <add key="debug_file_xml_debug" value="~/Logs/debug.xml" />
+    <add key="debug_path_xml_debug" value="~/Logs/" />
+    <!-- Permissão de Notícias -->
+    <add key="idPublicadorSite" value="7" />
+    <add key="idPublicacaoSite" value="16" />
+    <add key="qtdConteudoRequisitaAssinatura" value="5" />
+    <add key="qtdConteudoRestrito" value="5" />
+    <!-- configurações dos repositorios Imagens -->
+    <add key="multimidia_url_repositorio_arquivos_frontend" value="https://emc.tudoep.com/dbimagens" />
+    <add key="multimidia_url_repositorio_email" value="https://emc.tudoep.com/dbimagens/emailmkt" />
+    <add key="multimidia_url_repositorio_edicoes" value="https://emc.tudoep.com/edicoes/fotos" />
+    <!--Configurações Participação Internauta-->
+    <add key="confirmaCadastroInternauta" value="https://www.tudoep.com/cadastro/confirmarCadastro.aspx?parameter=" />
+    <add key="pastaPermanenteWeb" value="https://www.tudoep.com/participe/suanoticia" />
+    <add key="pastaPermanente" value="\\participe\\suanoticia\\participacao" />
+    <add key="pastaTemp" value="\\participe\\suanoticia\\participacao\\temp" />
+    <add key="pastaPermanenteWebReciclar" value="https://www.tudoep.com/participe/reciclar" />
+    <add key="pastaPermanenteReciclar" value="\\participe\\reciclar\\participacao" />
+    <add key="pastaTempReciclar" value="\\participe\\reciclar\\participacao\\temp" />
+    <add key="tamanhoVideo" value="50" />
+    <add key="tamanhoFoto" value="8" />
+    <add key="qtd_xml_galeria" value="360" />
+    <add key="qtd_xml_video" value="360" />
+    <add key="qtd_xml_som" value="360" />
+  </viaeptv.noticia>
+  <cms.eptv>
+    <!-- XML do Módulo de Múltimidia -->
+    <xmlFrontend.negocio xmlProgramas="D:\inetpub\Sites_v5\amp.tudoep.com.v56\XML\programas_acidadeon.xml" xmlVideo="D:\inetpub\Sites_v5\amp.tudoep.com.v56\XML\video_acidadeon.xml" xmlGaleriaFotos="D:\inetpub\Sites_v5\amp.tudoep.com.v56\XML\galeria_acidadeon.xml" xmlSons="D:\inetpub\Sites_v5\amp.tudoep.com.v56\XML\sons_acidadeon.xml" idSite="15" redirectTimeOut="900" />
+  </cms.eptv>
+  <appSettings>
+    <!-- Chaves de API -->
+    <add key="urlBaseAPI" value="https://webapicms51.eptv.com.br/api/" />
+    <add key="cookieTime" value="20" />
+    <add key="HostEmail" value="10.254.13.104" />
+    <add key="EmailToReportarErroConteudo" value="marketing@eptv.com.br; suporte.sites@eptv.com.br" />
+    <!-- XML do Módulo de Cobertura -->
+    <add key="xmlCobertura" value="D:\inetpub\Sites_v5\amp.tudoep.com.v56\XML\cobertura.xml" />
+    <!-- Chaves de variáveis do site -->
+    <add key="id_site" value="1" />
+    <add key="SiteName" value="tudoep"/>
+    <add key="SiteSlogan" value="tudo sobre tudo."/>
+    <add key="SiteUrl" value="https://www.tudoep.com" />
+	<add key="SiteUrlCanonical" value="https://www.tudoep.com" />
+    <add key="SiteUrlAMP" value="https://amp.tudoep.com" />
+    <add key="urlLogoSite" value="/img/tudo-ep.svg"/>
+    <add key="ImagemPadrao" value="imagem_padrao_tudoEP.jpg"/>
+    <add key="PrefixoSite" value="" />
+    <!--Prefixo Site quando múltiplos sites internos  ex: /araraquara  /ribeiraopreto /campinas /saocarlos, porém o site pai deverá ser passado vazio ex: "" -->
+    <!-- Chaves de Integracoes Google -->
+    <add key="GTMTagManager" value="GTM-N7QN55J" />
+    <add key="uaAnalytics" value="UA-226568519-2" />
+    <add key="ativarModuloGAReporting" value="false" />
+    <add key="GAReportingKeyPath" value="D:\tudoep.com.v56\comuns\google\GAReporting\key.json" />
+    <add key="ViewId" value="113412945" />
+    <!-- URL de Frontend dos Conteúdos -->
+    <add key="EMC_FotosClassificados" value="https://emc.tudoep.com/Classificados_Fotos/" />
+    <add key="EMC_DBImagens" value="https://emc.tudoep.com/dbimagens" />
+    <add key="EMC_DBImagensProgramese" value="https://emc.tudoep.com/dbimagens/programese" />
+    <add key="EMC_Videos" value="https://emc.tudoep.com/EMC_Videos" />
+    <add key="EMC_Fotos" value="https://emc.tudoep.com/EMC_Fotos" />
+    <add key="EMC_Sons" value="https://emc.tudoep.com/EMC_Sons" />
+    <add key="EMC_Arquivos" value="https://emc-src.eptv.com.br" />
+    <!--Chaves do módulo de Assinatura -->
+    <add key="ativarModuloSubscription" value="false" />
+    <add key="urlSubscription" value="https://subscriptionapi.tudoep.com/api/" />
+    <add key="linkPaginaConfirmacao" value="https://www.tudoep.com/assinantes/cadastro/confirmarCadastro.aspx?parameter=" />
+    <add key="linkResetSenha" value="https://www.tudoep.com/assinantes/cadastro/RecuperacaoSenha.aspx?parameter=" />
+    <add key="linkBloqueio" value="https://www.tudoep.com/comuns/avisos/bloqueado.aspx" />
+    <!--Chaves do Módulo de WebPush local -->
+    <add key="ativarModuloWebPush" value="false" />
+    <add key="urlBaseWebPush" value="http://webpushapi.eptv.com.br/api/" />
+    <add key="PublicKey" value="BOuHK7SeEjWVy46coUQjrzcGcAN2EL9b9UsKgNVElMJvI2OyfeK_VlwwDWSgxbf6pyCuBGVerbHfrScR3d8fbSI" />
+    <add key="PrivateKey" value="CNe0ih14xSDcaLwvf1APt31Mr92B7OeTiPDCv8ycKfk" />
+    <!--Chaves do Módulo de Navegg local -->
+    <add key="ativarModuloNavegg" value="true" />
+    <!--Chaves do Módulo do PH3A -->
+    <add key="ativarModuloPH3A" value="false" />
+    <!--Chaves do Módulo do Tabula -->
+    <add key="ativarModuloTABULA" value="false" />
+    <!--Chaves do Módulo do Seed Tag -->
+    <add key="ativarModuloSeedTag" value="true" />
+    <!--Integrações com redes sociais -->
+    <add key="ativarContaTwitter" value="true" />
+    <add key="contaTwitter" value="tudo_ep" />
+    <add key="urlPaginaTwitter" value="https://www.twitter.com/tudo_ep" />
+
+    <add key="ativarContaInstagram" value="true" />
+    <add key="urlPaginaInstagram" value="https://www.instagram.com/tudo.ep" />
+
+    <add key="ativarContaFacebook" value="true" />
+    <add key="urlPaginaFacebook" value="https://www.facebook.com/tudoep.oficial" />
+    <add key="idAPPFacebook" value="1683572355256849" />
+    <add key="idAdminsFacebook" value="100007564816099" />
+
+    <add key="ativarGPlus" value="true" />
+    <add key="urlGPlus" value="https://plus.google.com/u/0/117353106272813266042" />
+    <add key="ConexaoMongo" value="mongodb://superuser:i9r2t0e1c9!@localhost:27017?authSource=admin&amp;readPreference=primary&amp;appname=MongoDB%20Compass%20Community&amp;ssl=false" />
+	<add key="AnoCorteRedirect" value="2017" />
+  </appSettings>
+  <rewriter>
+    <!-- Todas as Editorias -->
+    <rewrite url="~/(.+)/(.+)/(.+)/NOT,[0-9],[0-9]+,(.+),(.+).aspx" to="~/$1/$1_internaNOT.aspx?idnoticia=$4" />
+    <rewrite url="~/(.+)/(.+)/(.+)/BLOG,[0-9],[0-9]+,(.+),(.+).aspx" to="~/$1/$1_internaBLOG.aspx?idnoticia=$4" />
+    <rewrite url="~/(.+)/(.+)/(.+)/PUBE,[0-9],[0-9]+,(.+),(.+).aspx" to="~/$1/$1_internaPUBE.aspx?idnoticia=$4" />
+    <rewrite url="~/(.+)/(.+)/(.+)/BRND,[0-9],[0-9]+,(.+),(.+).aspx" to="~/$1/$1_internaBRND.aspx?idnoticia=$4" />
+    <rewrite url="~/(.+)/(.+)/NOT,[0-9],[0-9]+,(.+),(.+).aspx" to="~/$1/$1_internaNOT.aspx?idnoticia=$3" />
+    <rewrite url="~/(.+)/(.+)/BLOG,[0-9],[0-9]+,(.+),(.+).aspx" to="~/$1/$1_internaBLOG.aspx?idnoticia=$3" />
+    <rewrite url="~/(.+)/(.+)/PUBE,[0-9],[0-9]+,(.+),(.+).aspx" to="~/$1/$1_internaPUBE.aspx?idnoticia=$3" />
+    <rewrite url="~/(.+)/(.+)/BRND,[0-9],[0-9]+,(.+),(.+).aspx" to="~/$1/$1_internaBRND.aspx?idnoticia=$3" />
+    <rewrite url="~/(.+)/NOT,[0-9],[0-9]+,(.+),(.+).aspx" to="~/$1/$1_internaNOT.aspx?idnoticia=$2" />
+    <rewrite url="~/(.+)/BLOG,[0-9],[0-9]+,(.+),(.+).aspx" to="~/$1/$1_internaBLOG.aspx?idnoticia=$2" />
+    <rewrite url="~/(.+)/PUBE,[0-9],[0-9]+,(.+),(.+).aspx" to="~/$1/$1_internaPUBE.aspx?idnoticia=$2" />
+    <rewrite url="~/(.+)/BRND,[0-9],[0-9]+,(.+),(.+).aspx" to="~/$1/$1_internaBRND.aspx?idnoticia=$2" />
+    <rewrite url="~/NOT,[0-9],[0-9]+,(.+),(.+).aspx" to="~/tv/tv_internaNOT.aspx?idnoticia=$1" />
+    <rewrite url="~/BLOG,[0-9],[0-9]+,(.+),(.+).aspx" to="~/tv/tv_internaBLOG.aspx?idnoticia=$1" />
+    <rewrite url="~/PUBE,[0-9],[0-9]+,(.+),(.+).aspx" to="~/tv/tv_internaPUBE.aspx?idnoticia=$1" />
+    <rewrite url="~/BRND,[0-9],[0-9]+,(.+),(.+).aspx" to="~/tv/tv_internaBRND.aspx?idnoticia=$1" />
+    <!--vídeos-->
+    <rewrite url="~/(.+)/(.+)/(.+)/VID,0,(.+),(.+).aspx" to="~/$1/$1_internaVID.aspx?VideoId=$4" />
+    <rewrite url="~/(.+)/(.+)/VID,0,(.+),(.+).aspx" to="~/$1/$1_internaVID.aspx?VideoId=$3" />
+    <rewrite url="~/(.+)/VID,(.+),(.+).aspx" to="~/$1/$1_internaVID.aspx?VideoId=$2" />
+    <rewrite url="~/(.+)/VID,(.+),(.+),(.+).aspx" to="~/$1/videos/video.aspx?VideoId=$3" />
+    <rewrite url="~/(.+)/VID,0,0,(.+),(.+).aspx" to="~/$1/videos/video.aspx?VideoId=$2" />
+    <rewrite url="~/(.+)/VID,0,1,(.+),(.+).aspx" to="~/$1/videos/video.aspx?VideoId=$2" />
+    <rewrite url="~/(.+)/(.+)/VID,(.+),(.+).aspx" to="~/$1/videos/video.aspx?VideoId=$3" />
+    <rewrite url="~/(.+)/(.+)/VID,(.+),(.+),(.+).aspx" to="~/$1/videos/video.aspx?VideoId=$4" />
+    <rewrite url="~/(.+)/(.+)/VID,0,0,(.+),(.+).aspx" to="~/$1/videos/video.aspx?VideoId=$3" />
+    <rewrite url="~/(.+)/(.+)/VID,0,1,(.+),(.+).aspx" to="~/$1/videos/video.aspx?VideoId=$3" />
+    <!--galeria de fotos-->
+    <rewrite url="~/(.+)/(.+)/(.+)/GFOT,(.+),3,(.+),(.+).aspx" to="~/$1/$1_internaGFOT.aspx?GaleriaId=$5" />
+    <rewrite url="~/(.+)/(.+)/GFOT,(.+),3,(.+),(.+).aspx" to="~/$1/$1_internaGFOT.aspx?GaleriaId=$4" />
+    <rewrite url="~/(.+)/GFOT,(.+),3,(.+),(.+).aspx" to="~/$1/$1_internaGFOT.aspx?GaleriaId=$3" />
+    <rewrite url="GFOT,(.+),3,(.+),(.+).aspx" to="~/comuns/galerias/internaGFOT.aspx?GaleriaId=$2" />
+    <!--podcasts-->
+    <!--http://localhost:8012/campanhas/campinas/som,0,1504203,teste.aspx-->
+    <rewrite url="~/(.+)/(.+)/(.+)/SOM,0,(.+),(.+).aspx" to="~/$1/$1_internaSOM.aspx?SomId=$4" />
+    <rewrite url="~/(.+)/(.+)/SOM,0,(.+),(.+).aspx" to="~/$1/$1_internaSOM.aspx?SomId=$3" />
+    <rewrite url="~/(.+)/SOM,(.+),(.+).aspx" to="~/$1/$1_internaSOM.aspx?SomId=$2" />
+    <!-- Antigos EPs -->
+    <if url="^/epnoticia/(.+)$">
+      <rewrite to="/$1/Default.aspx" />
+    </if>
+  </rewriter>
+  <!--
+    For a description of web.config changes see http://go.microsoft.com/fwlink/?LinkId=235367.
+    The following attributes can be set on the <httpRuntime> tag.      
+  -->
+  <system.web>
+    <sessionState cookieless="false" mode="InProc" regenerateExpiredSessionId="true" sqlCommandTimeout="60" sqlConnectionString="Server=10.254.13.92;User ID=aspState;Password=As2Ps0T@1Te2;" stateNetworkTimeout="120" timeout="120" useHostingIdentity="false" />
+    <machineKey decryptionKey="777CB456774AF02F7F1AC8570FAF31545B156354D9E2DAAD" validationKey="89B5B536D5D17B8FE6A53CBB3CA8B8695289BA3DF0B1370BC47D362D375CF91525DDB5307D8A288230DCD4B3931D23AED4E223955C45CFF2AF66BCC422EC7ECD" />
+    <httpCookies domain="acidadeon.com" />
+    <globalization uiCulture="pt-BR" culture="pt-BR" enableClientBasedCulture="true" />
+    <compilation debug="true" batch="false" batchTimeout="1200" defaultLanguage="c#" maxBatchGeneratedFileSize="1000" maxBatchSize="2000" numRecompilesBeforeAppRestart="150" targetFramework="4.8">
+      <assemblies>
+        <add assembly="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />
+        <add assembly="System.Diagnostics.Tracing, Version=4.2.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A" />
+        <add assembly="System.IO.Compression, Version=4.2.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />
+        <add assembly="System.IO.Compression.FileSystem, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />
+        <add assembly="System.Numerics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />
+        <add assembly="System.ComponentModel.Composition, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />
+        <add assembly="System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A" />
+        <add assembly="netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51"/>
+      </assemblies>
+    </compilation>
+    <customErrors mode="Off" />
+    <!--
+            The <authentication> section enables configuration 
+            of the security authentication mode used by 
+            ASP.NET to identify an incoming user. 
+        -->
+    <authentication mode="Windows" />
+    <httpRuntime targetFramework="4.5" maxRequestLength="10485700" executionTimeout="3600" requestPathInvalidCharacters="&lt;,&gt;,%,&amp;,:,\,?" />
+    <httpModules>
+      <add name="UrlRewriter" type="Intelligencia.UrlRewriter.RewriterHttpModule, Intelligencia.UrlRewriter" />
+    </httpModules>
+    <httpHandlers>
+      <add path="WebResource.axd" verb="GET" type="System.Web.Handlers.AssemblyResourceLoader" validate="True" />
+    </httpHandlers>
+    <webServices>
+      <protocols>
+        <add name="HttpGet" />
+        <add name="HttpPost" />
+      </protocols>
+    </webServices>
+    <pages controlRenderingCompatibilityVersion="4.0" />
+  </system.web>
+  <system.webServer>
+    <validation validateIntegratedModeConfiguration="false" />
+    <modules>
+      <remove name="WebDAVModule" />
+      <add name="UrlRewriter" type="Intelligencia.UrlRewriter.RewriterHttpModule" />
+    </modules>
+    <httpErrors errorMode="Custom">
+      <remove statusCode="404" subStatusCode="-1" />
+      <error statusCode="404" prefixLanguageFilePath="" path="/404.aspx" responseMode="ExecuteURL" />
+    </httpErrors>
+    <security>
+      <requestFiltering allowDoubleEscaping="true">
+        <requestLimits maxAllowedContentLength="3000000000" />
+        <fileExtensions>
+          <remove fileExtension=".mp4" />
+          <remove fileExtension=".flv" />
+          <remove fileExtension=".sitemap" />
+          <add fileExtension=".mp4" allowed="true" />
+          <add fileExtension=".flv" allowed="true" />
+          <add fileExtension=".sitemap" allowed="true" />
+        </fileExtensions>
+      </requestFiltering>
+    </security>
+    <defaultDocument>
+      <files>
+        <clear />
+        <add value="Default.htm" />
+        <add value="default.aspx" />
+        <add value="index.aspx" />
+        <add value="index.htm" />
+        <add value="index.html" />
+      </files>
+    </defaultDocument>
+    <httpProtocol allowKeepAlive="true">
+      <customHeaders>
+        <add name="Access-Control-Allow-Origin" value="*" />
+        <add name="Access-Control-Allow-Headers" value="Origin, X-Requested-With, Content-Type, Accept" />
+        <add name="Access-Control-Allow-Methods" value="GET,PUT,POST,OPTIONS" />
+      </customHeaders>
+    </httpProtocol>
+    <handlers>
+      <remove name="WebDAV" />
+      <remove name="ExtensionlessUrlHandler-ISAPI-4.0_32bit" />
+      <remove name="ExtensionlessUrlHandler-ISAPI-4.0_64bit" />
+      <remove name="ExtensionlessUrlHandler-Integrated-4.0" />
+      <remove name="StaticFile" />
+      <add name="StaticFile" path="*" verb="*" modules="StaticFileModule,DefaultDocumentModule,DirectoryListingModule" resourceType="Either" requireAccess="Read" />
+      <add name="ExtensionlessUrlHandler-ISAPI-4.0_64bit" path="*." verb="GET,HEAD,POST,DEBUG,PUT,DELETE,PATCH,OPTIONS" modules="IsapiModule" scriptProcessor="%windir%\Microsoft.NET\Framework64\v4.0.30319\aspnet_isapi.dll" preCondition="classicMode,runtimeVersionv4.0,bitness64" responseBufferLimit="0" />
+      <add name="ExtensionlessUrlHandler-Integrated-4.0" path="*." verb="GET,HEAD,POST,DEBUG,PUT,DELETE,PATCH,OPTIONS" type="System.Web.Handlers.TransferRequestHandler" preCondition="integratedMode,runtimeVersionv4.0" />
+    </handlers>
+    <staticContent>
+      <clientCache cacheControlMode="UseMaxAge" cacheControlMaxAge="15.00:00:00" cacheControlCustom="public" />
+      <remove fileExtension=".css" />
+      <mimeMap fileExtension=".css" mimeType="text/css" />
+      <remove fileExtension=".js" />
+      <mimeMap fileExtension=".js" mimeType="application/javascript" />
+      <remove fileExtension=".json" />
+      <mimeMap fileExtension=".json" mimeType="application/json" />
+      <remove fileExtension=".rss" />
+      <mimeMap fileExtension=".rss" mimeType="application/rss+xml; charset=UTF-8" />
+      <remove fileExtension=".html" />
+      <mimeMap fileExtension=".html" mimeType="text/html; charset=UTF-8" />
+      <remove fileExtension=".xml" />
+      <mimeMap fileExtension=".xml" mimeType="application/xml; charset=UTF-8" />
+      <!-- HTML5 Audio/Video mime types-->
+      <remove fileExtension=".mp3" />
+      <mimeMap fileExtension=".mp3" mimeType="audio/mpeg" />
+      <remove fileExtension=".mp4" />
+      <mimeMap fileExtension=".mp4" mimeType="video/mp4" />
+      <remove fileExtension=".ogg" />
+      <mimeMap fileExtension=".ogg" mimeType="audio/ogg" />
+      <remove fileExtension=".ogv" />
+      <mimeMap fileExtension=".ogv" mimeType="video/ogg" />
+      <remove fileExtension=".webm" />
+      <mimeMap fileExtension=".webm" mimeType="video/webm" />
+      <!-- Proper svg serving. Required for svg webfonts on iPad -->
+      <remove fileExtension=".svg" />
+      <mimeMap fileExtension=".svg" mimeType="image/svg+xml" />
+      <remove fileExtension=".svgz" />
+      <mimeMap fileExtension=".svgz" mimeType="image/svg+xml" />
+      <!-- HTML4 Web font mime types -->
+      <!-- Remove default IIS mime type for .eot which is application/octet-stream -->
+      <remove fileExtension=".eot" />
+      <mimeMap fileExtension=".eot" mimeType="application/vnd.ms-fontobject" />
+      <remove fileExtension=".ttf" />
+      <mimeMap fileExtension=".ttf" mimeType="application/x-font-ttf" />
+      <remove fileExtension=".ttc" />
+      <mimeMap fileExtension=".ttc" mimeType="application/x-font-ttf" />
+      <remove fileExtension=".otf" />
+      <mimeMap fileExtension=".otf" mimeType="font/otf" />
+      <remove fileExtension=".woff" />
+      <mimeMap fileExtension=".woff" mimeType="application/x-font-woff" />
+      <remove fileExtension=".woff2" />
+      <mimeMap fileExtension=".woff2" mimeType="application/x-font-woff2" />
+      <!-- Flash Video mime types-->
+      <remove fileExtension=".flv" />
+      <mimeMap fileExtension=".flv" mimeType="video/x-flv" />
+      <remove fileExtension=".f4v" />
+      <mimeMap fileExtension=".f4v" mimeType="video/mp4" />
+      <!-- Asorted types -->
+      <remove fileExtension=".ico" />
+      <mimeMap fileExtension=".ico" mimeType="image/x-icon" />
+      <remove fileExtension=".webp" />
+      <mimeMap fileExtension=".webp" mimeType="image/webp" />
+      <remove fileExtension=".appcache" />
+      <mimeMap fileExtension=".appcache" mimeType="text/cache-manifest" />
+      <remove fileExtension=".manifest" />
+      <mimeMap fileExtension=".manifest" mimeType="text/cache-manifest" />
+      <remove fileExtension=".htc" />
+      <mimeMap fileExtension=".htc" mimeType="text/x-component" />
+      <remove fileExtension=".vcf" />
+      <mimeMap fileExtension=".vcf" mimeType="text/x-vcard" />
+      <remove fileExtension=".sitemap" />
+      <mimeMap fileExtension=".sitemap" mimeType="text/xml" />
+      <remove fileExtension=".dae" />
+      <mimeMap fileExtension=".dae" mimeType="application/octet-stream" />
+      <remove fileExtension=".pat" />
+      <mimeMap fileExtension=".pat" mimeType="application/octet-stream" />
+      <remove fileExtension=".dat" />
+      <mimeMap fileExtension=".dat" mimeType="application/octet-stream" />
+    </staticContent>
+    <caching>
+      <profiles />
+    </caching>
+  </system.webServer>
+  <system.net>
+    <mailSettings>
+      <smtp>
+        <network host="localhost" />
+      </smtp>
+    </mailSettings>
+  </system.net>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="Newtonsoft.Json" publicKeyToken="30ad4fe6b2a6aeed" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-6.0.0.0" newVersion="6.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="HtmlAgilityPack" publicKeyToken="bd319b19eaf3b43a" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-1.11.32.0" newVersion="1.11.32.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Diagnostics.DiagnosticSource" publicKeyToken="cc7b13ffcd2ddd51" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.1.0" newVersion="4.0.1.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.Extensions.Primitives" publicKeyToken="adb9793829ddae60" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-5.0.0.1" newVersion="5.0.0.1" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Runtime.CompilerServices.Unsafe" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-5.0.0.0" newVersion="5.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="SharpCompress" publicKeyToken="afb0a02973931d96" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-0.28.1.0" newVersion="0.28.1.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Buffers" publicKeyToken="cc7b13ffcd2ddd51" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.3.0" newVersion="4.0.3.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+</configuration>

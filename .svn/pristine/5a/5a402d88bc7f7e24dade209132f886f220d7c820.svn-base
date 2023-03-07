@@ -1,0 +1,17 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/masterpages/Template.AMP.master" AutoEventWireup="true" CodeFile="Template.Home.AMP.master.cs" Inherits="masterpages_Template_Home_AMP" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="cphHead" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cphHeaderTopo" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="cphTopoCorpo" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="cphCorpo" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content5" ContentPlaceHolderID="cphRodapeCorpo" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content6" ContentPlaceHolderID="cphRodape" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content7" ContentPlaceHolderID="cphScriptsRodape" Runat="Server">
+</asp:Content>
+

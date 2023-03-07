@@ -1,0 +1,78 @@
+﻿using FrameworkExtension.Utils;
+using Newtonsoft.Json;
+using System;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Xml;
+using System.Xml.Xsl;
+using CMS.Personalizacoes.Front.BLL;
+using Enums = CMS.Personalizacoes.Model.Extensions.BoxControlModel;
+
+public partial class personalizacao_xsl_debug_20_previsualizarlayout : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        // - - - - - - - - - - - - - - - - - - - - - - - -
+        // Carrega o xml de personalização do layout
+        // - - - - - - - - - - - - - - - - - - - - - - - -
+        int idlayout = NumericHelper.GetInt(Request["idLayout"]);
+        string ObtemTransformacaoXslJsonString = string.Empty;
+
+        if (idlayout == 0) 
+            return;
+
+        // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        // Cria o xsl de personalizado que ira iteragir com o conteudo
+        // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        //XmlDocument docAtivas = PersonalizadorXsl.GetXmlAtivas();
+
+        CMS.Personalizacoes.Model.PersonalizacaoSecoesLayoutModel secaoLayoutModel = null;
+        CMS.Personalizacoes.Front.BLL.PersonalizacaoSecoesLayoutBLL personalizacaoSecoesLayoutBLL = new CMS.Personalizacoes.Front.BLL.PersonalizacaoSecoesLayoutBLL();
+        secaoLayoutModel = personalizacaoSecoesLayoutBLL.GetById(idlayout);
+
+        Enums.EnumTipoPagina tipoPagina = (Enums.EnumTipoPagina)Enum.Parse(typeof(Enums.EnumTipoPagina), secaoLayoutModel.TipoPagina.ToString());
+        string urlXsl = null;
+
+        //switch (tipoPagina)
+        //{
+        //    case SecaoLayoutNegocio.EnumTipoPagina.Home:
+        //        urlXsl = "~/personalizacao/xsl/debug/body.xsl.aspx?idLayout=" + Request["idLayout"];
+        //        break;
+        //    case SecaoLayoutNegocio.EnumTipoPagina.Lateral:
+        //        urlXsl = "~/personalizacao/xsl/debug/lateral.xsl.aspx?idLayout=" + Request["idLayout"];
+        //        break;
+        //    case SecaoLayoutNegocio.EnumTipoPagina.Mobile:
+        //        urlXsl = "~/personalizacao/xsl/debug/mobile.xsl.aspx?idLayout=" + Request["idLayout"];
+        //		break;
+        //	case SecaoLayoutNegocio.EnumTipoPagina.Home2Coll:
+        //		urlXsl = "~/personalizacao/xsl/debug/versao_antiga.xsl.aspx?idLayout=" + Request["idLayout"];
+        //        break;
+        //}
+
+        //XsltArgumentList args = new XsltArgumentList();
+        //XslExtensoes loaduc = new XslExtensoes();
+
+        //Response.Write(loaduc.Load("~/esportes/controles/ucresultados_brasileirao.ascx"));
+
+        //return;
+
+        //args.AddExtensionObject("urn:xsl-extensoes", loaduc);
+
+        //IXmlNegocio iXmlNegocio = GenericFactory.GenerateClass<IXmlNegocio>();
+        CMS.Xml.Front.BLL.XmlBLL xmlBLL = new CMS.Xml.Front.BLL.XmlBLL();
+        XmlDocument doc = xmlBLL.GetXml(true);
+
+        //ITransformaXsl iTransformaXsl = GenericFactory.GenerateClass<ITransformaXsl>();
+        //CMS.Personalizacoes.BLL.TransformaXsl transformaXsl = new CMS.Personalizacoes.BLL.TransformaXsl();
+
+        XsltArgumentList args = new XsltArgumentList();
+
+        urlXsl = FrameworkExtension.CommonBusiness.CommonBusiness.GetHttpAddress("~/personalizacao/xsl/xsl-personalizadores/personalizador-secao-linha.aspx?idLayout=" + Request["idLayout"]);
+        CMS.Personalizacoes.Front.BLL.TransformaXslBLL transformaXslBLL = new CMS.Personalizacoes.Front.BLL.TransformaXslBLL();
+
+        this.principal.Text = this.principal.Text = transformaXslBLL.ObtemTransformacaoXsl(urlXsl, args, true, doc);
+
+        ExtensoesXslBLL extensoesXslBLL = new ExtensoesXslBLL();
+        extensoesXslBLL.LimpaListaConteudoSelecionado();
+    }
+}

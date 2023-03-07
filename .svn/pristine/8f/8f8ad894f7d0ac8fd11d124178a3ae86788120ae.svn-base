@@ -1,0 +1,31 @@
+FROM mcr.microsoft.com/windows/servercore/iis:windowsservercore-ltsc2019
+
+# Uses dism.exe to install the IIS role.
+RUN dism.exe /online /enable-feature /all /featurename:iis-webserver /NoRestart
+
+RUN powershell Import-Module WebAdministration
+
+EXPOSE 80
+EXPOSE 51329
+
+RUN powershell Import-Module WebAdministration; \
+				New-Item -Path IIS:\AppPools\AppPoolTudoEpAmp; \
+				New-Item -Path "C:\inetpub\wwwroot" -Type Directory; \
+				New-WebSite -Name TudoEpAmp -Port 51329 -PhysicalPath "C:\inetpub\wwwroot" -ApplicationPool AppPoolTudoEpAmp -Force; \
+				Set-ItemProperty -Path "IIS:\AppPools\AppPoolTudoEpAmp" -name "managedPipelineMode" -value 1; \
+				Set-ItemProperty -Path "IIS:\AppPools\AppPoolTudoEpAmp" -name "managedRuntimeVersion" -value v4.0; \
+				Set-ItemProperty -Path "IIS:\AppPools\AppPoolTudoEpAmp" -name "startMode" -value 1; \
+				$Site = Get-Item IIS:\Sites\TudoEpAmp; \
+				$Site.applicationDefaults.preloadEnabled = $true; \
+				New-Item -Path "C:\temp" -Type Directory
+
+RUN powershell remove-item C:\inetpub\wwwroot\iisstart.*
+
+FROM mcr.microsoft.com/dotnet/framework/aspnet:4.8-windowsservercore-ltsc2019
+
+WORKDIR /install
+ADD https://download.microsoft.com/download/1/2/8/128E2E22-C1B9-44A4-BE2A-5859ED1D4592/rewrite_amd64_en-US.msi rewrite_amd64.msi
+RUN Write-Host 'Installing URL Rewrite' ; \
+    Start-Process msiexec.exe -ArgumentList '/i', 'rewrite_amd64.msi', '/quiet', '/norestart' -NoNewWindow -Wait
+
+COPY ./ ./inetpub/wwwroot

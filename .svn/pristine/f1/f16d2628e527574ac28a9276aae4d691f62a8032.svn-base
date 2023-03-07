@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/masterpages/Template.AMP.master" AutoEventWireup="true" CodeFile="Template.Home.AMP.master.cs" Inherits="CMS.Web.FrontEnd.TemplatesV55.masterpages_Template_Home_AMP" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="cphHead" runat="Server">
+    <asp:ContentPlaceHolder ID="cphHeadHome" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cphHeaderTopo" runat="Server">
+    <asp:ContentPlaceHolder ID="cphHeaderTopoHome" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="cphTopoCorpo" runat="Server">
+    <asp:ContentPlaceHolder ID="cphTopoCorpoHome" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="cphCorpo" runat="Server">
+    <asp:ContentPlaceHolder ID="cphCorpoHome" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content5" ContentPlaceHolderID="cphRodapeCorpo" runat="Server">
+    <asp:ContentPlaceHolder ID="cphRodapeCorpoHome" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content6" ContentPlaceHolderID="cphRodape" runat="Server">
+    <asp:ContentPlaceHolder ID="cphRodapeHome" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content7" ContentPlaceHolderID="cphScriptsRodape" runat="Server">
+    <asp:ContentPlaceHolder ID="cphScriptsRodapeHome" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+

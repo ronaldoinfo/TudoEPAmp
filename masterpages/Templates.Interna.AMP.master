@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/masterpages/Template.AMP.master" AutoEventWireup="true" CodeFile="Templates.Interna.AMP.master.cs" 
+    Inherits="CMS.Web.FrontEnd.TemplatesV55.masterpages_Templates_Interna_AMP" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="cphHead" runat="Server">
+    <!-- Aponta para a versão HTML normal do documento AMP HTML ou para si mesmo, se essa versão HTML não existir -->
+    <link rel="canonical" href="<%= SiteUrlHtml %>" />
+
+    <asp:ContentPlaceHolder ID="cphHead_Interna" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cphHeaderTopo" runat="Server">
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="cphTopoCorpo" runat="Server">
+    <asp:ContentPlaceHolder ID="cphTopoCorpo_Interna" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="cphCorpo" runat="Server">
+</asp:Content>
+<asp:Content ID="Content5" ContentPlaceHolderID="cphRodapeCorpo" runat="Server">
+    <asp:ContentPlaceHolder ID="cphRodapeCorpo_Interna" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content6" ContentPlaceHolderID="cphRodape" runat="Server">
+</asp:Content>
+<asp:Content ID="Content7" ContentPlaceHolderID="cphScriptsRodape" runat="Server">
+    <asp:ContentPlaceHolder ID="cphScriptsRodape_Interna" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

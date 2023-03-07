@@ -1,0 +1,107 @@
+﻿using CMS.Web.FrontEnd.TemplatesV55.Comuns;
+using MongoDB.Driver;
+using Newtonsoft.Json;
+using System;
+using System.Configuration;
+using System.Net.Http;
+using System.Threading;
+using System.Web.Http;
+using System.Linq;
+using MongoDB.Bson;
+using WebApi.MidiaCenterNoSQL.Galerias.Controllers;
+using WebApi.NoticiaNoSQL.Controllers;
+using WebApi.SiteNoSQL.Controllers;
+using WebApi.MidiaCenterNoSQL.Sons.Controllers;
+using WebApi.ArquivosAssociadosNoSQLController.Controllers;
+using WebApi.MidiaCenterNoSQL.Videos.Controllers;
+
+[RoutePrefix("api/CheckStructureSite")]
+public class CheckStructureSiteController : ApiController
+{
+    /// <summary>
+    /// Verifica se existem as coleções necessárias no NoSQL para que o site suba.
+    /// </summary>
+    [Route("CheckStructureSiteIsComplete")]
+    [HttpGet]
+    public bool CheckStructureSiteIsComplete()
+    {
+        CheckConnectionController checkConnectionController = new CheckConnectionController();
+        string[] collectionsArray = { "Galerias", "GaleriasSecoesSites", "Noticias", "NoticiasSecoesSites", "Sites", "Sons",
+                                      "SonsSecoesSites", "UploadFiles", "UploadFolders", "Videos", "VideosSecoesSites" };
+        try
+        {
+            bool retorno;
+            if (checkConnectionController.TestConnectionNoSQL())
+            {
+                var client = CommonMongoClient.Instance;
+                var idSite = Convert.ToInt32(ClassNegocio.GetIdPortal.ToString());
+                var db = client.GetDatabase(idSite.ToString());
+
+                SitesNoSQLController sitesNoSQLController = new SitesNoSQLController();
+                sitesNoSQLController.PublicarSites();
+
+                foreach (var collection in collectionsArray)
+                {
+                    if (CollectionExists(db, collection))
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        if (collection == "Galerias")
+                        {
+                            GaleriasNoSQLController galeriasNoSQLController = new GaleriasNoSQLController();
+                            galeriasNoSQLController.PublicarGaleriasSecoesSites();
+                            galeriasNoSQLController.PublicarGalerias();
+                        }
+                        if (collection == "Noticias")
+                        {
+                            NoticiasNoSQLController noticiasNoSQLController = new NoticiasNoSQLController();
+                            noticiasNoSQLController.PublicarNoticiasSecoesSites();
+                            noticiasNoSQLController.PublicarNoticias();
+                        }
+                        if (collection == "Sons")
+                        {
+                            SonsNoSQLController sonsNoSQLController = new SonsNoSQLController();
+                            sonsNoSQLController.PublicarSonsSecoesSites();
+                            sonsNoSQLController.PublicarSons();
+                        }
+                        if (collection == "UploadFiles")
+                        {
+                            ArquivosAssociadosNoSQLController arquivosAssociadosNoSQLController = new ArquivosAssociadosNoSQLController();
+                            arquivosAssociadosNoSQLController.PublicarUploadFiles();
+                        }
+                        if (collection == "UploadFolders")
+                        {
+                            ArquivosAssociadosNoSQLController arquivosAssociadosNoSQLController = new ArquivosAssociadosNoSQLController();
+                            arquivosAssociadosNoSQLController.PublicarUploadFolders();
+                        }
+                        if (collection == "Videos")
+                        {
+                            VideosNoSQLController videosNoSQLController = new VideosNoSQLController();
+                            videosNoSQLController.PublicarVideosSecoesSites();
+                            videosNoSQLController.PublicarVideos();
+                        }
+                    }
+                }
+
+                retorno = true;
+            }
+            else
+            {
+                retorno = false;
+            }
+            return retorno;
+        }
+        catch (Exception)
+        {
+            return false;
+        }
+    }
+    public static bool CollectionExists(IMongoDatabase database, string collectionName)
+    {
+        var filter = new BsonDocument("name", collectionName);
+        var options = new ListCollectionNamesOptions { Filter = filter };
+        return database.ListCollectionNames(options).Any();
+    }
+}

@@ -1,0 +1,377 @@
+﻿using HtmlAgilityPack;
+using System.Linq;
+using System.Net;
+using System.Text;
+using System.Text.RegularExpressions;
+
+/// <summary>
+/// Descrição resumida de CommonHtmlToAMPHelper
+/// </summary>
+/// 
+namespace HtmlToAMPHelper
+{
+    public class CommonHtmlToAMPHelper
+    {
+        public CommonHtmlToAMPHelper()
+        {
+            AmpTypes.Audio = false;
+            AmpTypes.Carousel = false;
+            AmpTypes.Video = false;
+            AmpTypes.Youtube = false;
+        }
+
+        #region AMP Helpers
+        public static string HtmlToAmpImages(string html)
+        {
+            int DefaultImgHeight = 388;
+            int DefaultImgWidth = 690;
+
+            var doc = GetHtmlDocument(html);
+            var imageList = doc.DocumentNode.Descendants("img");
+
+            const string ampImage = "amp-img";
+            if (!imageList.Any())
+            {
+                return html;
+            }
+
+            if (!HtmlNode.ElementsFlags.ContainsKey("amp-img"))
+            {
+                HtmlNode.ElementsFlags.Add("amp-img", HtmlElementFlag.Closed);
+            }
+
+            foreach (var imgTag in imageList)
+            {
+                string width = imgTag.Attributes["width"] != null ? imgTag.Attributes["width"].Value : string.Empty;
+                string height = imgTag.Attributes["height"] != null ? imgTag.Attributes["height"].Value : string.Empty;
+
+                var original = imgTag.OuterHtml;
+                var replacement = imgTag.Clone();
+                replacement.Name = ampImage;
+                replacement.Attributes.Remove("caption");
+
+                if (replacement.Attributes["layout"] == null)
+                {
+                    var layoutType = "responsive";
+                    replacement.Attributes.Add("layout", layoutType);
+                }
+
+                if (replacement.Attributes["width"] == null)
+                {
+                    replacement.Attributes.Add("width", DefaultImgWidth.ToString());
+                }
+
+                if (replacement.Attributes["height"] == null)
+                {
+                    replacement.Attributes.Add("height", DefaultImgHeight.ToString());
+                }
+
+                html = html.Replace(original, replacement.OuterHtml);
+            }
+
+            return html;
+        }
+        public static string HtmlToAmpYoutube(string html)
+        {
+            int DefaultIframeWidth = 388;
+            int DefaultIframeHeight = 690;
+
+            var doc = GetHtmlDocument(html);
+            var iframes = doc.DocumentNode.Descendants("iframe");
+            const string ampYoutube = "amp-youtube";
+
+            foreach (var iframe in iframes)
+            {
+                string iframeSrc = iframe.Attributes["src"].Value;
+                if (iframeSrc.Contains("youtube.com/embed"))
+                {
+                    string width = iframe.Attributes["width"] != null ? iframe.Attributes["width"].Value : string.Empty;
+                    string height = iframe.Attributes["height"] != null ? iframe.Attributes["height"].Value : string.Empty;
+
+                    var original = iframe.OuterHtml;
+                    var replacement = iframe.Clone();
+                    replacement.Name = ampYoutube;
+
+                    // Check querystring & remove it if not necessary
+                    if (iframeSrc.IndexOf("?") > -1)
+                        iframeSrc = iframeSrc.Split('?')[0];
+
+                    string idVideo = GetYouTubeId(iframeSrc);
+
+                    replacement.Attributes.RemoveAll();
+
+                    if (replacement.Attributes["layout"] == null)
+                    {
+                        var layoutType = "responsive";
+                        replacement.Attributes.Add("layout", layoutType);
+                    }
+
+                    if (replacement.Attributes["width"] == null)
+                    {
+                        replacement.Attributes.Add("width", DefaultIframeWidth.ToString());
+                    }
+
+                    if (replacement.Attributes["height"] == null)
+                    {
+                        replacement.Attributes.Add("height", DefaultIframeHeight.ToString());
+                    }
+
+                    if (replacement.Attributes["data-videoid"] == null)
+                    {
+                        replacement.Attributes.Add("data-videoid", idVideo);
+                    }
+
+                    html = html.Replace(original, replacement.OuterHtml);
+                }
+            }
+
+            AmpTypes.Youtube = html.Contains("amp-youtube");
+
+            return html;
+        }
+        public static string HtmlToAmpIframe(string html)
+        {
+            int DefaultIframeWidth = 388;
+            int DefaultIframeHeight = 690;
+
+            var doc = GetHtmlDocument(html);
+            var iframes = doc.DocumentNode.Descendants("iframe");
+            const string ampIframe = "amp-iframe";
+
+            foreach (var iframe in iframes)
+            {
+                string iframeSrc = iframe.Attributes["src"].Value;
+
+                // fazer verificação, se for uma galeria, eu tenho que 
+                // ler o conteudo, separar as imagens e criar um carosel amp
+                // caso o src do iframe contiver [galeriaEmbed.aspx] trata-se de uma galeria
+                if (iframeSrc.Contains("galeriaEmbed.aspx"))
+                {
+                    html = CreateAmpCarouselFromIframe(html, iframe, iframeSrc);
+                }
+                else
+                {
+                    string width = iframe.Attributes["width"] != null ? iframe.Attributes["width"].Value : string.Empty;
+                    string height = iframe.Attributes["height"] != null ? iframe.Attributes["height"].Value : string.Empty;
+
+                    var original = iframe.OuterHtml;
+                    var replacement = iframe.Clone();
+                    replacement.Name = ampIframe;
+
+                    replacement.Attributes.RemoveAll();
+
+                    if (replacement.Attributes["layout"] == null)
+                    {
+                        var layoutType = "responsive";
+                        replacement.Attributes.Add("layout", layoutType);
+                    }
+
+                    if (replacement.Attributes["width"] == null)
+                    {
+                        replacement.Attributes.Add("width", DefaultIframeWidth.ToString());
+                    }
+
+                    if (replacement.Attributes["height"] == null)
+                    {
+                        replacement.Attributes.Add("height", DefaultIframeHeight.ToString());
+                    }
+
+                    if (replacement.Attributes["sandbox"] == null)
+                    {
+                        replacement.Attributes.Add("sandbox", "allow-scripts");
+                    }
+
+                    if (replacement.Attributes["frameborder"] == null)
+                    {
+                        replacement.Attributes.Add("frameborder", "0");
+                    }
+
+                    replacement.Attributes.Add("src", iframeSrc);
+
+                    html = html.Replace(original, replacement.OuterHtml);
+                }
+            }
+
+            return html;
+        }
+        public static string HtmlToAmpVideo(string html)
+        {
+            int DefaultVideoWidth = 388;
+            int DefaultVideoHeight = 690;
+
+            var doc = GetHtmlDocument(html);
+            var videoList = doc.DocumentNode.Descendants("video");
+
+            const string ampVideo = "amp-video";
+            if (!videoList.Any())
+            {
+                AmpTypes.Video = html.Contains("amp-video");
+                return html;
+            }
+
+            if (!HtmlNode.ElementsFlags.ContainsKey("amp-video"))
+            {
+                HtmlNode.ElementsFlags.Add("amp-video", HtmlElementFlag.Closed);
+            }
+
+            foreach (var videoTag in videoList)
+            {
+                string videoSrc = videoTag.ChildNodes["source"] != null && videoTag.ChildNodes["source"].Attributes["src"] != null ? videoTag.ChildNodes["source"].Attributes["src"].Value : string.Empty;
+                string videoPoster = videoTag.Attributes["poster"] != null ? videoTag.Attributes["poster"].Value : string.Empty;
+
+                string width = videoTag.Attributes["width"] != null ? videoTag.Attributes["width"].Value : string.Empty;
+                string height = videoTag.Attributes["height"] != null ? videoTag.Attributes["height"].Value : string.Empty;
+
+                var original = videoTag.OuterHtml;
+                var replacement = videoTag.Clone();
+                replacement.Name = ampVideo;
+
+                replacement.Attributes.RemoveAll();
+
+                if (replacement.Attributes["layout"] == null)
+                {
+                    var layoutType = "responsive";
+                    replacement.Attributes.Add("layout", layoutType);
+                }
+
+                if (replacement.Attributes["width"] == null)
+                {
+                    replacement.Attributes.Add("width", DefaultVideoWidth.ToString());
+                }
+
+                if (replacement.Attributes["height"] == null)
+                {
+                    replacement.Attributes.Add("height", DefaultVideoHeight.ToString());
+                }
+
+                replacement.Attributes.Add("src", videoSrc);
+                replacement.Attributes.Add("poster", videoPoster);
+                replacement.Attributes.Add("controls", null);
+
+                html = html.Replace(original, replacement.OuterHtml);
+            }
+
+            AmpTypes.Video = html.Contains("amp-video");
+            return html;
+        }
+        public static string HtmlToAmpAudio(string html)
+        {
+            string DefaultAudioWidth = "auto";
+            int DefaultAudioHeight = 50;
+
+            var doc = GetHtmlDocument(html);
+            var audioList = doc.DocumentNode.Descendants("audio");
+
+            const string ampAudio = "amp-audio";
+            if (!audioList.Any())
+            {
+                AmpTypes.Audio = html.Contains("amp-audio");
+                return html;
+            }
+
+            if (!HtmlNode.ElementsFlags.ContainsKey("amp-audio"))
+            {
+                HtmlNode.ElementsFlags.Add("amp-audio", HtmlElementFlag.Closed);
+            }
+
+            foreach (var audioTag in audioList)
+            {
+                string audioSrc = audioTag.ChildNodes["source"] != null && audioTag.ChildNodes["source"].Attributes["src"] != null ? audioTag.ChildNodes["source"].Attributes["src"].Value : string.Empty;
+
+                string width = audioTag.Attributes["width"] != null ? audioTag.Attributes["width"].Value : string.Empty;
+                string height = audioTag.Attributes["height"] != null ? audioTag.Attributes["height"].Value : string.Empty;
+
+                var original = audioTag.OuterHtml;
+                var replacement = audioTag.Clone();
+                replacement.Name = ampAudio;
+
+                replacement.Attributes.RemoveAll();
+
+                if (replacement.Attributes["width"] == null)
+                {
+                    replacement.Attributes.Add("width", DefaultAudioWidth);
+                }
+
+                if (replacement.Attributes["height"] == null)
+                {
+                    replacement.Attributes.Add("height", DefaultAudioHeight.ToString());
+                }
+
+                replacement.Attributes.Add("src", audioSrc);
+                replacement.Attributes.Add("controls", null);
+
+                html = html.Replace(original, replacement.OuterHtml);
+            }
+
+            AmpTypes.Audio = html.Contains("amp-audio");
+            return html;
+        }
+        private static HtmlDocument GetHtmlDocument(string htmlContent)
+        {
+            var doc = new HtmlDocument
+            {
+                OptionOutputAsXml = false,
+                OptionDefaultStreamEncoding = Encoding.UTF8
+            };
+            doc.LoadHtml(htmlContent);
+
+            return doc;
+        }
+        private static string GetYouTubeId(string url)
+        {
+            var regex = @"(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?|watch)\/|.*[?&amp;]v=)|youtu\.be\/)([^""&amp;?\/ ]{11})";
+
+            var match = Regex.Match(url, regex);
+
+            if (match.Success)
+            {
+                return match.Groups[1].Value;
+            }
+
+            return url;
+        }
+        private static string CreateAmpCarouselFromIframe(string html, HtmlNode iframe, string iframeSrc)
+        {
+            var original = iframe.OuterHtml;
+
+            StringBuilder htmlCode = new StringBuilder();
+            HtmlDocument htmlDocument = new HtmlDocument();
+            StringBuilder stringBuilderCarousel = new StringBuilder();
+
+            using (WebClient client = new WebClient())
+            {
+                htmlCode.Append(client.DownloadString(iframeSrc));
+                htmlDocument = GetHtmlDocument(htmlCode.ToString());
+                var images = htmlDocument.DocumentNode.Descendants("img");
+
+                stringBuilderCarousel.Append("<amp-carousel class='carousel-tracking' height='300' layout='fixed-height' type='carousel' role='region' aria-label=''>");
+
+                foreach (var item in images.Where(a => !a.Attributes["src"].Value.Contains("_thumb")))
+                {
+                    stringBuilderCarousel.AppendFormat("<amp-img src='{0}' width='400' height='300' alt='{1}'></amp-img>", item.Attributes["src"].Value, item.Attributes["alt"].Value);
+                }
+
+                stringBuilderCarousel.Append("</amp-carousel>");
+            }
+
+            html = html.Replace(original, stringBuilderCarousel.ToString());
+            AmpTypes.Carousel = html.Contains("amp-carousel");
+            return html;
+        }
+
+        //private static string CreateAmpAudioFromIframe(string html, HtmlNode iframe, string iframeSrc)
+        //{
+            
+        //}
+
+        #endregion
+    }
+
+    public static class AmpTypes
+    {
+        public static bool Carousel { get; set; }
+        public static bool Video { get; set; }
+        public static bool Youtube { get; set; }
+        public static bool Audio { get; set; }
+    }
+}

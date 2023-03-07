@@ -1,0 +1,6 @@
+﻿<%@ Page Title="Home" Language="C#" MasterPageFile="~/masterpages/Template.Home.AMP.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="CMS.Web.FrontEnd.TemplatesV55._Default" %>
+
+<%--<%@ Page Title="Home" Language="C#" MasterPageFile="~/masterpages/Template.Home.master" AutoEventWireup="true" CodeFile="default.aspx.cs" Inherits="CMS.Web.FrontEnd.TemplatesV55._default" %>--%>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="cphHead" runat="Server">
+</asp:Content>

@@ -1,0 +1,1218 @@
+
+
+<!doctype html>
+<html amp lang="pt-br">
+
+<head id="Head1"><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>
+	TudoEP - Campinas - ACidade ON - Você ligado em tudo
+</title>
+
+    <!-- AMP Project -->
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+    <!-- AMP Analytics -->
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+
+    <!-- AMP Social Share -->
+    <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+
+    <!-- AMP User Notification [NOTIFICAÇÃO DE COOKIES]  Conforme manual em: https://amp.dev/documentation/examples/components/amp-user-notification/?format=websites&optimize=false     -->
+    <script async custom-element="amp-user-notification" src="https://cdn.ampproject.org/v0/amp-user-notification-0.1.js"></script>    
+
+    <!-- AMP Sidebar -->
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+
+    <!-- AMP Accordion -->
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+
+    <!-- AMP Iframe -->
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+
+    <!-- AMP AD -->
+    <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+	
+    <!-- [!] PARA O BOTÃO DE "SCROLL TO TOP"  -->
+    <!-- AMP Position Observer -->
+    <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
+
+    <!-- AMP Animation -->
+    <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
+
+
+
+    
+    <script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
+
+    
+    <!-- Aponta para a versão HTML normal do documento AMP HTML ou para si mesmo, se essa versão HTML não existir -->
+    <link rel="canonical" href="https://www.acidadeon.com/campinas/Default.aspx" />
+
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://www.tudoep.com/index.html","potentialAction":{"@type":"SearchAction",
+    "target":"https://www.tudoep.com/busca/avancada/Default.aspx?q={search_term_string}&periodo=6","query-input":"required name=search_term_string"}}
+    </script>
+    <script type="application/ld+json"> {
+    "@context": "http://schema.org"
+    , "@type": "Organization"
+    , "name": "TudoEP"
+    , "url": "https://www.tudoep.com/index.html"
+    , "publisher":{"@type":"Organization", "name":"ACidade ON Campinas"}
+    , "logo": "https://statics.tudoep.com/tudoep.v56/img/logo_tudoep.svg"
+    , "sameAs": []}
+    </script>
+
+    
+
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+
+    
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1,end) 0s 1 normal both
+        }
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+    </style>
+    <noscript>
+        <style amp-boilerplate>
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none
+            }
+        </style>
+    </noscript>
+
+    <style amp-custom>
+        #tit-error{--bs-primary:var(--bs-roxoazulado)}:root{--bs-azulescuro:#153572;--bs-roxoazulado:#460FC8;--bs-agro:#076D02;--bs-corrida:#8CE73D;--bs-games:#8A44C9;--bs-viuessa:#650E99;--bs-auto:#494949;--bs-gastro:#DB0008;--bs-sertanejo:#A76627;--bs-viagens:#195389;--bs-bebes:#F08C86;--bs-decor:#D1382C;--bs-inovacao:#208ACF;--bs-podcasts:#E11B22;--bs-educa:#FEBD0B;--bs-vagas:#0CAB83;--bs-saude:#118ab2;--bs-churrasqueadas:#FF4800;--bs-casaemversoeprosa:#663C17;--bs-virandobixo:#FF7D02;--bs-acidadeon:#FF9600;--bs-blue:#0d6efd;--bs-indigo:#6610f2;--bs-purple:#6f42c1;--bs-pink:#d63384;--bs-red:#dc3545;--bs-orange:#fd7e14;--bs-yellow:#ffc107;--bs-green:#198754;--bs-teal:#20c997;--bs-cyan:#0dcaf0;--bs-white:#fff;--bs-gray:#7e7e7e;--bs-gray-dark:#3b3b3b;--bs-black:#000;--bs-columns-width:clamp(8rem,7rem + 3.2vw,11rem);--bs-columns-count:2;--bs-columns-gap:2%;--bs-border:1px solid rgba(0,0,0,0.12);--bs-border-d:1px dashed rgba(0,0,0,0.12);--bs-font-websafe:system-ui,-apple-system,Segoe UI,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;--bs-font-azosans:azo-sans-web,Raleway,Segoe UI,Helvetica Neue,Arial,system-ui,-apple-system,sans-serif;--bs-gray-100:#f5f5f5;--bs-gray-200:#ececec;--bs-gray-300:#e2e2e2;--bs-gray-400:#d4d4d4;--bs-gray-500:#adadad;--bs-gray-600:#7e7e7e;--bs-gray-700:#454545;--bs-gray-800:#3b3b3b;--bs-gray-900:#262626;--bs-primary:#460FC8;--bs-secondary:#7e7e7e;--bs-success:#198754;--bs-info:#0dcaf0;--bs-warning:#ffc107;--bs-danger:#dc3545;--bs-light:#f5f5f5;--bs-dark:#262626;--bs-primary-rgb:70,15,200;--bs-secondary-rgb:126,126,126;--bs-success-rgb:25,135,84;--bs-info-rgb:13,202,240;--bs-warning-rgb:255,193,7;--bs-danger-rgb:220,53,69;--bs-light-rgb:245,245,245;--bs-dark-rgb:38,38,38;--bs-white-rgb:255,255,255;--bs-black-rgb:0,0,0;--bs-body-color-rgb:38,38,38;--bs-body-bg-rgb:255,255,255;--bs-font-sans-serif:"Lato","Segoe UI","Open Sans","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",system-ui,-apple-system,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--bs-gradient:linear-gradient(185deg,rgba(255,255,255,0.15),rgba(255,255,255,0));--bs-body-font-family:var(--bs-font-sans-serif);--bs-body-font-size:1.125rem;--bs-body-font-weight:400;--bs-body-line-height:1.3;--bs-body-color:#262626;--bs-body-bg:#fff;--bs-border-width:1px;--bs-border-style:solid;--bs-border-color:var(--bs-gray-300);--bs-border-color-translucent:rgba(0,0,0,0.175);--bs-border-radius:0.45rem;--bs-border-radius-sm:0.4rem;--bs-border-radius-lg:0.8rem;--bs-border-radius-xl:1rem;--bs-border-radius-2xl:2rem;--bs-border-radius-pill:50rem;--bs-link-color:var(--bs-dark);--bs-link-hover-color:#460FC8;--bs-code-color:#d63384;--bs-highlight-bg:#fff3cd}*,:after,:before{-webkit-box-sizing:border-box;box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:var(--bs-body-font-family);font-size:var(--bs-body-font-size);font-weight:var(--bs-body-font-weight);line-height:var(--bs-body-line-height);color:var(--bs-body-color);text-align:var(--bs-body-text-align);background-color:var(--bs-body-bg);-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}hr{margin:1rem 0;color:inherit;border:0;border-top:1px solid;opacity:0.25}.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:0.5rem;font-weight:900;line-height:1.2;color:var(--bs-heading-color)}.h1,h1{font-size:calc(1.375000875rem + 1.5000105vw)}@media (min-width:1200px){.h1,h1{font-size:2.50000875rem}}.h2,h2{font-size:calc(1.343750625rem + 1.1250075vw)}@media (min-width:1200px){.h2,h2{font-size:2.18750625rem}}.h3,h3{font-size:calc(1.312489125rem + 0.7498695vw)}@media (min-width:1200px){.h3,h3{font-size:1.87489125rem}}.h4,h4{font-size:calc(1.27500075rem + 0.300009vw)}@media (min-width:1200px){.h4,h4{font-size:1.5000075rem}}.h5,h5{font-size:calc(1.256250375rem + 0.0750045vw)}@media (min-width:1200px){.h5,h5{font-size:1.31250375rem}}.h6,h6{font-size:1.125rem}p{margin-top:0;margin-bottom:1rem}abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ol,ul{padding-left:2rem}dl,ol,ul{margin-top:0;margin-bottom:1rem}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}dt{font-weight:700}dd{margin-bottom:0.5rem;margin-left:0}blockquote{margin:0 0 1rem}b,strong{font-weight:900}.small,small{font-size:0.875em}.mark,mark{padding:0.1875em;background-color:var(--bs-highlight-bg)}sub,sup{position:relative;font-size:0.75em;line-height:0;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}a{color:var(--bs-link-color);text-decoration:none}a:hover{color:var(--bs-link-hover-color)}a:not([href]):not([class]),a:not([href]):not([class]):hover{color:inherit;text-decoration:none}code,kbd,pre,samp{font-family:var(--bs-font-monospace);font-size:1em}pre{display:block;margin-top:0;margin-bottom:1rem;overflow:auto;font-size:0.875em}pre code{font-size:inherit;color:inherit;word-break:normal}code{font-size:0.875em;color:var(--bs-code-color);word-wrap:break-word}a>code{color:inherit}kbd{padding:0.1875rem 0.375rem;font-size:0.875em;color:var(--bs-body-bg);background-color:var(--bs-body-color);border-radius:0.4rem}kbd kbd{padding:0;font-size:1em}figure{margin:0 0 1rem}img,svg{vertical-align:middle}table{caption-side:bottom;border-collapse:collapse}caption{padding-top:0.5rem;padding-bottom:0.5rem;color:rgba(var(--bs-body-color-rgb),0.75);text-align:left}th{text-align:inherit;text-align:-webkit-match-parent}tbody,td,tfoot,th,thead,tr{border-color:inherit;border-style:solid;border-width:0}label{display:inline-block}button{border-radius:0}button:focus:not(:focus-visible){outline:0}button,input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,select{text-transform:none}[role=button]{cursor:pointer}select{word-wrap:normal}select:disabled{opacity:1}[list]:not([type=date]):not([type=datetime-local]):not([type=month]):not([type=week]):not([type=time])::-webkit-calendar-picker-indicator{display:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled){cursor:pointer}::-moz-focus-inner{padding:0;border-style:none}textarea{resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{float:left;width:100%;padding:0;margin-bottom:0.5rem;font-size:calc(1.275rem + 0.3vw);line-height:inherit}@media (min-width:1200px){legend{font-size:1.5rem}}legend+*{clear:left}::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-text,::-webkit-datetime-edit-year-field{padding:0}::-webkit-inner-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:textfield}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-color-swatch-wrapper{padding:0}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}::file-selector-button{font:inherit;-webkit-appearance:button}output{display:inline-block}iframe{border:0}summary{display:list-item;cursor:pointer}progress{vertical-align:baseline}[hidden]{display:none}.lead{font-size:calc(1.265625rem + 0.1875vw);font-weight:300}@media (min-width:1200px){.lead{font-size:1.40625rem}}.display-1{font-size:calc(1.625rem + 4.5vw);font-weight:unset;line-height:1.2}@media (min-width:1200px){.display-1{font-size:5rem}}.display-2{font-size:calc(1.575rem + 3.9vw);font-weight:unset;line-height:1.2}@media (min-width:1200px){.display-2{font-size:4.5rem}}.display-3{font-size:calc(1.525rem + 3.3vw);font-weight:unset;line-height:1.2}@media (min-width:1200px){.display-3{font-size:4rem}}.display-4{font-size:calc(1.475rem + 2.7vw);font-weight:unset;line-height:1.2}@media (min-width:1200px){.display-4{font-size:3.5rem}}.display-5{font-size:calc(1.425rem + 2.1vw);font-weight:unset;line-height:1.2}@media (min-width:1200px){.display-5{font-size:3rem}}.display-6{font-size:calc(1.375rem + 1.5vw);font-weight:unset;line-height:1.2}@media (min-width:1200px){.display-6{font-size:2.5rem}}.list-unstyled{padding-left:0;list-style:none}.list-inline{padding-left:0;list-style:none}.list-inline-item{display:inline-block}.list-inline-item:not(:last-child){margin-right:0.5rem}.initialism{font-size:0.875em;text-transform:uppercase}.blockquote{margin-bottom:1rem;font-size:calc(1.265625rem + 0.1875vw)}@media (min-width:1200px){.blockquote{font-size:1.40625rem}}.blockquote>:last-child{margin-bottom:0}.blockquote-footer{margin-top:-1rem;margin-bottom:1rem;font-size:0.875em;color:#7e7e7e}.blockquote-footer:before{content:"— "}.row{--bs-gutter-x:1.5rem;--bs-gutter-y:0;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-top:calc(-1 * var(--bs-gutter-y));margin-right:calc(-0.5 * var(--bs-gutter-x));margin-left:calc(-0.5 * var(--bs-gutter-x))}.row>*{-webkit-box-sizing:border-box;box-sizing:border-box;-ms-flex-negative:0;flex-shrink:0;width:100%;max-width:100%;padding-right:calc(var(--bs-gutter-x) * 0.5);padding-left:calc(var(--bs-gutter-x) * 0.5);margin-top:var(--bs-gutter-y)}.col{-webkit-box-flex:1;-ms-flex:1 0 0%;flex:1 0 0%}.row-cols-auto>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto}.row-cols-1>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:100%}.row-cols-2>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:50%}.row-cols-3>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:33.3333333333%}.row-cols-4>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:25%}.row-cols-5>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:20%}.row-cols-6>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:16.6666666667%}.col-auto{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto}.col-1{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:8.33333333%}.col-2{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:16.66666667%}.col-3{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:25%}.col-4{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:33.33333333%}.col-5{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:41.66666667%}.col-6{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:50%}.col-7{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:58.33333333%}.col-8{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:66.66666667%}.col-9{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:75%}.col-10{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:83.33333333%}.col-11{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:91.66666667%}.col-12{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:100%}.offset-1{margin-left:8.33333333%}.offset-2{margin-left:16.66666667%}.offset-3{margin-left:25%}.offset-4{margin-left:33.33333333%}.offset-5{margin-left:41.66666667%}.offset-6{margin-left:50%}.offset-7{margin-left:58.33333333%}.offset-8{margin-left:66.66666667%}.offset-9{margin-left:75%}.offset-10{margin-left:83.33333333%}.offset-11{margin-left:91.66666667%}.g-0,.gx-0{--bs-gutter-x:0}.g-0,.gy-0{--bs-gutter-y:0}.g-1,.gx-1{--bs-gutter-x:0.25rem}.g-1,.gy-1{--bs-gutter-y:0.25rem}.g-2,.gx-2{--bs-gutter-x:0.5rem}.g-2,.gy-2{--bs-gutter-y:0.5rem}.g-3,.gx-3{--bs-gutter-x:1rem}.g-3,.gy-3{--bs-gutter-y:1rem}.g-4,.gx-4{--bs-gutter-x:1.5rem}.g-4,.gy-4{--bs-gutter-y:1.5rem}.g-5,.gx-5{--bs-gutter-x:3rem}.g-5,.gy-5{--bs-gutter-y:3rem}@media (min-width:321px){.col-xsm{-webkit-box-flex:1;-ms-flex:1 0 0%;flex:1 0 0%}.row-cols-xsm-auto>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto}.row-cols-xsm-1>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:100%}.row-cols-xsm-2>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:50%}.row-cols-xsm-3>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:33.3333333333%}.row-cols-xsm-4>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:25%}.row-cols-xsm-5>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:20%}.row-cols-xsm-6>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:16.6666666667%}.col-xsm-auto{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto}.col-xsm-1{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:8.33333333%}.col-xsm-2{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:16.66666667%}.col-xsm-3{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:25%}.col-xsm-4{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:33.33333333%}.col-xsm-5{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:41.66666667%}.col-xsm-6{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:50%}.col-xsm-7{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:58.33333333%}.col-xsm-8{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:66.66666667%}.col-xsm-9{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:75%}.col-xsm-10{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:83.33333333%}.col-xsm-11{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:91.66666667%}.col-xsm-12{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:100%}.offset-xsm-0{margin-left:0}.offset-xsm-1{margin-left:8.33333333%}.offset-xsm-2{margin-left:16.66666667%}.offset-xsm-3{margin-left:25%}.offset-xsm-4{margin-left:33.33333333%}.offset-xsm-5{margin-left:41.66666667%}.offset-xsm-6{margin-left:50%}.offset-xsm-7{margin-left:58.33333333%}.offset-xsm-8{margin-left:66.66666667%}.offset-xsm-9{margin-left:75%}.offset-xsm-10{margin-left:83.33333333%}.offset-xsm-11{margin-left:91.66666667%}.g-xsm-0,.gx-xsm-0{--bs-gutter-x:0}.g-xsm-0,.gy-xsm-0{--bs-gutter-y:0}.g-xsm-1,.gx-xsm-1{--bs-gutter-x:0.25rem}.g-xsm-1,.gy-xsm-1{--bs-gutter-y:0.25rem}.g-xsm-2,.gx-xsm-2{--bs-gutter-x:0.5rem}.g-xsm-2,.gy-xsm-2{--bs-gutter-y:0.5rem}.g-xsm-3,.gx-xsm-3{--bs-gutter-x:1rem}.g-xsm-3,.gy-xsm-3{--bs-gutter-y:1rem}.g-xsm-4,.gx-xsm-4{--bs-gutter-x:1.5rem}.g-xsm-4,.gy-xsm-4{--bs-gutter-y:1.5rem}.g-xsm-5,.gx-xsm-5{--bs-gutter-x:3rem}.g-xsm-5,.gy-xsm-5{--bs-gutter-y:3rem}}@media (min-width:361px){.col-xsl{-webkit-box-flex:1;-ms-flex:1 0 0%;flex:1 0 0%}.row-cols-xsl-auto>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto}.row-cols-xsl-1>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:100%}.row-cols-xsl-2>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:50%}.row-cols-xsl-3>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:33.3333333333%}.row-cols-xsl-4>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:25%}.row-cols-xsl-5>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:20%}.row-cols-xsl-6>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:16.6666666667%}.col-xsl-auto{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto}.col-xsl-1{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:8.33333333%}.col-xsl-2{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:16.66666667%}.col-xsl-3{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:25%}.col-xsl-4{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:33.33333333%}.col-xsl-5{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:41.66666667%}.col-xsl-6{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:50%}.col-xsl-7{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:58.33333333%}.col-xsl-8{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:66.66666667%}.col-xsl-9{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:75%}.col-xsl-10{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:83.33333333%}.col-xsl-11{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:91.66666667%}.col-xsl-12{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:100%}.offset-xsl-0{margin-left:0}.offset-xsl-1{margin-left:8.33333333%}.offset-xsl-2{margin-left:16.66666667%}.offset-xsl-3{margin-left:25%}.offset-xsl-4{margin-left:33.33333333%}.offset-xsl-5{margin-left:41.66666667%}.offset-xsl-6{margin-left:50%}.offset-xsl-7{margin-left:58.33333333%}.offset-xsl-8{margin-left:66.66666667%}.offset-xsl-9{margin-left:75%}.offset-xsl-10{margin-left:83.33333333%}.offset-xsl-11{margin-left:91.66666667%}.g-xsl-0,.gx-xsl-0{--bs-gutter-x:0}.g-xsl-0,.gy-xsl-0{--bs-gutter-y:0}.g-xsl-1,.gx-xsl-1{--bs-gutter-x:0.25rem}.g-xsl-1,.gy-xsl-1{--bs-gutter-y:0.25rem}.g-xsl-2,.gx-xsl-2{--bs-gutter-x:0.5rem}.g-xsl-2,.gy-xsl-2{--bs-gutter-y:0.5rem}.g-xsl-3,.gx-xsl-3{--bs-gutter-x:1rem}.g-xsl-3,.gy-xsl-3{--bs-gutter-y:1rem}.g-xsl-4,.gx-xsl-4{--bs-gutter-x:1.5rem}.g-xsl-4,.gy-xsl-4{--bs-gutter-y:1.5rem}.g-xsl-5,.gx-xsl-5{--bs-gutter-x:3rem}.g-xsl-5,.gy-xsl-5{--bs-gutter-y:3rem}}@media (min-width:576px){.col-sm{-webkit-box-flex:1;-ms-flex:1 0 0%;flex:1 0 0%}.row-cols-sm-auto>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto}.row-cols-sm-1>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:100%}.row-cols-sm-2>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:50%}.row-cols-sm-3>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:33.3333333333%}.row-cols-sm-4>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:25%}.row-cols-sm-5>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:20%}.row-cols-sm-6>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:16.6666666667%}.col-sm-auto{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto}.col-sm-1{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:8.33333333%}.col-sm-2{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:16.66666667%}.col-sm-3{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:25%}.col-sm-4{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:33.33333333%}.col-sm-5{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:41.66666667%}.col-sm-6{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:50%}.col-sm-7{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:58.33333333%}.col-sm-8{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:66.66666667%}.col-sm-9{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:75%}.col-sm-10{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:83.33333333%}.col-sm-11{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:91.66666667%}.col-sm-12{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:100%}.offset-sm-0{margin-left:0}.offset-sm-1{margin-left:8.33333333%}.offset-sm-2{margin-left:16.66666667%}.offset-sm-3{margin-left:25%}.offset-sm-4{margin-left:33.33333333%}.offset-sm-5{margin-left:41.66666667%}.offset-sm-6{margin-left:50%}.offset-sm-7{margin-left:58.33333333%}.offset-sm-8{margin-left:66.66666667%}.offset-sm-9{margin-left:75%}.offset-sm-10{margin-left:83.33333333%}.offset-sm-11{margin-left:91.66666667%}.g-sm-0,.gx-sm-0{--bs-gutter-x:0}.g-sm-0,.gy-sm-0{--bs-gutter-y:0}.g-sm-1,.gx-sm-1{--bs-gutter-x:0.25rem}.g-sm-1,.gy-sm-1{--bs-gutter-y:0.25rem}.g-sm-2,.gx-sm-2{--bs-gutter-x:0.5rem}.g-sm-2,.gy-sm-2{--bs-gutter-y:0.5rem}.g-sm-3,.gx-sm-3{--bs-gutter-x:1rem}.g-sm-3,.gy-sm-3{--bs-gutter-y:1rem}.g-sm-4,.gx-sm-4{--bs-gutter-x:1.5rem}.g-sm-4,.gy-sm-4{--bs-gutter-y:1.5rem}.g-sm-5,.gx-sm-5{--bs-gutter-x:3rem}.g-sm-5,.gy-sm-5{--bs-gutter-y:3rem}}@media (min-width:768px){.col-md{-webkit-box-flex:1;-ms-flex:1 0 0%;flex:1 0 0%}.row-cols-md-auto>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto}.row-cols-md-1>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:100%}.row-cols-md-2>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:50%}.row-cols-md-3>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:33.3333333333%}.row-cols-md-4>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:25%}.row-cols-md-5>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:20%}.row-cols-md-6>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:16.6666666667%}.col-md-auto{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto}.col-md-1{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:8.33333333%}.col-md-2{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:16.66666667%}.col-md-3{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:25%}.col-md-4{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:33.33333333%}.col-md-5{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:41.66666667%}.col-md-6{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:50%}.col-md-7{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:58.33333333%}.col-md-8{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:66.66666667%}.col-md-9{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:75%}.col-md-10{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:83.33333333%}.col-md-11{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:91.66666667%}.col-md-12{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:100%}.offset-md-0{margin-left:0}.offset-md-1{margin-left:8.33333333%}.offset-md-2{margin-left:16.66666667%}.offset-md-3{margin-left:25%}.offset-md-4{margin-left:33.33333333%}.offset-md-5{margin-left:41.66666667%}.offset-md-6{margin-left:50%}.offset-md-7{margin-left:58.33333333%}.offset-md-8{margin-left:66.66666667%}.offset-md-9{margin-left:75%}.offset-md-10{margin-left:83.33333333%}.offset-md-11{margin-left:91.66666667%}.g-md-0,.gx-md-0{--bs-gutter-x:0}.g-md-0,.gy-md-0{--bs-gutter-y:0}.g-md-1,.gx-md-1{--bs-gutter-x:0.25rem}.g-md-1,.gy-md-1{--bs-gutter-y:0.25rem}.g-md-2,.gx-md-2{--bs-gutter-x:0.5rem}.g-md-2,.gy-md-2{--bs-gutter-y:0.5rem}.g-md-3,.gx-md-3{--bs-gutter-x:1rem}.g-md-3,.gy-md-3{--bs-gutter-y:1rem}.g-md-4,.gx-md-4{--bs-gutter-x:1.5rem}.g-md-4,.gy-md-4{--bs-gutter-y:1.5rem}.g-md-5,.gx-md-5{--bs-gutter-x:3rem}.g-md-5,.gy-md-5{--bs-gutter-y:3rem}}@media (min-width:1200px){.col-lg{-webkit-box-flex:1;-ms-flex:1 0 0%;flex:1 0 0%}.row-cols-lg-auto>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto}.row-cols-lg-1>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:100%}.row-cols-lg-2>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:50%}.row-cols-lg-3>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:33.3333333333%}.row-cols-lg-4>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:25%}.row-cols-lg-5>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:20%}.row-cols-lg-6>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:16.6666666667%}.col-lg-auto{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto}.col-lg-1{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:8.33333333%}.col-lg-2{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:16.66666667%}.col-lg-3{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:25%}.col-lg-4{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:33.33333333%}.col-lg-5{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:41.66666667%}.col-lg-6{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:50%}.col-lg-7{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:58.33333333%}.col-lg-8{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:66.66666667%}.col-lg-9{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:75%}.col-lg-10{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:83.33333333%}.col-lg-11{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:91.66666667%}.col-lg-12{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:100%}.offset-lg-0{margin-left:0}.offset-lg-1{margin-left:8.33333333%}.offset-lg-2{margin-left:16.66666667%}.offset-lg-3{margin-left:25%}.offset-lg-4{margin-left:33.33333333%}.offset-lg-5{margin-left:41.66666667%}.offset-lg-6{margin-left:50%}.offset-lg-7{margin-left:58.33333333%}.offset-lg-8{margin-left:66.66666667%}.offset-lg-9{margin-left:75%}.offset-lg-10{margin-left:83.33333333%}.offset-lg-11{margin-left:91.66666667%}.g-lg-0,.gx-lg-0{--bs-gutter-x:0}.g-lg-0,.gy-lg-0{--bs-gutter-y:0}.g-lg-1,.gx-lg-1{--bs-gutter-x:0.25rem}.g-lg-1,.gy-lg-1{--bs-gutter-y:0.25rem}.g-lg-2,.gx-lg-2{--bs-gutter-x:0.5rem}.g-lg-2,.gy-lg-2{--bs-gutter-y:0.5rem}.g-lg-3,.gx-lg-3{--bs-gutter-x:1rem}.g-lg-3,.gy-lg-3{--bs-gutter-y:1rem}.g-lg-4,.gx-lg-4{--bs-gutter-x:1.5rem}.g-lg-4,.gy-lg-4{--bs-gutter-y:1.5rem}.g-lg-5,.gx-lg-5{--bs-gutter-x:3rem}.g-lg-5,.gy-lg-5{--bs-gutter-y:3rem}}@media (min-width:1400px){.col-xl{-webkit-box-flex:1;-ms-flex:1 0 0%;flex:1 0 0%}.row-cols-xl-auto>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto}.row-cols-xl-1>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:100%}.row-cols-xl-2>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:50%}.row-cols-xl-3>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:33.3333333333%}.row-cols-xl-4>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:25%}.row-cols-xl-5>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:20%}.row-cols-xl-6>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:16.6666666667%}.col-xl-auto{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto}.col-xl-1{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:8.33333333%}.col-xl-2{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:16.66666667%}.col-xl-3{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:25%}.col-xl-4{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:33.33333333%}.col-xl-5{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:41.66666667%}.col-xl-6{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:50%}.col-xl-7{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:58.33333333%}.col-xl-8{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:66.66666667%}.col-xl-9{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:75%}.col-xl-10{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:83.33333333%}.col-xl-11{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:91.66666667%}.col-xl-12{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:100%}.offset-xl-0{margin-left:0}.offset-xl-1{margin-left:8.33333333%}.offset-xl-2{margin-left:16.66666667%}.offset-xl-3{margin-left:25%}.offset-xl-4{margin-left:33.33333333%}.offset-xl-5{margin-left:41.66666667%}.offset-xl-6{margin-left:50%}.offset-xl-7{margin-left:58.33333333%}.offset-xl-8{margin-left:66.66666667%}.offset-xl-9{margin-left:75%}.offset-xl-10{margin-left:83.33333333%}.offset-xl-11{margin-left:91.66666667%}.g-xl-0,.gx-xl-0{--bs-gutter-x:0}.g-xl-0,.gy-xl-0{--bs-gutter-y:0}.g-xl-1,.gx-xl-1{--bs-gutter-x:0.25rem}.g-xl-1,.gy-xl-1{--bs-gutter-y:0.25rem}.g-xl-2,.gx-xl-2{--bs-gutter-x:0.5rem}.g-xl-2,.gy-xl-2{--bs-gutter-y:0.5rem}.g-xl-3,.gx-xl-3{--bs-gutter-x:1rem}.g-xl-3,.gy-xl-3{--bs-gutter-y:1rem}.g-xl-4,.gx-xl-4{--bs-gutter-x:1.5rem}.g-xl-4,.gy-xl-4{--bs-gutter-y:1.5rem}.g-xl-5,.gx-xl-5{--bs-gutter-x:3rem}.g-xl-5,.gy-xl-5{--bs-gutter-y:3rem}}@media (min-width:1760px){.col-xxl{-webkit-box-flex:1;-ms-flex:1 0 0%;flex:1 0 0%}.row-cols-xxl-auto>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto}.row-cols-xxl-1>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:100%}.row-cols-xxl-2>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:50%}.row-cols-xxl-3>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:33.3333333333%}.row-cols-xxl-4>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:25%}.row-cols-xxl-5>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:20%}.row-cols-xxl-6>*{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:16.6666666667%}.col-xxl-auto{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto}.col-xxl-1{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:8.33333333%}.col-xxl-2{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:16.66666667%}.col-xxl-3{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:25%}.col-xxl-4{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:33.33333333%}.col-xxl-5{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:41.66666667%}.col-xxl-6{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:50%}.col-xxl-7{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:58.33333333%}.col-xxl-8{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:66.66666667%}.col-xxl-9{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:75%}.col-xxl-10{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:83.33333333%}.col-xxl-11{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:91.66666667%}.col-xxl-12{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:100%}.offset-xxl-0{margin-left:0}.offset-xxl-1{margin-left:8.33333333%}.offset-xxl-2{margin-left:16.66666667%}.offset-xxl-3{margin-left:25%}.offset-xxl-4{margin-left:33.33333333%}.offset-xxl-5{margin-left:41.66666667%}.offset-xxl-6{margin-left:50%}.offset-xxl-7{margin-left:58.33333333%}.offset-xxl-8{margin-left:66.66666667%}.offset-xxl-9{margin-left:75%}.offset-xxl-10{margin-left:83.33333333%}.offset-xxl-11{margin-left:91.66666667%}.g-xxl-0,.gx-xxl-0{--bs-gutter-x:0}.g-xxl-0,.gy-xxl-0{--bs-gutter-y:0}.g-xxl-1,.gx-xxl-1{--bs-gutter-x:0.25rem}.g-xxl-1,.gy-xxl-1{--bs-gutter-y:0.25rem}.g-xxl-2,.gx-xxl-2{--bs-gutter-x:0.5rem}.g-xxl-2,.gy-xxl-2{--bs-gutter-y:0.5rem}.g-xxl-3,.gx-xxl-3{--bs-gutter-x:1rem}.g-xxl-3,.gy-xxl-3{--bs-gutter-y:1rem}.g-xxl-4,.gx-xxl-4{--bs-gutter-x:1.5rem}.g-xxl-4,.gy-xxl-4{--bs-gutter-y:1.5rem}.g-xxl-5,.gx-xxl-5{--bs-gutter-x:3rem}.g-xxl-5,.gy-xxl-5{--bs-gutter-y:3rem}}:root{--color-primary:var(--bs-primary);--color-secondary:var(--bs-secondary);--color-text-light:var(--bs-white);--space-2:1rem;--box-shadow-1:0 1px 1px 0 rgba(0,0,0,.14),0 1px 1px -1px rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12)}*{margin:0;padding:0;list-style:none;text-decoration:none}*,:after,:before{-webkit-box-sizing:border-box;box-sizing:border-box}hr{color:inherit;background-color:var(--bs-black);border:0;opacity:0.4}hr:not([size]){height:1px}.content-width{width:80%}.content{margin:0 auto;padding-top:50px;padding-bottom:50px}.hdr{position:sticky;top:0;z-index:999}#sidebar{max-width:100%;width:calc(10% + 40vh)}.sidebarView{display:-ms-grid;display:grid;-ms-grid-rows:auto 1fr auto;grid-template-rows:auto 1fr auto;height:100vh;position:fixed;width:100%;overflow:hidden}.tdepScrollView{overflow-y:scroll;overflow-x:hidden;height:100%;-webkit-overflow-scrolling:touch;-webkit-box-sizing:border-box;box-sizing:border-box}.tdep-menuShareButtons{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:100%;height:50px;-webkit-box-sizing:border-box;box-sizing:border-box;padding:0 18px}.sidebar-menu{background:var(--bs-white);padding:0px;margin:0px;font-weight:400}.amp-custom-sidebar-header{line-height:3.5rem;min-height:3.5rem;padding:0 1rem}#sidebar-close{cursor:pointer;margin-left:auto}.sidebar-nav-item{padding:1rem 20px;margin:0px;list-style:none;text-transform:capitalize;letter-spacing:0.6px}.sidebar-nav-link{cursor:pointer}.sidebar-nav-link:hover{text-decoration:underline}.menu{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;margin:0 auto}#sidebar-menu-btn,.sidebar-menu-btn{background:0 0;border:0;color:var(--bs-roxoazulado);font-weight:800;font-size:16px}.tdep-dropdown-item{font-size:85%;margin-left:1.5rem}article,aside,footer,header,nav,section{display:block}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{-webkit-box-sizing:content-box;box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:800}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}.mark,mark{background-color:var(--bs-yellow);color:var(--bs-black)}.small,small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:var(--bs-font-sans-serif);font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{-webkit-box-sizing:border-box;box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}[hidden],template{display:none}*{-webkit-box-sizing:border-box;box-sizing:border-box}main{margin:0 auto}amp-user-notification.sample-notification{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;font-size:10pt}amp-user-notification.sample-notification>button{min-width:80px}.ampstart-accent{color:var(--bs-roxoazulado)}.ampstart-title-lg{font-size:3rem;line-height:3.5rem;letter-spacing:0.06rem}.ampstart-title-md{font-size:2rem;line-height:2.5rem;letter-spacing:0.06rem}.ampstart-title-sm{font-size:1.5rem;line-height:2rem;letter-spacing:0.06rem}.ampstart-subtitle{color:var(--bs-roxoazulado);font-size:1rem}.ampstart-byline,.ampstart-caption,.ampstart-hint,.ampstart-label{font-size:0.875rem;color:#4f4f4f;line-height:1.125rem;letter-spacing:0.06rem}.ampstart-label{text-transform:uppercase}.ampstart-footer,.ampstart-small-text{font-size:0.75rem;line-height:1rem;letter-spacing:0.06rem}.ampstart-card{-webkit-box-shadow:0 1px 1px 0 rgba(0,0,0,0.14),0 1px 1px -1px rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12);box-shadow:0 1px 1px 0 rgba(0,0,0,0.14),0 1px 1px -1px rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12)}.ampstart-btn{font-family:inherit;font-weight:inherit;font-size:1rem;line-height:1.125rem;padding:0.7em 0.8em;text-decoration:none;white-space:nowrap;word-wrap:normal;vertical-align:middle;cursor:pointer;background-color:var(--bs-black);color:var(--bs-white);border:1px solid var(--bs-white)}.ampstart-btn:visited{color:var(--bs-white)}.ampstart-btn-secondary{background-color:var(--bs-white);color:var(--bs-black);border:1px solid var(--bs-black)}.ampstart-btn-secondary:visited{color:var(--bs-black)}.ampstart-btn:active .ampstart-btn:focus{opacity:0.8}.ampstart-btn[disabled],.ampstart-btn[disabled]:active,.ampstart-btn[disabled]:focus,.ampstart-btn[disabled]:hover{opacity:0.5;outline:0;cursor:default}.ampstart-dropcap:first-letter{color:var(--bs-black);font-size:3rem;font-weight:800;float:left;overflow:hidden;line-height:3rem;margin-left:0;margin-right:0.5rem}.ampstart-initialcap{padding-top:1rem;margin-top:1.5rem}.ampstart-initialcap:first-letter{color:var(--bs-black);font-size:3rem;font-weight:800;margin-left:-2px}.ampstart-pullquote{border:none;border-left:4px solid var(--bs-black);font-size:1.5rem;padding-left:1.5rem}.ampstart-byline time{font-style:normal;white-space:nowrap}.ampstart-dropdown{min-width:200px}.ampstart-dropdown.absolute{z-index:100}.ampstart-dropdown.absolute>section,.ampstart-dropdown.absolute>section>header{height:100%}.ampstart-dropdown>section>header{border:0}.ampstart-dropdown .header .bi{color:currentColor;margin-left:auto;margin-top:auto;margin-bottom:auto}.ampstart-dropdown>section .header .bi-chevron-right{display:inline-block}.ampstart-dropdown>section[expanded] .header .bi-chevron-right{display:none}.ampstart-dropdown>section .header .bi-chevron-down{display:none}.ampstart-dropdown>section[expanded] .header .bi-chevron-down{display:inline-block}.absolute .ampstart-dropdown-items{z-index:200}.ampstart-dropdown-item{color:var(--bs-roxoazulado)}.ampstart-dropdown-item:active,.ampstart-dropdown-item:hover{opacity:1}.ampstart-footer{background-color:var(--bs-white);color:var(--bs-black);padding-top:5rem;padding-bottom:5rem}.ampstart-footer .ampstart-icon{fill:var(--bs-black)}.ampstart-footer .ampstart-social-follow li:last-child{margin-right:0}.ampstart-image-fullpage-hero{color:var(--bs-white)}.ampstart-fullpage-hero-heading-text,.ampstart-image-fullpage-hero .ampstart-image-credit{-webkit-box-decoration-break:clone;box-decoration-break:clone;background:var(--bs-black);padding:0 1rem 0.2rem}.ampstart-image-fullpage-hero>amp-img{max-height:calc(100vh - 3.5rem)}.ampstart-image-fullpage-hero>amp-img img{-o-object-fit:cover;object-fit:cover}.ampstart-fullpage-hero-heading{line-height:3.5rem}.ampstart-fullpage-hero-cta{background:transparent}.ampstart-readmore{background:-webkit-gradient(linear,left bottom,left top,color-stop(0,rgba(0,0,0,0.65)),to(transparent));background:linear-gradient(0deg,rgba(0,0,0,0.65) 0,transparent);color:var(--bs-white);margin-top:5rem;padding-bottom:3.5rem}.ampstart-readmore:after{display:block;content:"⌄";font-size:2rem}.ampstart-readmore-text{background:var(--bs-black)}@media (min-width:52.06rem){.ampstart-image-fullpage-hero>amp-img{height:60vh}}.ampstart-image-heading{color:var(--bs-white);background:-webkit-gradient(linear,left bottom,left top,color-stop(0,rgba(0,0,0,0.65)),to(transparent));background:linear-gradient(0deg,rgba(0,0,0,0.65) 0,transparent)}.ampstart-image-heading>*{margin:0}amp-carousel .ampstart-image-with-heading{margin-bottom:0}.ampstart-image-with-caption figcaption{color:#4f4f4f;line-height:1.125rem}amp-carousel .ampstart-image-with-caption{margin-bottom:0}.ampstart-input{max-width:100%;width:300px;min-width:100px;font-size:1rem;line-height:1.5rem}.ampstart-input [disabled],.ampstart-input [disabled]+label{opacity:0.5}.ampstart-input [disabled]:focus{outline:0}.ampstart-input>input,.ampstart-input>select,.ampstart-input>textarea{width:100%;margin-top:1rem;line-height:1.5rem;border:0;border-radius:0;border-bottom:1px solid var(--bs-primary);background:none;color:var(--bs-primary);outline:0}.ampstart-input>label{color:var(--bs-roxoazulado);pointer-events:none;text-align:left;font-size:0.875rem;line-height:1rem;opacity:0;-webkit-animation:0.2s;animation:0.2s;-webkit-animation-timing-function:cubic-bezier(0.4,0,0.2,1);animation-timing-function:cubic-bezier(0.4,0,0.2,1);-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}.ampstart-input>input:focus,.ampstart-input>select:focus,.ampstart-input>textarea:focus{outline:0}.ampstart-input>input:focus:-ms-input-placeholder,.ampstart-input>select:focus:-ms-input-placeholder,.ampstart-input>textarea:focus:-ms-input-placeholder{color:transparent}.ampstart-input>input:focus::-webkit-input-placeholder,.ampstart-input>select:focus::-webkit-input-placeholder,.ampstart-input>textarea:focus::-webkit-input-placeholder{color:transparent}.ampstart-input>input:focus::-moz-placeholder,.ampstart-input>select:focus::-moz-placeholder,.ampstart-input>textarea:focus::-moz-placeholder{color:transparent}.ampstart-input>input:focus:-ms-input-placeholder,.ampstart-input>select:focus:-ms-input-placeholder,.ampstart-input>textarea:focus:-ms-input-placeholder{color:transparent}.ampstart-input>input:focus::-ms-input-placeholder,.ampstart-input>select:focus::-ms-input-placeholder,.ampstart-input>textarea:focus::-ms-input-placeholder{color:transparent}.ampstart-input>input:focus::placeholder,.ampstart-input>select:focus::placeholder,.ampstart-input>textarea:focus::placeholder{color:transparent}.ampstart-input>input:not(:-moz-placeholder-shown):not([disabled])+label,.ampstart-input>select:not(:-moz-placeholder-shown):not([disabled])+label,.ampstart-input>textarea:not(:-moz-placeholder-shown):not([disabled])+label{opacity:1}.ampstart-input>input:not(:-ms-input-placeholder):not([disabled])+label,.ampstart-input>select:not(:-ms-input-placeholder):not([disabled])+label,.ampstart-input>textarea:not(:-ms-input-placeholder):not([disabled])+label{opacity:1}.ampstart-input>input:not(:placeholder-shown):not([disabled])+label,.ampstart-input>select:not(:placeholder-shown):not([disabled])+label,.ampstart-input>textarea:not(:placeholder-shown):not([disabled])+label{opacity:1}.ampstart-input>input:focus+label,.ampstart-input>select:focus+label,.ampstart-input>textarea:focus+label{-webkit-animation-name:a;animation-name:a}@-webkit-keyframes a{to{opacity:1}}@keyframes a{to{opacity:1}}.ampstart-input>label:after{content:"";height:2px;position:absolute;bottom:0;left:45%;background:var(--bs-roxoazulado);-webkit-transition:0.2s;transition:0.2s;-webkit-transition-timing-function:cubic-bezier(0.4,0,0.2,1);transition-timing-function:cubic-bezier(0.4,0,0.2,1);visibility:hidden;width:10px}.ampstart-input>input:focus+label:after,.ampstart-input>select:focus+label:after,.ampstart-input>textarea:focus+label:after{left:0;width:100%;visibility:visible}.ampstart-input>input[type=search]{-webkit-appearance:none;-moz-appearance:none;appearance:none}.ampstart-input>input[type=range]{border-bottom:0}.ampstart-input>input[type=range]+label:after{display:none}.ampstart-input>select{-webkit-appearance:none;-moz-appearance:none;appearance:none}.ampstart-input>select+label:before{content:"⌄";line-height:1.5rem;position:absolute;right:5px;zoom:2;top:0;bottom:0;color:var(--bs-roxoazulado)}.ampstart-input-chk,.ampstart-input-radio{width:auto;color:var(--bs-primary)}.ampstart-input input[type=checkbox],.ampstart-input input[type=radio]{margin-top:0;-webkit-appearance:none;-moz-appearance:none;appearance:none;width:20px;height:20px;border:1px solid var(--bs-roxoazulado);vertical-align:middle;margin-right:0.5rem;text-align:center}.ampstart-input input[type=radio]{border-radius:20px}.ampstart-input input[type=checkbox]:not([disabled])+label,.ampstart-input input[type=radio]:not([disabled])+label{pointer-events:auto;-webkit-animation:none;animation:none;vertical-align:middle;opacity:1;cursor:pointer}.ampstart-input input[type=checkbox]+label:after,.ampstart-input input[type=radio]+label:after{display:none}.ampstart-input input[type=checkbox]:after,.ampstart-input input[type=radio]:after{position:absolute;top:0;left:0;bottom:0;right:0;content:" ";line-height:1.4rem;vertical-align:middle;text-align:center;background-color:var(--bs-white)}.ampstart-input input[type=checkbox]:checked:after{background-color:var(--bs-roxoazulado);color:var(--bs-white);content:"✓"}.ampstart-input input[type=radio]:checked{background-color:var(--bs-white)}.ampstart-input input[type=radio]:after{top:3px;bottom:3px;left:3px;right:3px;border-radius:12px}.ampstart-input input[type=radio]:checked:after{content:"";font-size:3rem;background-color:var(--bs-roxoazulado)}.ampstart-input>label,_:-ms-lang(x){opacity:1}.ampstart-input>input:-ms-input-placeholder,_:-ms-lang(x){color:transparent}.ampstart-input>input:-ms-input-placeholder{color:transparent}.ampstart-input>input::-ms-input-placeholder{color:transparent}.ampstart-input>input::placeholder,_:-ms-lang(x){color:transparent}.ampstart-input>input::-ms-input-placeholder,_:-ms-lang(x){color:transparent}.ampstart-input>select::-ms-expand{display:none}.ampstart-headerbar{background-color:var(--bs-white);color:var(--bs-black);z-index:999;-webkit-box-shadow:0 0 5px 2px rgba(0,0,0,0.1);box-shadow:0 0 5px 2px rgba(0,0,0,0.1)}.ampstart-headerbar+:not(amp-sidebar),.ampstart-headerbar+amp-sidebar+*{margin-top:3.5rem}.ampstart-headerbar-nav .ampstart-nav-item{padding:0 1rem;background:transparent;opacity:0.8}.ampstart-headerbar-nav{line-height:3.5rem}.ampstart-nav-item:active,.ampstart-nav-item:focus,.ampstart-nav-item:hover{opacity:1}.ampstart-navbar-trigger:focus{outline:none}.ampstart-nav a,.ampstart-navbar-trigger,.ampstart-sidebar-faq a{cursor:pointer;text-decoration:none}.ampstart-nav .ampstart-label{color:inherit}.ampstart-navbar-trigger{line-height:3.5rem;font-size:var(--bs-body-font-size)}.ampstart-headerbar-nav{-ms-flex:1;-webkit-box-flex:1;flex:1}.ampstart-nav-search{-ms-flex-positive:0.5;-webkit-box-flex:0.5;flex-grow:0.5}.ampstart-headerbar .ampstart-nav-search:active,.ampstart-headerbar .ampstart-nav-search:focus,.ampstart-headerbar .ampstart-nav-search:hover{-webkit-box-shadow:none;box-shadow:none}.ampstart-nav-search>input{border:none;border-radius:3px;line-height:normal}.ampstart-nav-dropdown{min-width:200px}.ampstart-nav-dropdown amp-accordion header{background-color:var(--bs-white);border:none}.ampstart-nav-dropdown amp-accordion ul{background-color:var(--bs-white)}.ampstart-nav-dropdown .ampstart-dropdown-item,.ampstart-nav-dropdown .ampstart-dropdown>section>header{background-color:var(--bs-white)}.ampstart-nav-dropdown .ampstart-dropdown-item{color:var(--bs-roxoazulado)}.ampstart-sidebar{background-color:var(--bs-white);color:currentColor;min-width:300px;width:300px}.ampstart-sidebar .ampstart-icon{fill:var(--bs-roxoazulado)}.ampstart-sidebar-header{line-height:3.5rem;min-height:3.5rem}.ampstart-sidebar .ampstart-dropdown header,.ampstart-sidebar .ampstart-dropdown-item,.ampstart-sidebar .ampstart-faq-item,.ampstart-sidebar .ampstart-nav-item,.ampstart-sidebar .ampstart-social-follow{margin:0}.ampstart-sidebar .ampstart-nav-dropdown{margin:0}.ampstart-sidebar .ampstart-navbar-trigger{line-height:inherit}.ampstart-navbar-trigger svg{pointer-events:none}.ampstart-related-article-section{border-color:var(--bs-primary)}.ampstart-related-article-section .ampstart-heading{color:var(--bs-primary);font-weight:400}.ampstart-related-article-readmore{color:var(--bs-black);letter-spacing:0}.ampstart-related-section-items>li{border-bottom:1px solid var(--bs-primary)}.ampstart-related-section-items>li:last-child{border:none}.ampstart-related-section-items .ampstart-image-with-caption{display:-ms-flexbox;display:-webkit-box;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-align:center;-webkit-box-align:center;align-items:center;margin-bottom:0}.ampstart-related-section-items .ampstart-image-with-caption>amp-img,.ampstart-related-section-items .ampstart-image-with-caption>figcaption{-ms-flex:1;-webkit-box-flex:1;flex:1}.ampstart-related-section-items .ampstart-image-with-caption>figcaption{padding-left:1rem}@media (min-width:40.06rem){.ampstart-related-section-items>li{border:none}.ampstart-related-section-items .ampstart-image-with-caption>figcaption{padding:1rem 0}.ampstart-related-section-items .ampstart-image-with-caption>amp-img,.ampstart-related-section-items .ampstart-image-with-caption>figcaption{-ms-flex-preferred-size:100%;flex-basis:100%}}.ampstart-social-box{display:-ms-flexbox;display:-webkit-box;display:flex}.ampstart-social-box>amp-social-share{background-color:var(--bs-black)}.ampstart-icon{fill:var(--bs-roxoazulado)}.ampstart-input{width:100%}main .ampstart-social-follow{margin-left:auto;margin-right:auto;width:315px}main .ampstart-social-follow li{-webkit-transform:scale(1.8);transform:scale(1.8)}.h1+.ampstart-byline time,h1+.ampstart-byline time{font-size:1.5rem;font-weight:400}p{padding:0;margin:0;margin-top:0;margin-bottom:1rem}.hdr .outer{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.links{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.links .link{color:var(--bs-white);text-decoration:none;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;text-align:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-left:3rem}.links .link:hover{color:var(--bs-primary)}.cursor-pointer{cursor:pointer}.heading{font-size:50px;color:var(--bs-gray-dark);font-weight:800}#contact-form{width:60%;margin:0 auto;margin-bottom:30px}#contact-form input[type=email],#contact-form input[type=text],#contact-form textarea{width:100%;border:1px solid var(--bs-gray-300);display:block;margin:20px 0px;padding:20px}#contact-form input:hover{border-color:var(--bs-secondary)}#contact-form input[type=submit]{width:100%;padding:20px;border:0;background:var(--bs-green);cursor:pointer;color:var(--bs-white);font-weight:bold}#contact-form input[type=submit]:hover{background:var(--bs-green)}.tdep-quicklinks .tdep-scrollable{overflow-x:scroll;-webkit-overflow-scrolling:touch}.tdep-quicklinks .tdep-scrollable::-webkit-scrollbar{display:none}.tdep-quicklinks .tdep-Indicator{height:100%;white-space:nowrap;line-height:10px;-webkit-transition:-webkit-transform 0.3s ease-out;transition:-webkit-transform 0.3s ease-out;transition:transform 0.3s ease-out;transition:transform 0.3s ease-out,-webkit-transform 0.3s ease-out}.tdep-quicklinks .tdep-Indicator .tdep-section{font-size:13px}.tdep-quicklinks.pracas .tdep-Indicator .tdep-section,.tdep-quicklinks.topo .tdep-Indicator .tdep-section{font-size:10px}.tdep-quicklinks.pracas .tdep-scrollable,.tdep-quicklinks.topo .tdep-scrollable{padding-top:3px;padding-bottom:2px}footer a{text-decoration:none}.logorodape{text-align:center}.hr-footer{opacity:1}.hr-footer:not([size]){height:4px}footer a{text-decoration:none}@media screen and (min-device-height:570px){.start-socialbar{position:sticky;position:-webkit-sticky;bottom:-1px}}.start-socialbar .botao{display:-webkit-box;display:-ms-flexbox;display:flex;padding:0.3rem 0.1rem}.text-white{color:var(--bs-white)}.text-light{color:var(--bs-light)}.text-lighter{color:var(--bs-gray-300)}.text-secondary{color:var(--bs-secondary)}.text-primary{color:var(--bs-primary)}.text-orange,.text-tdep{color:var(--bs-roxoazulado)}.bg-tudoep{background:var(--bs-roxoazulado)}.bg-grad-gray{background:linear-gradient(4deg,var(--bs-dark) 30%,var(--bs-secondary) 120%)}.bg-grad-dark{background:linear-gradient(4deg,var(--bs-black) 20%,var(--bs-gray-800) 130%);--bs-link-color:var(--bs-white);--bs-link-hover-color:var(--bs-gray-500)}.border-top-tdep{border-top:2px solid var(--bs-roxoazulado)}.bg-transparent{background-color:transparent}.bg-warning{background-color:var(--bs-warning)}.bg-light{background-color:var(--bs-gray-100)}.bg-tdep{background-color:var(--bs-roxoazulado)}.bg-gray{background-color:var(--bs-light)}.hero{width:100%;height:300px;color:var(--bs-roxoazulado);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative}#hero-cta{position:absolute;bottom:50px}.w-100{width:100%}.h-100{height:100%}.img-fluid{max-width:100%;height:auto}.mr-20{margin-left:20px}.pb-05{padding-bottom:0.5rem}.px-1{padding-right:1rem;padding-left:1rem}.py-0{padding-top:0;padding-bottom:0}.mx-auto{margin:0 auto}.d-flex{display:-webkit-box;display:-ms-flexbox;display:flex}.clearfix{clear:both}.justify-content-center{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.text-center{text-align:center}.text-right{text-align:right}.text-uppercase{text-transform:uppercase}.text-lowercase{text-transform:lowercase}.scrollToTop{color:var(--color-text-light);font-size:1.4em;-webkit-box-shadow:var(--box-shadow-1);box-shadow:var(--box-shadow-1);width:50px;height:50px;border-radius:50%;line-height:2.6;border:none;outline:none;z-index:9999;bottom:var(--space-2);right:var(--space-2);position:fixed;opacity:0;visibility:hidden}.spacer{width:100vw;max-width:700px;height:200vh;background-color:var(--color-secondary)}.target{position:relative;height:3rem;bottom:4rem}.target-anchor{position:absolute;top:-72px;left:0}@media (min-width:769px){footer a:hover{color:var(--bs-roxoazulado);text-decoration:underline}amp-video,amp-youtube{height:25rem;width:740px;margin:0 auto}}@media (min-width:1025px){main{max-width:70%}.align-items-center{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.menu{padding-right:2rem;padding-left:2rem}.ml-md-3{margin-left:3rem}.py-md-1{padding:1rem 0}.content-md-width{width:80%}}@media only screen and (max-width:1024px){footer .h2,footer h2{font-size:140%}#why-content .meta{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}}@media only screen and (max-width:768px){.links{display:none}#contact-form{width:80%}.footer-item{-ms-flex-preferred-size:40%;flex-basis:40%}}@media only screen and (max-width:600px){body{font-size:0.9rem}.target{height:2rem}.logorodape{text-align:left}.bg-grad-gray{background:linear-gradient(20deg,var(--bs-dark) 30%,var(--bs-secondary) 120%)}.logo img{max-width:100%;height:auto}#noticia-corpo figure{margin:0}amp-video,amp-youtube{height:17rem}.content-width{width:93%}#contact-form{width:100%}.heading{font-size:28px}.feature{-ms-flex-preferred-size:100%;flex-basis:100%}.meta{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.meta>a{text-align:center;margin-left:0px;margin-bottom:10px}}.font-family-inherit{font-family:inherit}.font-size-inherit{font-size:inherit}.text-decoration-none{text-decoration:none}.fw-bolder{font-weight:900}.fw-bold{font-weight:700}.fw-lighter{font-weight:100}.fw-light{font-weight:300}.fw-normal,.regular{font-weight:400}.italic{font-style:italic}.left-align{text-align:left}.center{text-align:center}.right-align{text-align:right}.justify{text-align:justify}.nowrap{white-space:nowrap}.break-word{word-wrap:break-word}.line-height-1{line-height:1rem}.line-height-2{line-height:1.125rem}.line-height-3{line-height:1.5rem}.line-height-4{line-height:2rem}.list-style-none{list-style:none}.underline{text-decoration:underline}.truncate{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.list-reset{list-style:none;padding-left:0}.inline{display:inline}.block{display:block}.inline-block{display:inline-block}.table{display:table}.table-cell{display:table-cell}.overflow-hidden{overflow:hidden}.overflow-scroll{overflow:scroll}.overflow-auto{overflow:auto}.clearfix:after,.clearfix:before{content:" ";display:table}.clearfix:after{clear:both}.left{float:left}.right{float:right}.fit{max-width:100%}.max-width-1{max-width:24rem}.max-width-2{max-width:32rem}.max-width-3{max-width:48rem}.max-width-4{max-width:64rem}.border-box{-webkit-box-sizing:border-box;box-sizing:border-box}.align-baseline{vertical-align:baseline}.align-top{vertical-align:top}.align-middle{vertical-align:middle}.align-bottom{vertical-align:bottom}.m0{margin:0}.mt0{margin-top:0}.mr0{margin-right:0}.mb0{margin-bottom:0}.ml0,.mx0{margin-left:0}.mx0{margin-right:0}.my0{margin-top:0;margin-bottom:0}.m1{margin:0.5rem}.mt1{margin-top:0.5rem}.mr1{margin-right:0.5rem}.mb1{margin-bottom:0.5rem}.ml1,.mx1{margin-left:0.5rem}.mx1{margin-right:0.5rem}.my1{margin-top:0.5rem;margin-bottom:0.5rem}.m2{margin:1rem}.mt2{margin-top:1rem}.mr2{margin-right:1rem}.mb2{margin-bottom:1rem}.ml2,.mx2{margin-left:1rem}.mx2{margin-right:1rem}.my2{margin-top:1rem;margin-bottom:1rem}.m3{margin:1.5rem}.mt3{margin-top:1.5rem}.mr3{margin-right:1.5rem}.mb3{margin-bottom:1.5rem}.ml3,.mx3{margin-left:1.5rem}.mx3{margin-right:1.5rem}.my3{margin-top:1.5rem;margin-bottom:1.5rem}.m4{margin:2rem}.mt4{margin-top:2rem}.mr4{margin-right:2rem}.mb4{margin-bottom:2rem}.ml4,.mx4{margin-left:2rem}.mx4{margin-right:2rem}.my4{margin-top:2rem;margin-bottom:2rem}.mxn1{margin-left:-0.5rem;margin-right:-0.5rem}.mxn2{margin-left:-1rem;margin-right:-1rem}.mxn3{margin-left:-1.5rem;margin-right:-1.5rem}.mxn4{margin-left:-2rem;margin-right:-2rem}.m-auto{margin:auto}.mt-auto{margin-top:auto}.mr-auto{margin-right:auto}.mb-auto{margin-bottom:auto}.ml-auto,.mx-auto{margin-left:auto}.mx-auto{margin-right:auto}.my-auto{margin-top:auto;margin-bottom:auto}.p0{padding:0}.pt0{padding-top:0}.pr0{padding-right:0}.pb0{padding-bottom:0}.pl0,.px0{padding-left:0}.px0{padding-right:0}.py0{padding-top:0;padding-bottom:0}.p1{padding:0.5rem}.pt1{padding-top:0.5rem}.pr1{padding-right:0.5rem}.pb1{padding-bottom:0.5rem}.pl1{padding-left:0.5rem}.py1{padding-top:0.5rem;padding-bottom:0.5rem}.px1{padding-left:0.5rem;padding-right:0.5rem}.p2{padding:1rem}.pt2{padding-top:1rem}.pr2{padding-right:1rem}.pb2{padding-bottom:1rem}.pl2{padding-left:1rem}.py2{padding-top:1rem;padding-bottom:1rem}.px2{padding-left:1rem;padding-right:1rem}.p3{padding:1.5rem}.pt3{padding-top:1.5rem}.pr3{padding-right:1.5rem}.pb3{padding-bottom:1.5rem}.pl3{padding-left:1.5rem}.py3{padding-top:1.5rem;padding-bottom:1.5rem}.px3{padding-left:1.5rem;padding-right:1.5rem}.p4{padding:2rem}.pt4{padding-top:2rem}.pr4{padding-right:2rem}.pb4{padding-bottom:2rem}.pl4{padding-left:2rem}.py4{padding-top:2rem;padding-bottom:2rem}.px4{padding-left:2rem;padding-right:2rem}.flex{display:-ms-flexbox;display:-webkit-box;display:flex}@media (min-width:40.06rem){.sm-flex{display:-ms-flexbox;display:-webkit-box;display:flex}}@media (min-width:52.06rem){.md-flex{display:-ms-flexbox;display:-webkit-box;display:flex}}@media (min-width:64.06rem){.lg-flex{display:-ms-flexbox;display:-webkit-box;display:flex}}.flex-column{-ms-flex-direction:column;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column}.flex-wrap{-ms-flex-wrap:wrap;flex-wrap:wrap}.items-start{-ms-flex-align:start;-webkit-box-align:start;align-items:flex-start}.items-end{-ms-flex-align:end;-webkit-box-align:end;align-items:flex-end}.items-center{-ms-flex-align:center;-webkit-box-align:center;align-items:center}.items-baseline{-ms-flex-align:baseline;-webkit-box-align:baseline;align-items:baseline}.items-stretch{-ms-flex-align:stretch;-webkit-box-align:stretch;align-items:stretch}.self-start{-ms-flex-item-align:start;align-self:flex-start}.self-end{-ms-flex-item-align:end;align-self:flex-end}.self-center{-ms-flex-item-align:center;-ms-grid-row-align:center;align-self:center}.self-baseline{-ms-flex-item-align:baseline;align-self:baseline}.self-stretch{-ms-flex-item-align:stretch;-ms-grid-row-align:stretch;align-self:stretch}.justify-start{-ms-flex-pack:start;-webkit-box-pack:start;justify-content:flex-start}.justify-end{-ms-flex-pack:end;-webkit-box-pack:end;justify-content:flex-end}.justify-center{-ms-flex-pack:center;-webkit-box-pack:center;justify-content:center}.justify-between{-ms-flex-pack:justify;-webkit-box-pack:justify;justify-content:space-between}.justify-around{-ms-flex-pack:distribute;justify-content:space-around}.justify-evenly{-ms-flex-pack:space-evenly;-webkit-box-pack:space-evenly;justify-content:space-evenly}.content-start{-ms-flex-line-pack:start;align-content:flex-start}.content-end{-ms-flex-line-pack:end;align-content:flex-end}.content-center{-ms-flex-line-pack:center;align-content:center}.content-between{-ms-flex-line-pack:justify;align-content:space-between}.content-around{-ms-flex-line-pack:distribute;align-content:space-around}.content-stretch{-ms-flex-line-pack:stretch;align-content:stretch}.flex-auto{-ms-flex:1 1 auto;-webkit-box-flex:1;flex:1 1 auto;min-width:0;min-height:0}.flex-none{-ms-flex:none;-webkit-box-flex:0;flex:none}.order-0{-ms-flex-order:0;-webkit-box-ordinal-group:1;order:0}.order-1{-ms-flex-order:1;-webkit-box-ordinal-group:2;order:1}.order-2{-ms-flex-order:2;-webkit-box-ordinal-group:3;order:2}.order-3{-ms-flex-order:3;-webkit-box-ordinal-group:4;order:3}.order-last{-ms-flex-order:99999;-webkit-box-ordinal-group:100000;order:99999}.relative{position:relative}.absolute{position:absolute}.fixed{position:fixed}.top-0{top:0}.right-0{right:0}.bottom-0{bottom:0}.left-0{left:0}.z1{z-index:1}.z2{z-index:2}.z3{z-index:3}.z4{z-index:4}.border{border-style:var(--bs-border-style);border-width:var(--bs-border-width)}.border-top{border-top-style:var(--bs-border-style);border-top-width:var(--bs-border-width)}.border-right{border-right-style:var(--bs-border-style);border-right-width:var(--bs-border-width)}.border-bottom{border-bottom-style:var(--bs-border-style);border-bottom-width:var(--bs-border-width)}.border-left{border-left-style:var(--bs-border-style);border-left-width:var(--bs-border-width)}.border,.border-bottom,.border-left,.border-right,.border-top{border-color:var(--bs-border-color-translucent)}.border-none{border:0}.separador{width:1px;display:inline-block;vertical-align:middle;height:20px;background:var(--bs-white);margin:0 20px;opacity:0.5}.rounded{border-radius:var(--bs-border-radius)}.circle{border-radius:50%}.rounded-top{border-radius:var(--bs-border-radius) var(--bs-border-radius) 0 0}.rounded-right{border-radius:0 var(--bs-border-radius) var(--bs-border-radius) 0}.rounded-bottom{border-radius:0 0 var(--bs-border-radius) var(--bs-border-radius)}.rounded-left{border-radius:var(--bs-border-radius) 0 0 var(--bs-border-radius)}.not-rounded{border-radius:0}.hide{position:absolute;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px)}.display-none{display:none}.grey-bg{background-color:var(--bs-light)}.button{color:var(--bs-white);padding:10px 15px;background-color:var(--bs-primary);cursor:pointer;text-decoration:none}.button.green.secondary{color:#414141;background-color:transparent;border:2px solid var(--bs-green)}.button.green.secondary:hover,.button:hover{color:var(--bs-white);background-color:var(--bs-green);-webkit-box-shadow:0 0 15px rgba(33,33,33,0.5);box-shadow:0 0 15px rgba(33,33,33,0.5)}.meta{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.sub-text{text-align:center;font-weight:400;color:var(--bs-light)}.highlight{color:var(--bs-green);font-weight:800}.columns{-webkit-column-width:var(--bs-columns-width);-moz-column-width:var(--bs-columns-width);column-width:var(--bs-columns-width);-webkit-column-gap:var(--bs-columns-gap);-moz-column-gap:var(--bs-columns-gap);column-gap:var(--bs-columns-gap);-webkit-column-rule:var(--bs-border-d);-moz-column-rule:var(--bs-border-d);column-rule:var(--bs-border-d);orphans:1;widows:1}.columns>div{display:inline-block;width:100%}@media (max-width:40rem){.xs-hide{display:none}.columns{--bs-columns-gap:3%}.fixfooter1 .footer-logo{padding-left:2rem;padding-right:2rem}.fixfooter1 .px4,.fixfooter1.px4{padding-left:1rem;padding-right:1rem}.fixfooter1 .sociais .justify-start{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.logo.justify-start{-ms-flex-pack:center;-webkit-box-pack:center;justify-content:center}.sidebar-menu-btn .ml2{margin:0}.fixfooter1 .left-align{text-align:center}}@media (min-width:40.06rem){*,:after,:before{-webkit-transition:all 0.2s linear;transition:all 0.2s linear}.tdep-dropdown-item:hover{text-decoration:underline}.dp-menu1 .dp-menu li:focus,.dp-menu1 .dp-menu li:hover{background-color:var(--bs-roxoazulado)}.dp-menu1 .dp-menu li:focus>a,.dp-menu1 .dp-menu li:hover>a{color:var(--bs-white)}.dp-menu1 ul.dp-menu li{display:-webkit-box;display:-ms-flexbox;display:flex;min-width:220px}.dp-menu1 ul.dp-menu{border-radius:0.4rem;background:#fff;-webkit-box-shadow:-1px 3px 6px rgba(0,0,0,0.6);box-shadow:-1px 3px 6px rgba(0,0,0,0.6);overflow:hidden}.dp-menu1 ul.dp-menu li a{padding:0.45rem 0.9rem}.dp-menu1 .dp-menu li{border-left:0px;display:-webkit-box;display:-ms-flexbox;display:flex;min-width:160px}.dp-menu1 ul ul{display:none;left:0;position:absolute;z-index:1030}.dp-menu1 ul li{position:relative}.dp-menu1 ul li:hover ul{display:block}.dp-menu1 li.especiais{width:196px}.sidebar-menu::-webkit-scrollbar-track,html::-webkit-scrollbar-track{border-radius:0;background-color:var(--bs-gray-400)}.sidebar-menu::-webkit-scrollbar,html::-webkit-scrollbar{width:0.6rem;background-color:var(--bs-gray-400)}.sidebar-menu::-webkit-scrollbar-thumb,html::-webkit-scrollbar-thumb{border-radius:0.6rem;background-color:var(--bs-primary)}.sidebar-menu::-webkit-scrollbar-button:single-button,html::-webkit-scrollbar-button:single-button{background-color:var(--bs-gray-500);display:block;border:0;height:0.8rem;width:0.8rem;border-radius:0.6rem}html::-webkit-scrollbar{width:0.7rem}}@media (min-width:40.06rem) and (max-width:52rem){.sm-hide{display:none}}@media (min-width:52.06rem) and (max-width:64rem){.md-hide{display:none}}@media (min-width:64.06rem){.lg-hide{display:none}}
+    </style>
+    
+    <link rel="manifest" href="/manifest.json" /><meta id="dfp_pgTipo" name="dfp_pgTipo" content="home" /><meta id="dfp_adUnitPage" name="dfp_adUnitPage" content="acidadeon>home" /><meta id="dfp_pgStr" name="dfp_pgStr" content="acidadeon" /><meta id="dfp_Page" name="dfp_Page" content="~acidadeon*" /><meta name="description" content="tudoep, plataforma de conteúdo e notícias que vai falar sobre tudo. Um espaço para fãs de temas variados com acesso a todo tido de conteúdo e nos mais diferentes formatos, confira tudo sobre games, agronegócio, decoração, corrida, saúde, viagens, veículos e automobilismo, tecnologia, o que acontece no Brasil e no mundo e muito mais." /><meta name="keywords" content="tudo ep, tudoep, portal, portal de notícias, site, jornalismo, não a fakenews, fatos, artigos, notícias, esporte, futebol, esportes olímpicos, copa do mundo, política, eleição, eleição 2022, eleições 2022, gastronomia, cozinha, receita, churrasco, games, game, game play, jogos, autos, automóveis, carros, automobilismo, motos, motovelocidade, corrida, on run, corrida de rua, agro, agronegócio, agricultura, viagens, turismo, passaporte, hotéis, hotelaria, bebês, gravidez, nascimento, maternidade, mãe, filho, decor, decoração, arquitetura, design de interiores, faça você mesmo, cupons, compras, economia, descontos, desconto, vagas, vaga de emprego, emprego, empregos, classificados, concurso, currículo, saúde, moda, cotidiano, brasil e mundo, colunistas, opinião, análise, jornal, revistas, novelas, tv, televisão, filmes, cinema, fotos, imagem, som, podcast, tecnologia, vestibular, acidade on, cbn, rádio" /></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+    <meta itemprop="name" content="TudoEP - Campinas - ACidade ON - Você ligado em tudo" />
+    <meta itemprop="description" content="tudoep, plataforma de conteúdo e notícias que vai falar sobre tudo. Um espaço para fãs de temas variados com acesso a todo tido de conteúdo e nos mais diferentes formatos, confira tudo sobre games, agronegócio, decoração, corrida, saúde, viagens, veículos e automobilismo, tecnologia, o que acontece no Brasil e no mundo e muito mais." />
+    <meta itemprop="keywords" content="tudo ep, tudoep, portal, portal de notícias, site, jornalismo, não a fakenews, fatos, artigos, notícias, esporte, futebol, esportes olímpicos, copa do mundo, política, eleição, eleição 2022, eleições 2022, gastronomia, cozinha, receita, churrasco, games, game, game play, jogos, autos, automóveis, carros, automobilismo, motos, motovelocidade, corrida, on run, corrida de rua, agro, agronegócio, agricultura, viagens, turismo, passaporte, hotéis, hotelaria, bebês, gravidez, nascimento, maternidade, mãe, filho, decor, decoração, arquitetura, design de interiores, faça você mesmo, cupons, compras, economia, descontos, desconto, vagas, vaga de emprego, emprego, empregos, classificados, concurso, currículo, saúde, moda, cotidiano, brasil e mundo, colunistas, opinião, análise, jornal, revistas, novelas, tv, televisão, filmes, cinema, fotos, imagem, som, podcast, tecnologia, vestibular, acidade on, cbn, rádio" />
+	
+    
+	<header id="cabecalho" class="z4">
+		
+		<div class="content-width content pt3 pb2">
+			<div class="outer contrast-bg py0 row g-0 justify-start">
+				<button class="col-1 sidebar-menu-btn cursor-pointer flex justify-start items-center" on="tap:sidebar.toggle">
+					<span class="block ml2">
+						☰
+					</span>
+				</button>
+				<h1 class="col logo flex justify-start py1 mb0">
+					<a class="block h-100 relative" href="https://www.tudoep.com/" title="TudoEP">
+						<amp-img layout="fixed" media="(min-width: 470px)" src="https://statics.tudoep.com/tudoep.v56/img/logo_tudoep.svg" class="img-fluid" width="290" height="80" alt="TudoEP - logo" noloading></amp-img>
+						<amp-img layout="fixed" media="(max-width: 469px)" src="https://statics.tudoep.com/tudoep.v56/img/logo_tudoep.svg" class="img-fluid" width="240" height="62" alt="TudoEP - logo" noloading></amp-img>
+						<span class="hide text-lowercase">
+							Tudo EP
+						</span>
+					</a>
+				</h1>
+				<div class="col-1 sm-hide md-hide lg-hide">
+					<span class="hide">
+						ajusta layout mobile
+					</span>
+				</div>
+				<div class="icones-menu col-2 col-md-3 justify-self-end xs-hide pl0" style="--bs-link-color: var(--bs-roxoazulado); right: 0; bottom: 0;">
+                    <ul class="flex flex-wrap justify-end h-100 items-center">
+                        <li class="">
+                            <a class="px1" href="https://www.youtube.com/channel/UCuq5PGOVTqA_gmaCDttXKgQ" target="_blank" rel="noopener" title="tudo ep - Youtube">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-youtube img-fluid" viewBox="0 0 16 16">
+                                    <use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a class="px1" href="https://www.facebook.com/tudoep.oficial" target="_blank" rel="noopener" title="tudo ep - Facebook">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook img-fluid" viewBox="0 0 16 16">
+                                    <use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a class="px1" href="https://www.instagram.com/tudo.ep/" target="_blank" rel="noopener" title="tudo ep - Instagram">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram img-fluid" viewBox="0 0 16 16">
+                                    <use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                         <li class="">
+                            <a class="px1" href="https://www.tiktok.com/@tudoep" target="_blank" rel="noopener" title="tudo ep - tiktok">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok img-fluid" viewBox="0 0 16 16">
+                                    <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="border-left ml2">
+                            <a class="pl2" href="https://www.tudoep.com/busca/avancada/" title="tudo ep - Busca avançada">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search img-fluid" viewBox="0 0 16 16">
+                                    <use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#search"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+			</div>
+		</div>
+		<hr class="bg-tudoep my0" style="opacity: 1; height: 2px;" />
+		<!-- [START] MENU HORIZONTAL "Secondlevel", acesso rápido aos sites de nicho -->
+		<nav class="tdep-quicklinks w-100 border-bottom dp-menu1 xs-hide">
+			<div class="tdep-scrollable content content-width py0" style="overflow: inherit;">
+				<ul class="tdep-Indicator relative w-100 p0 m0 flex justify-center">
+					<li class="tdep-section relative inline-block" style="border-left: 0;">
+						<a class="tdep-button fw-bold tdep-displayInitial block p3" href="https://www.acidadeon.com/" title="Notícias"><span itemprop="name">Notícias</span></a>
+						
+						<ul class="dp-menu pl0">
+							<li><a href="https://www.acidadeon.com/" itemprop="url" title="Acidade ON"><span itemprop="name">Acidade ON</span></a></li>
+							<ol class="pl2">
+								<li><a href="https://www.acidadeon.com/araraquara/" itemprop="url" title="" target="_blank" rel="noopener"><span itemprop="name">Araraquara</span></a></li>
+								<li><a href="https://www.acidadeon.com/campinas/" itemprop="url" title="" target="_blank" rel="noopener"><span itemprop="name">Campinas</span></a></li>
+								<li><a href="https://www.acidadeon.com/ribeiraopreto/" itemprop="url" title="" target="_blank" rel="noopener"><span itemprop="name">Ribeirão Preto</span></a></li>
+								<li><a href="https://www.acidadeon.com/saocarlos/" itemprop="url" title="" target="_blank" rel="noopener"><span itemprop="name">São Carlos</span></a></li>
+							</ol>
+							<li class="mt-3 m0"><a href="#" itemprop="url" title="Rádio CBN"><span itemprop="name">Rádio CBN</span></a></li>
+							<ol class="pl2">
+								<li><a href="https://www.cbnararaquara.com.br/" itemprop="url" title="" target="_blank" rel="noopener"><span itemprop="name">Araraquara</span></a></li>
+								<li><a href="https://www.cbnribeirao.com.br/" itemprop="url" title="" target="_blank" rel="noopener"><span itemprop="name">Ribeirão Preto</span></a></li>
+								<li><a href="https://www.cbnsaocarlos.com.br/" itemprop="url" title="" target="_blank" rel="noopener"><span itemprop="name">São Carlos</span></a></li>
+							</ol>
+							<li class="mt-3 m0"><a href="https://www.tudoep.com/tudo-noticias/sul-de-minas/" itemprop="url" title=""><span itemprop="name">Sul de Minas</span></a></li>
+						</ul>
+					</li>
+
+					<li class="tdep-section relative inline-block">
+						<a class="tdep-button fw-bold tdep-displayInitial block p3" href="https://www.tudoep.com/tudo-agro/" itemprop="url" title=""><span itemprop="name"><span itemprop="name">Agro</span></span></a>
+						<ul class="dp-menu pl0">
+							<li><a href="https://www.tudoep.com/tudo-agro/no-pe-do-cafe/" itemprop="url" title=""><span itemprop="name">No pé do café</span></a></li>
+						</ul>
+					</li>
+
+					<li class="tdep-section relative inline-block">
+						<a class="tdep-button fw-bold tdep-displayInitial block p3" href="https://www.tudoep.com/tudo-auto/" itemprop="url" title=""><span itemprop="name"><span itemprop="name">Auto</span></span></a></li>
+
+					<li class="tdep-section relative inline-block">
+						<a class="tdep-button fw-bold tdep-displayInitial block p3" href="https://www.tudoep.com/tudo-cult/" itemprop="url" title=""><span itemprop="name">Cult</span></a>
+						<ul class="dp-menu pl0">
+							<li><a href="https://www.tudoep.com/tudo-cult/horoscopo/" itemprop="url" title=""><span itemprop="name">Horóscopo</span></a></li>
+							<li><a href="https://www.tudoep.com/tudo-cult/viu-essa/" itemprop="url" title=""><span itemprop="name">Viu essa?</span></a></li>
+						</ul>
+					</li>
+
+					<li class="tdep-section relative inline-block">
+						<a class="tdep-button fw-bold tdep-displayInitial block p3" href="https://www.tudoep.com/tudo-elas/" itemprop="url" title=""><span itemprop="name"><span itemprop="name">Elas</span></span></a></li>
+
+					<li class="tdep-section relative inline-block">
+						<a class="tdep-button fw-bold tdep-displayInitial block p3" href="https://www.tudoep.com/tudo-games/" itemprop="url" title=""><span itemprop="name"><span itemprop="name">Games</span></span></a>
+						<ul class="dp-menu pl0">
+							<li><a href="https://www.tudoep.com/tudo-games/game-on/" itemprop="url" title=""><span itemprop="name">Game ON</span></a></li>
+						</ul>
+					</li> 
+
+					<li class="tdep-section relative inline-block">
+						<a class="tdep-button fw-bold tdep-displayInitial block p3" href="https://www.tudoep.com/tudo-inovacao/" itemprop="url" title=""><span itemprop="name"><span itemprop="name">Inovação</span></span></a></li>
+
+					<li class="tdep-section relative inline-block">
+						<a class="tdep-button fw-bold tdep-displayInitial block p3" href="https://www.tudoep.com/tudo-receitas/" itemprop="url" title=""><span itemprop="name">Receitas</span></a>
+						<ul class="dp-menu pl0">
+							<li><a href="https://www.tudoep.com/tudo-receitas/churrasqueadas/" itemprop="url" title=""><span itemprop="name">Churrasqueadas</span></a></li>
+						</ul>
+					</li>
+
+					<li class="tdep-section relative inline-block">
+						<span class="tdep-button fw-bold tdep-displayInitial block p3" itemprop="name">Sertanejo</span>
+						<ul class="dp-menu pl0">
+							<li><a href="https://www.movimentocountry.com/" itemprop="url" title="" target="_blank" rel="noopener"><span itemprop="name">Movimento Country</span></a></li>
+						</ul>
+					</li>
+
+					<li class="tdep-section relative inline-block">
+						<a class="tdep-button fw-bold tdep-displayInitial block p3" href="https://www.tudoep.com/tudo-valor/" itemprop="url" title=""><span itemprop="name">Valor</span></a>
+						<ul class="dp-menu pl0">
+							<li><a href="https://www.tudoep.com/tudo-valor/dinheiro-com-voce/" itemprop="url" title=""><span itemprop="name">Dinheiro com Você</span></a></li>
+						</ul>
+					</li>
+
+					<li class="tdep-section relative inline-block">
+						<a class="tdep-button fw-bold tdep-displayInitial block p3" href="https://www.tudoep.com/tudo-viagens/" itemprop="url" title=""><span itemprop="name">Viagens</span></a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- [END] MENU HORIZONTAL "Secondlevel" -->
+
+	</header>
+	<amp-sidebar id="sidebar" class="ampstart-sidebar" layout="nodisplay" side="left">
+
+		<div class="sidebarView">
+				<div class="amp-custom-sidebar-header flex items-center ampstart-sidebar-header border-bottom py2" style="--bs-border-width: 2px; --bs-border-color-translucent: var(--bs-roxoazulado);">
+
+					<div class="sidebar-nav-item p0 hide" role="label">
+						<h2 class="h5 offcanvas-title " id="navlabel">
+							Menu
+						</h2>
+					</div>
+					<a href="https://www.tudoep.com/busca/avancada/" class="xs-hide fw-bolder" itemprop="url" title="busca" style="font-size: 0.875em">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search img-fluid" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>&nbsp;&nbsp;
+                        Busca
+                    </a>
+					<ul class="flex flex-wrap justify-center mb0 sm-hide md-hide lg-hide py1 pl1" style="--bs-link-color: var(--bs-roxoazulado);">
+                            <li class="">
+                                <a class="block px1" href="https://www.youtube.com/channel/UCuq5PGOVTqA_gmaCDttXKgQ" target="_blank" rel="noopener" title="tudo ep - Youtube">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-youtube img-fluid" viewBox="0 0 16 16">
+                                        <use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#youtube" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="block px1" href="https://www.facebook.com/tudoep.oficial" target="_blank" rel="noopener" title="tudo ep - Facebook">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook img-fluid" viewBox="0 0 16 16">
+                                        <use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#facebook" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="block px1" href="https://www.instagram.com/tudo.ep/" target="_blank" rel="noopener" title="tudo ep - Instagram">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram img-fluid" viewBox="0 0 16 16">
+                                        <use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#instagram" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="block px1" href="https://twitter.com/tudo_ep" target="_blank" rel="noopener" title="tudo ep - Twitter">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter img-fluid" viewBox="0 0 16 16">
+                                        <use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#twitter" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="ml3">
+                                <a class="border-left p1 pl3" href="https://www.tudoep.com/busca/avancada/" title="tudo ep - Busca avançada" style="--bs-border-width: 1px; --bs-border-color-translucent: var(--bs-gray-400);">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search img-fluid" viewBox="0 0 16 16">
+                                        <use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#search"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+					
+
+					<div id="sidebar-close"
+						role="button"
+						aria-label="close sidebar"
+						on="tap:sidebar.toggle"
+						tabindex="0"
+						class="ampstart-navbar-trigger items-start p1"
+					>
+						✕
+					</div>
+				</div>
+				<br />
+
+				<div class="sidebar-menu tdepScrollView" style="font-weight: 700;">
+					<h2 class="h4 text-primary fw-bolder p2">
+						Notícias
+					</h2>
+					<amp-accordion layout="container" class="ampstart-dropdown px2 border-bottom mb2" style="border-width: 2px; border-color: var(--bs-roxoazulado);" expand-single-section>
+						<!-- Start Dropdown-inline -->
+						<section class="sidebar-nav-item ampstart-nav-item ampstart-nav-dropdown relative border-bottom border-top">
+							<header class="sidebar-nav-link header pr0 bg-transparent">
+								<div class="flex items-center">
+									<!-- <i class="fas fa-map-marker-alt left pr2"></i> -->
+									<div class="bg-light rounded overflow-hidden d-flex" style="width: 3rem; height: 3rem;">
+                                        <amp-img layout="responsive" class="img-fluid mx-auto" src="https://www.acidadeon.com/img/logo2021/logo_acidadeon2021_isotipo2.svg" width="60" height="60" alt="" style="object-fit: fill; width: 80%" noloading></amp-img>
+                                    </div>
+									<span class="text-lowercase fw-bolder ml2">
+										ACidadde ON
+									</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-right img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-right"></use>
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-down img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-down"></use>
+									</svg>
+								</div>
+							</header>
+							<ul class="ampstart-dropdown-items list-reset pl2 ml3 mt1">
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.acidadeon.com/araraquara/">Araraquara</a>
+								</li>
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.acidadeon.com/campinas/">Campinas</a>
+								</li>
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.acidadeon.com/ribeiraopreto/">Ribeirão Preto</a>
+								</li>
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.acidadeon.com/saocarlos/">São Carlos</a>
+								</li>
+							</ul>
+						</section>
+						<!-- End Dropdown-inline -->
+						<!-- Start Dropdown-inline -->
+						<section class="sidebar-nav-item ampstart-nav-item ampstart-nav-dropdown relative border-bottom">
+							<header class="sidebar-nav-link header pr0 bg-transparent">
+								<div class="flex items-center">
+									<!-- <i class="fas fa-map-marker-alt left pr2"></i> -->
+									<div class="rounded overflow-hidden d-flex" style="width: 3rem; height: 3rem; background-color: var(--bs-podcasts)">
+                                        <amp-img layout="responsive" class="img-fluid mx-auto" src="https://www.tudoep.com/img/logo-cbn_branco.svg" width="60" height="60" alt="" style="object-fit: fill; width: 80%;" noloading></amp-img>
+                                    </div>
+									<span class="text-uppercase fw-bolder ml2">
+										CBN
+									</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-right img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-right"></use>
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-down img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-down"></use>
+									</svg>
+								</div>
+							</header>
+							<ul class="ampstart-dropdown-items list-reset pl2 ml3 mt1">
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.cbnararaquara.com.br/" itemprop="url" title="CBN Araraquara">Araraquara</a>
+								</li>
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.cbnribeirao.com.br/" itemprop="url" title="CBN Ribeirão Preto">Ribeirão Preto</a>
+								</li>
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.cbnsaocarlos.com.br/" itemprop="url" title="CBN São Carlos">
+                                            <span itemprop="name">São Carlos</a>
+								</li>
+							</ul>
+						</section>
+						<!-- End Dropdown-inline -->
+						<!-- Start Dropdown-inline -->
+						<section class="sidebar-nav-item ampstart-nav-item ampstart-nav-dropdown relative">
+							<header class="sidebar-nav-link header pr0 bg-transparent">
+								<div class="flex items-center">
+									<!-- <i class="fas fa-map-marker-alt left pr2"></i> -->
+									<div class="rounded overflow-hidden d-flex bg-light" style="width: 3rem; height: 3rem;">
+                                        <amp-img layout="responsive" class="img-fluid mx-auto" src="https://www.tudoep.com/img/logo_tudoep_isotipo.svg" width="60" height="60" alt="" style="object-fit: fill; width: 80%;" noloading></amp-img>
+                                    </div>
+									<span class="fw-bolder ml2">
+										Sul de Minas
+									</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-right img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-right"></use>
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-down img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-down"></use>
+									</svg>
+								</div>
+							</header>
+							<ul class="ampstart-dropdown-items list-reset pl2 ml3 mt1">
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-noticias/sul-de-minas/" itemprop="url" title="Tudo EP - Sul de Minas">
+										<span class="text-lowercase fw-bolder">
+											Tudo EP
+										</span>
+										 - Sul de Minas
+									</a>
+								</li>
+							</ul>
+						</section>
+						<!-- End Dropdown-inline -->
+					</amp-accordion>
+					<amp-accordion layout="container" class="ampstart-dropdown px2" expand-single-section>
+						<!-- Start Dropdown-inline -->
+						<section class="sidebar-nav-item ampstart-nav-item ampstart-nav-dropdown relative border-bottom">
+							<header class="sidebar-nav-link header pr0 bg-transparent">
+								<div class="flex items-center">
+									<span>Tudo Agro</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-right img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-right"></use>
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-down img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-down"></use>
+									</svg>
+								</div>
+							</header>
+							<ul class="ampstart-dropdown-items list-reset mx0 p0 mt2">
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-agro/" itemprop="url" title="Tudo Agro">
+										<span class="text-lowercase fw-bolder">
+											Tudo
+										</span>
+										Agro
+									</a>
+								</li>
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-agro/no-pe-do-cafe/" itemprop="url" title="No pé do café">
+										<span>No pé do café</span>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<section class="sidebar-nav-item ampstart-nav-item ampstart-nav-dropdown relative border-bottom">
+							<header class="sidebar-nav-link header pr0 bg-transparent">
+								<div class="flex items-center">
+									<span>Tudo Bebês</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-right img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-right"></use>
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-down img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-down"></use>
+									</svg>
+								</div>
+							</header>
+							<ul class="ampstart-dropdown-items list-reset mx0 p0 mt2">
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-bebes/" itemprop="url" title="Tudo Bebês">
+										<span class="text-lowercase fw-bolder">
+											Tudo 
+										</span>
+										Bebês
+									</a>
+								</li>
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-bebes/pod-falar-mae/" itemprop="url" title="Podfalar, mãe!">
+										<span>Podfalar, mãe!</span>
+									</a>
+								</li>
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-bebes/gravidez-e-bebe/" itemprop="url" title="Gravidez e bebê">
+										<span>Gravidez e bebê</span>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<section class="sidebar-nav-item ampstart-nav-item ampstart-nav-dropdown relative border-bottom">
+							<header class="sidebar-nav-link header pr0 bg-transparent">
+								<div class="flex items-center">
+									<span>Tudo Corrida</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-right img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-right"></use>
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-down img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-down"></use>
+									</svg>
+								</div>
+							</header>
+							<ul class="ampstart-dropdown-items list-reset mx0 p0 mt2">
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-corrida/" itemprop="url" title="Tudo Corrida">
+										<span class="text-lowercase fw-bolder">
+											Tudo 
+										</span>
+										Corrida
+									</a>
+								</li>
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-corrida/on-run/" itemprop="url" title="On Run">
+										<span>On Run</span>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<!-- End Dropdown-inline -->
+						<!-- Start Dropdown-inline -->
+						<section class="sidebar-nav-item ampstart-nav-item ampstart-nav-dropdown relative border-bottom">
+							<header class="sidebar-nav-link header pr0 bg-transparent">
+								<div class="flex items-center">
+									<span>Tudo Cult</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-right img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-right"></use>
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-down img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-down"></use>
+									</svg>
+								</div>
+							</header>
+							<ul class="ampstart-dropdown-items list-reset mx0 p0 mt2">
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-cult/" itemprop="url" title="Tudo Cult">
+										<span class="text-lowercase fw-bolder">
+											Tudo 
+										</span>
+										Cult
+									</a>
+								</li>
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-cult/horoscopo/" itemprop="url" title="Horóscopo">
+										<span itemprop="name">Horóscopo</span>
+									</a>
+								</li>
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-cult/viu-essa/" itemprop="url" title="Viu essa?">
+										<span>Viu essa?</span>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<!-- End Dropdown-inline -->
+						<!-- Start Dropdown-inline -->
+						<section class="sidebar-nav-item ampstart-nav-item ampstart-nav-dropdown relative border-bottom">
+							<header class="sidebar-nav-link header pr0 bg-transparent">
+								<div class="flex items-center">
+									<span>Tudo Educação</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-right img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-right"></use>
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-down img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-down"></use>
+									</svg>
+								</div>
+							</header>
+							<ul class="ampstart-dropdown-items list-reset mx0 p0 mt2">
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-educacao/" itemprop="url" title="Tudo Educação">
+										<span class="text-lowercase fw-bolder">
+											Tudo 
+										</span>
+										Educação
+									</a>
+								</li>
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.virandobixo.com.br/" itemprop="url" title="Virando Bixo" target="_blank" rel="noopener">
+										<span itemprop="name">Virando Bixo</span>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<!-- End Dropdown-inline -->
+						<!-- Start Dropdown-inline -->
+						<section class="sidebar-nav-item ampstart-nav-item ampstart-nav-dropdown relative border-bottom">
+							<header class="sidebar-nav-link header pr0 bg-transparent">
+								<div class="flex items-center">
+									<span>Tudo Esporte</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-right img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-right"></use>
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-down img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-down"></use>
+									</svg>
+								</div>
+							</header>
+							<ul class="ampstart-dropdown-items list-reset mx0 p0 mt2">
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-esporte/" itemprop="url" title="Tudo Esporte">
+										<span class="text-lowercase fw-bolder">
+											Tudo 
+										</span>
+										Esporte
+									</a>
+								</li>
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-esporte/derbicampineiro/" target="_blank" itemprop="url" title="Derbi Campineiro">
+										<span itemprop="name">Virando Bixo</span>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<!-- End Dropdown-inline -->
+						<!-- Start Dropdown-inline -->
+						<section class="sidebar-nav-item ampstart-nav-item ampstart-nav-dropdown relative border-bottom">
+							<header class="sidebar-nav-link header pr0 bg-transparent">
+								<div class="flex items-center">
+									<span>Tudo Games</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-right img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-right"></use>
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-down img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-down"></use>
+									</svg>
+								</div>
+							</header>
+							<ul class="ampstart-dropdown-items list-reset mx0 p0 mt2">
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-games/" itemprop="url" title="Tudo Games">
+										<span class="text-lowercase fw-bolder">
+											Tudo 
+										</span>
+										Games
+									</a>
+								</li>
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-games/game-on/" itemprop="url" title="Game On">
+										<span itemprop="name">Game On</span>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<!-- End Dropdown-inline -->
+						<!-- Start Dropdown-inline -->
+						<section class="sidebar-nav-item ampstart-nav-item ampstart-nav-dropdown relative border-bottom">
+							<header class="sidebar-nav-link header pr0 bg-transparent">
+								<div class="flex items-center">
+									<span>Tudo Receitas</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-right img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-right"></use>
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-down img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-down"></use>
+									</svg>
+								</div>
+							</header>
+							<ul class="ampstart-dropdown-items list-reset mx0 p0 mt2">
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-receitas/" itemprop="url" title="Tudo Receitas">
+										<span class="text-lowercase fw-bolder">
+											Tudo 
+										</span>
+										Receitas
+									</a>
+								</li>
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-receitas/churrasqueadas/" itemprop="url" title="Churrasqueadas">
+										<span itemprop="name">Churrasqueadas</span>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<!-- End Dropdown-inline -->
+						<!-- Start Dropdown-inline -->
+						<section class="sidebar-nav-item ampstart-nav-item ampstart-nav-dropdown relative border-bottom">
+							<header class="sidebar-nav-link header pr0 bg-transparent">
+								<div class="flex items-center">
+									<span>Tudo Sertanejo</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-right img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-right"></use>
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-down img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-down"></use>
+									</svg>
+								</div>
+							</header>
+							<ul class="ampstart-dropdown-items list-reset mx0 p0 mt2">
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.movimentocountry.com/" itemprop="url" title="Movimento Country" target="_blank" rel="noopener">
+										<span itemprop="name">Movimento Country</span>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<!-- End Dropdown-inline -->
+						<!-- Start Dropdown-inline -->
+						<section class="sidebar-nav-item ampstart-nav-item ampstart-nav-dropdown relative border-bottom">
+							<header class="sidebar-nav-link header pr0 bg-transparent">
+								<div class="flex items-center">
+									<span>Tudo Valor</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-right img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-right"></use>
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-down img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-down"></use>
+									</svg>
+								</div>
+							</header>
+							<ul class="ampstart-dropdown-items list-reset mx0 p0 mt2">
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-valor/" itemprop="url" title="Tudo Valor">
+										<span class="text-lowercase fw-bolder">
+											Tudo 
+										</span>
+										Valor
+									</a>
+								</li>
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/tudo-valor/dinheiro-com-voce/" itemprop="url" title="Dinheiro Com Você">
+										<span itemprop="name">Dinheiro Com Você</span>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<!-- End Dropdown-inline -->
+						<!-- Start Dropdown-inline -->
+						<section class="sidebar-nav-item ampstart-nav-item ampstart-nav-dropdown relative">
+							<header class="sidebar-nav-link header pr0 bg-transparent">
+								<div class="flex items-center">
+									<span>Especiais</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-right img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-right"></use>
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi ml-auto bi-chevron-down img-fluid" viewBox="0 0 16 16">
+										<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-down"></use>
+									</svg>
+								</div>
+							</header>
+							<ul class="ampstart-dropdown-items list-reset mx0 p0 mt2">
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/especiais/educa-mais-cast/" itemprop="url" title="Educa Mais Cast">
+										<span itemprop="name">Educa Mais Cast</span>
+									</a>
+								</li>
+								<li class="ampstart-dropdown-item">
+									<a class="block tdep-dropdown-item pb1" href="https://www.tudoep.com/especiais/rota-do-arraia/" itemprop="url" title="Rota do Arraiá">
+										<span>Rota do Arraiá</span>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<!-- End Dropdown-inline -->
+					</amp-accordion>
+					<ul class="py0 px2">
+						<li class="border-top">
+							<a class="sidebar-nav-item block sidebar-nav-link" href="https://www.tudoep.com/tudo-auto/" itemprop="url" title="Tudo Auto">
+								<span itemprop="name">Tudo Auto</span>
+							</a>
+						</li>
+						<li class="border-top">
+							<a class="sidebar-nav-item block sidebar-nav-link" href="https://www.tudoep.com/tudo-decor/" itemprop="url" title="Tudo Decoração">
+								<span itemprop="name">Tudo Decoração</span>
+							</a>
+						</li>
+						<li class="border-top">
+							<a class="sidebar-nav-item block sidebar-nav-link" href="https://www.tudoep.com/tudo-elas/" itemprop="url" title="Tudo Elas">
+								<span itemprop="name">Tudo Elas</span>
+							</a>
+						</li>
+						<li class="border-top">
+							<a class="sidebar-nav-item block sidebar-nav-link" href="https://www.tudoep.com/tudo-inovacao/" itemprop="url" title="Tudo Inovação">
+								<span itemprop="name">Tudo Inovação</span>
+							</a>
+						</li>
+						<li class="border-top">
+							<a class="sidebar-nav-item block sidebar-nav-link" href="https://www.tudoep.com/tudo-viagens/" itemprop="url" title="Tudo Viagens">
+								<span itemprop="name">Tudo Viagens</span>
+							</a>
+						</li>
+						<li class="border-top">
+							<a class="sidebar-nav-item block sidebar-nav-link" href="https://www.tudoep.com/conteudo-patrocinado/" itemprop="url" title="Conteúdo Patrocinado">
+								<span itemprop="name">Conteúdo Patrocinado</span>
+							</a>
+						</li>
+						<li class="border-top">
+							<a class="sidebar-nav-item block sidebar-nav-link" href="https://www.tudoep.com/institucional/" itemprop="url" title="Institucional">
+								<span itemprop="name">Institucional</span>
+							</a>
+						</li>
+						<li class="border-top">
+							<a class="sidebar-nav-item block sidebar-nav-link" href="https://www.tudoep.com/faleconosco/" itemprop="url" title="Fale Conosco">
+								<span itemprop="name">Fale Conosco</span>
+							</a>
+						</li>
+						<li class="border-top">
+							<a class="sidebar-nav-item block sidebar-nav-link" href="https://negocios.empresaspioneiras.com.br/Internet/nossos-sites/tudoep/" itemprop="url" title="Mídia Kit" target="_blank" rel="noopener">
+								<span itemprop="name">Mídia Kit</span>
+							</a>
+						</li>
+						<li class="border-top">
+							<a class="sidebar-nav-item block sidebar-nav-link" href="https://www.empresaspioneiras.com.br/privacidade" itemprop="url" title="Aviso legal" target="_blank" rel="noopener">
+								<span itemprop="name">Aviso Legal</span>
+							</a>
+						</li>
+						<!-- MAIS ESPAÇO NO FINAL DA LISTA -->
+						<li class="sidebar-nav-item">
+							<span class="hide">
+								layout
+							</span>
+							<br />
+							<br />
+							<br />
+							<!-- <br /> -->
+						</li>
+					</ul>
+				</div>
+
+		</div>
+
+	</amp-sidebar>
+	<section  class="target" style="z-index: -1;">
+		<a class="target-anchor" id="top">
+			<span class="hide">
+				topo do site
+			</span>
+		</a>
+		<amp-position-observer on="enter:hideAnim.start; exit:showAnim.start" layout="nodisplay">
+		</amp-position-observer>
+	</section>
+	
+	<!-- Google Tag Manager -->
+	<amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-N7QN55J&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
+
+    <main id="corpo" class="">
+        
+    
+
+
+        
+    
+
+
+        
+    
+    <section id="section1" class="container pt-3"><div class="row gy-3"><div class="col-12 cor-ref-home"><!--bc_amp_manchete_a--><div class="destaque-item-imagem"><a href="https://www.tudoep.com/tudo-viagens/NOT,0,0,1838142,veja-dicas-de-como-gastar-menos-em-nova-york.aspx" title="Cidade promove até fevereiro descontos em hospedagens, restaurantes e até em ingressos da Broadway. (Foto: Divulgação) - Foto: Divulgação" data-track-category="Box - Notícias" data-track-event="click" data-track-label="Link: Imagem Manchete - Notícia: Veja dicas de como gastar menos em Nova York"><amp-img src="https://emc-src.eptv.com.br/dbimagens/cidade_promove_1200x675_20012023204557.jpg" width="636" height="358" class="img-fluid w-100 rounded-3 lazyload" alt="Cidade promove até fevereiro descontos em hospedagens, restaurantes e até em ingressos da Broadway. (Foto: Divulgação) - Foto: Divulgação" title="Cidade promove até fevereiro descontos em hospedagens, restaurantes e até em ingressos da Broadway. (Foto: Divulgação) - Foto: Divulgação" /></a></div><div class="destaque-item-cont"><h2 class="display-5 fw-bolder lh-1 mb-4"><span class="no-margin-top" itemprop="headline"><a itemprop="url" class="display" href="https://www.tudoep.com/tudo-viagens/NOT,0,0,1838142,veja-dicas-de-como-gastar-menos-em-nova-york.aspx" data-track-category="Box - Notícias" data-track-event="click" data-track-label="Link: Notícia - Veja dicas de como gastar menos em Nova York"><span class="no-margin-top">Veja dicas de como gastar menos em Nova York</span></a></span></h2><meta itemprop="description" content="Cidade promove até fevereiro descontos em hospedagens, restaurantes e até em ingressos da Broadway" /></div></div></div></section><section id="section2" class="container pt-3"><div class="row gy-3"><div class="col-12 cor-ref-home"><!--bc_amp_destaque_a--><article class="intbox box-destaque clearfix"><div class="item-thumbnail-float"><a class="img-thumb-zoom" href="https://www.tudoep.com/tudo-cult/horoscopo/NOT,0,0,1837616,horoscopo-confira-a-previsao-para-os-signos-nesta-terca-feira-31-01.aspx" title="" data-track-category="Box - Notícias" data-track-event="click" data-track-label="Link: Imagem Destaque - Notícia: Horóscopo: confira a previsão para os signos nesta terça-feira (31/01)"><amp-img src="https://emc-src.eptv.com.br/dbimagens/horoscopo_terca_1200x675_06012023152625.jpg" width="" height="288" class="img-left lazyload" alt="Horóscopo: confira a previsão para os signos nesta terça-feira (31/01)" title="Horóscopo: confira a previsão para os signos nesta terça-feira (31/01)" /></a></div><div class="box300-cont"><div class="materia-assunto"><span>PREVISÃO</span></div><div class="info-box"><h2><a itemprop="url" class="" href="https://www.tudoep.com/tudo-cult/horoscopo/NOT,0,0,1837616,horoscopo-confira-a-previsao-para-os-signos-nesta-terca-feira-31-01.aspx" data-track-category="Box - Notícias" data-track-event="click" data-track-label="Link: Notícia - Horóscopo: confira a previsão para os signos nesta terça-feira (31/01)"><span class="no-margin-top">Horóscopo: confira a previsão para os signos nesta terça-feira (31/01)</span></a></h2></div></div></article></div></div></section>
+
+
+
+    </main>
+
+    
+    
+
+
+
+    <footer id="footer" class="footer rodape container-fluid bg-light px0 pt3 mt5" itemscope itemtype="http://schema.org/WPFooter" style="border-top: 4px solid var(--bs-roxoazulado);">
+        <meta itemprop="name" content="Webpage footer for TudoEP - Campinas - ACidade ON - Você ligado em tudo" />
+        <meta itemprop="copyrightYear" content="2023" />
+        <meta itemprop="copyrightHolder" content="EP - Empresas Pioneiras" />
+
+        
+<section class="col-xxl-11 mx-auto px4 pt2 pb3 fixfooter1">
+    <div class="row justify-center gy-4 pb5 gx-md-5">
+        <div class="footer-col1 col-md-3 col-xxl-2 mb2">
+            <div class="pb3">
+                <a class="footer-logo block pb2" href="/" target="_top" title="tudoep">
+					<amp-img layout="responsive" src="https://statics.tudoep.com/tudoep.v56/img/logo_tudoep.svg" width="270" height="90" alt="TudoEP - logo"></amp-img>
+                    <span class="hide">tudoep</span>
+                </a>
+                <div class="no-padding about-copyright" style="line-height: 1.1;">
+                    <span class="small">tudoep © copyright 2022. 
+                        É proibida a reprodução do conteúdo desta página em qualquer meio de comunicação, eletrônico ou impresso sem autorização escrita da Empresa Paulista de Notícias Ltda.
+                    </span>
+                </div>
+            </div>
+            <div class="sociais my5 py4 border-top border-bottom left-align" style="--bs-link-color: var(--bs-roxoazulado);">
+                <p class="h4 letter-s0 siganos mb3">Siga-nos</p>
+				<div class="flex justify-start">
+					<a class="d-inline-block pr2 py1 pl0" href="https://www.youtube.com/channel/UCuq5PGOVTqA_gmaCDttXKgQ" target="_blank" rel="noopener" title="tudo ep - Youtube">
+						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-youtube img-fluid" viewBox="0 0 16 16">
+							<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#youtube"></use>
+						</svg>
+					</a>
+					<a class="d-inline-block px2 py1" href="https://www.facebook.com/tudoep.oficial/" target="_blank" title="tudo ep - Facebook" rel="noopener">
+						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook img-fluid" viewBox="0 0 16 16">
+							<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#facebook"></use>
+						</svg>
+					</a>
+					<a class="d-inline-block px2 py1" href="https://www.instagram.com/tudo.ep/" target="_blank" title="tudo ep - Instagram" rel="noopener">
+						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram img-fluid" viewBox="0 0 16 16">
+							<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#instagram"></use>
+						</svg>
+					</a>
+					<a class="d-inline-block pl2 py1" href="https://twitter.com/tudo_ep" target="_blank" rel="noopener" title="tudo ep - Twitter">
+						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-twitter img-fluid" viewBox="0 0 16 16">
+							<use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#twitter"></use>
+						</svg>
+					</a>
+				</div>
+            </div>
+            <div class="contato mb4 pt4 left-align">
+                <p class="h4 letter-s0 mb3">Contato</p>
+                <a class="" href="https://wa.me/19971598294" target="_blank" title="">
+                    <span>
+                        +55 (19) 9 7159.8294 &nbsp;
+                    </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp img-fluid mb1" style="color: #22a118;" viewBox="0 0 16 16">
+                        <use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#whatsapp"></use>
+                    </svg>
+                </a>
+                <br>
+                <a class="pt2 lh-1" href="mailto:produtos@acidadeon.com" title="">
+                    <span style="word-break: break-all;">
+						<!-- &nbsp; -->
+                        tudoep@tudoep.com
+                    </span>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md mb0 px4 pt2">
+            <span class="block h5">Mapa do site...</span>
+            <br>
+            <div class="block columns" style="column-rule: unset;">
+                <div class="col link-news mb0">
+                    <span class="block h4 letter-s0 m0">ACidade On
+                    </span>
+                    <ul class="list-unstyled no-padding-top p0">
+                        <li><a class="text-decoration-none" href="https://www.acidadeon.com/araraquara/" title="" rel="noopener" target="_blank">Araraquara</a></li>
+                        <li><a class="text-decoration-none" href="https://www.acidadeon.com/campinas/" title="" rel="noopener" target="_blank">Campinas</a></li>
+                        <li><a class="text-decoration-none" href="https://www.acidadeon.com/ribeiraopreto/" title="" rel="noopener" target="_blank">Ribeirão Preto</a></li>
+                        <li><a class="text-decoration-none" href="https://www.acidadeon.com/saocarlos/" title="" rel="noopener" target="_blank">São Carlos</a></li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col link-news mb0">
+                    <span class="block h4 letter-s0 m0">Rádio CBN
+                    </span>
+                    <ul class="list-unstyled no-padding-top p0">
+                        <li><a class="text-decoration-none" href="https://www.cbnararaquara.com.br/" title="" rel="noopener" target="_blank">Araraquara</a></li>
+                        <li><a class="text-decoration-none" href="https://www.cbnribeirao.com.br/" title="" rel="noopener" target="_blank">Ribeirão Preto</a></li>
+                        <li><a class="text-decoration-none" href="https://www.cbnsaocarlos.com.br/" title="" rel="noopener" target="_blank">São Carlos</a></li>
+                    </ul>
+                    <br>
+
+                </div>
+                <div class="col link-news mb0">
+                    <a class="block h4 letter-s0 m0" href="/tudo-agro/" itemprop="url" title="Tudo Agro">Tudo Agro</a>
+                    <ul class="list-unstyled no-padding-top p0">
+                        <li><a class="text-decoration-none" href="/tudo-agro/no-pe-do-cafe/">No Pé do Café</a></li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col link-news mb0">
+                    <a class="block h4 letter-s0 m0" href="/tudo-auto/" itemprop="url" title="Tudo Auto">Tudo Auto</a>
+                    <br>
+                </div>
+                <div class="col link-news mb0">
+                    <a class="block h4 letter-s0 m0" href="/tudo-bebes/" itemprop="url" title="Tudo Bebê">Tudo Bebês</a>
+                    <ul class="list-unstyled no-padding-top p0">
+                        <li><a class="text-decoration-none" href="/tudo-bebes/gravidez-e-bebe/">Gravidez e Bebê</a></li>
+                        <li><a class="text-decoration-none" href="/tudo-bebes/pod-falar-mae/" itemprop="url" title="Podfalar, mãe!">Podfalar, mãe!</a></li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col link-news mb0">
+                    <a class="block h4 letter-s0 m0" href="/tudo-corrida/" itemprop="url" title="Tudo Corrida">Tudo Corrida</a>
+                    <ul class="list-unstyled no-padding-top p0">
+                        <li><a class="text-decoration-none" href="/tudo-corrida/on-run/">ON Run</a></li>
+                    </ul>
+                    <br>
+                </div>
+
+                <div class="col link-news mb0">
+
+                    <a class="block h4 letter-s0 m0" href="/tudo-cult/" itemprop="url" title="Tudo Cult">Tudo Cult</a>
+                    <ul class="list-unstyled no-padding-top p0">
+                        <li><a class="text-decoration-none" href="/tudo-cult/horoscopo/" itemprop="url" title="Horóscopo">Horóscopo</a></li>
+                        <li><a class="text-decoration-none" href="/tudo-cult/viu-essa/" itemprop="url" title="Viu essa?">Viu essa?</a></li>
+                    </ul>
+                    <br>
+                </div>
+
+                <div class="col link-news mb0">
+                    <a class="block h4 letter-s0 m0" href="/tudo-educacao/" itemprop="url" title="Tudo Educação">Tudo Educação</a>
+                    <ul class="list-unstyled no-padding-top p0">
+                        <li><a class="text-decoration-none" href="https://www.virandobixo.com.br/" rel="noopener" target="_blank">Virando Bixo</a></li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col link-news mb0">
+                    <a class="block h4 letter-s0 m0" href="/tudo-elas/" itemprop="url" title="Tudo Elas">Tudo Elas</a>
+                    <br>
+                </div>
+
+                <div class="col link-news mb0">
+                    <a class="block h4 letter-s0 m0" href="/tudo-decor/" itemprop="url" title="Tudo Decoração">Tudo Decoração</a>
+                    <br>
+                </div>
+
+                <div class="col link-news mb0">
+                    <a class="block h4 letter-s0 m0" href="/tudo-esporte/" itemprop="url" title="Tudo Esporte">Tudo Esporte</a>
+                    <ul class="list-unstyled no-padding-top p0">
+                        <li><a class="text-decoration-none" href="/tudo-esporte/derbi-campineiro/" target="_blank" itemprop="url" title="Derbi Campineiro" rel="noopener">Dérbi Campineiro</a></li>
+                    </ul>
+                    <br>
+                </div>
+
+                <div class="col link-news mb0">
+                    <a class="block h4 letter-s0 m0" href="/tudo-games/" itemprop="url" title="Tudo Games">Tudo Games</a>
+                    <ul class="list-unstyled no-padding-top p0">
+                        <li><a class="text-decoration-none" href="/tudo-games/game-on/">Game On</a></li>
+                    </ul>
+                    <br>
+                </div>
+
+                <div class="col link-news mb0">
+                    <a class="block h4 letter-s0 m0" href="/tudo-inovacao/" itemprop="url" title="Tudo Inovação">Tudo Inovação</a>
+                    <br>
+                </div>
+
+                <div class="col link-news mb0">
+                    <a class="block h4 letter-s0 m0" href="/tudo-receitas/" itemprop="url" title="Tudo Receitas">Tudo Receitas</a>
+                    <ul class="list-unstyled no-padding-top p0">
+                        <li><a class="text-decoration-none" href="/tudo-receitas/churrasqueadas/">Churrasqueadas</a></li>
+                    </ul>
+                    <br>
+                </div>
+
+                <div class="col link-news mb0">
+                    <span class="block h4 letter-s0 m0">Tudo Sertanejo</span>
+                    <ul class="list-unstyled no-padding-top p0">
+                        <li><a class="text-decoration-none" href="https://movimentocountry.tudoep.com" rel="noopener" target="_blank">Movimento Country</a></li>
+                    </ul>
+                    <br>
+                </div>
+
+                <div class="col link-news mb0">
+                    <a class="block h4 letter-s0 m0" href="/tudo-valor/" itemprop="url" title="Tudo Valor">Tudo Valor</a>
+                    <ul class="list-unstyled no-padding-top p0">
+                        <li><a class="text-decoration-none" href="/tudo-valor/dinheiro-com-voce/" itemprop="url" title="Dinheiro Com Você">Dinheiro Com Você</a></li>
+                    </ul>
+                    <br>
+                </div>
+
+                <div class="col link-news mb0">
+                    <a class="block h4 letter-s0 m0" href="/tudo-viagens/" itemprop="url" title="Tudo Viagens">Tudo Viagens</a>
+                    <br>
+                </div>
+
+
+                <div class="col link-news mb0">
+                    <span class="block h4 letter-s0 m0">Especiais</span>
+                    <ul class="list-unstyled no-padding-top p0">
+                        <li><a class="text-decoration-none" href="/especiais/educa-mais-cast/">Educa Mais Cast</a></li>
+                        <li><a class="text-decoration-none" href="/especiais/rota-do-arraia/">Rota do Arraiá</a></li>
+                    </ul>
+                    <br>
+                </div>
+
+                <div class="col link-news mb0">
+                    <a class="block h4 letter-s0 m0" href="/institucional/" itemprop="url" title="Institucional">Institucional</a>
+                    <br>
+                </div>
+
+                <div class="col link-news mb0">
+                    <a class="block h4 letter-s0 m0" href="/faleconosco/" itemprop="url" title="Fale conosco">Fale conosco</a>
+                    <br>
+                </div>
+
+                <div class="col link-news mb0">
+                    <a class="block h4 letter-s0 m0" href="https://negocios.empresaspioneiras.com.br/Internet/nossos-sites/tudoep/" itemprop="url" title="Mídia kit" rel="noopener" target="_blank">Mídia kit</a>
+                    <br>
+                </div>
+
+                <div class="col link-news mb0">
+                    <a class="block h4 letter-s0 m0" href="https://www.empresaspioneiras.com.br/privacidade" itemprop="url" title="Aviso legal" rel="noopener" target="_blank">Aviso legal</a>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+        
+<div class="content w-100 meta-content bg-grad-dark px1 py4" style="--bs-link-color: var(--bs-white); --bs-body-color: var(--bs-white); color: var(--bs-body-color);--bs-link-hover-color: var(--bs-gray-300);">
+	<div class="social align-items-center flex flex-wrap justify-center pb0">
+		<a href="https://www.empresaspioneiras.com.br/" class="ultimoitem" title="Quem Somos - GRUPO EP Empresas Pioneiras" target="_blank"><amp-img src="/img/logo_GrupoEP_branco.svg" width="140" height="45" alt="GRUPO EP - Empresas Pioneiras - logo" noloading></amp-img></a>&nbsp; 
+		<small class="text-center">
+			Copyright © 2023. GRUPO Empresas Pioneiras - Todos direitos reservados
+		</small>
+    </div>
+    <div class="footer-item text-center">
+		<small>
+        <a href="/faleconosco/faleconosco.aspx/" class="ultimoitem" target="_blank">Fale Conosco</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://negocios.empresaspioneiras.com.br/" target="_blank">Anuncie</a>
+		</small>
+	</div>
+</div>
+        
+    
+
+
+    </footer>
+    
+    
+
+
+    
+<div id="DHTML" class="adunit" data-outofpage="true" data-targeting='{"dfp_Pos":"DHTML"}'></div>
+<div id="ENVELOPAMENTO" class="adunit" data-outofpage="true" data-targeting='{"dfp_Pos":"ENVELOPAMENTO"}'></div>
+
+
+	
+	<button id="scrollToTopButton" on="tap:top.scrollTo(duration=200)" class="scrollToTop bg-tudoep flex cursor-pointer">
+		<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-up img-fluid m-auto" viewBox="0 0 16 16">
+            <use xlink:href="/img/bootstrap-icons/bootstrap-icons.svg#chevron-up"></use>
+        </svg>
+	</button>
+
+	<amp-animation id="showAnim" layout="nodisplay">
+		<script type="application/json">
+			{
+				"duration": "200ms",
+				"fill": "both",
+				"iterations": "1",
+				"direction": "alternate",
+				"animations": [
+					{
+					"selector": "#scrollToTopButton",
+					"keyframes": [
+						{ "opacity": "1", "visibility": "visible" }
+					]
+					}
+				]
+			}
+		</script>
+	</amp-animation>
+	<amp-animation id="hideAnim" layout="nodisplay">
+		<script type="application/json">
+			{
+				"duration": "200",
+				"fill": "both",
+				"iterations": "1",
+				"direction": "alternate",
+				"animations": [
+					{
+					"selector": "#scrollToTopButton",
+					"keyframes": [
+						{ "opacity": "0", "visibility": "hidden" }
+					]
+					}
+				]
+			}
+		</script>
+	</amp-animation>
+
+    <amp-user-notification layout="nodisplay" id="amp-user-notification1" class="sample-notification bg-grad-dark">
+        <div class="p3 content content-md-width flex">
+        <!-- This is an amp-user-notification. It uses local storage to store the dismissed state. -->
+        <p class="text-white m0 fw-light pr2">Nós usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência, analisar o tráfego do site e personalizar o conteúdo. Conheça a nossa <a class="link italic bold" href="https://www.empresaspioneiras.com.br/privacidade/" target="_blank">Política de Privacidade</a> e, ao continuar navegando, você concorda com estas condições.</p>
+        &nbsp;
+        <button class="bg-warning rounded border-none h4 py1 px2" on="tap:amp-user-notification1.dismiss">OK</button>
+        </div>
+    </amp-user-notification>
+
+    <amp-install-serviceworker src="/serviceworker.js"
+      data-iframe-src="/sw.html"
+      layout="nodisplay">
+    </amp-install-serviceworker>
+  
+</body>
+</html>
